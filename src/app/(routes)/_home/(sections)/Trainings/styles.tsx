@@ -1,0 +1,128 @@
+import styled from 'styled-components'
+import theme from '@/styles/theme'
+
+export const Section = styled.section`
+  padding: 80px 0 100px;
+  background-color: ${theme.colors.orange};
+  background-image: url('/assets/images/bg-pattern-3.jpg');
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 1024px) {
+    padding: 40px 0;
+  }
+`;
+
+export const Heading = styled.div`
+  text-align: center;
+  position: relative;
+  z-index: 3;
+
+  @media screen and (max-width: 1024px) {
+    text-align: left;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+  color: ${theme.colors.backgroundMint};
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
+`;
+
+export const Subtitle = styled.p`
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 15px auto;
+  color: ${theme.colors.backgroundMint};
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    margin: 25px 0;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  gap: 30px;
+  margin: 60px 0 0;
+  position: relative;
+  z-index: 2;
+
+  & > div {
+    flex: 1;
+  }
+`;
+
+export const ContentHeading = styled.div`
+  margin: 0 0 20px;
+`;
+
+export const ContentTitle = styled.div`
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  color: ${theme.colors.pinkMain};
+`;
+
+export const ContentDetail = styled.div`
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+
+  &.bottom {
+    align-items: flex-start;
+    font-weight: 400;
+  }
+`;
+
+export const ContentItem = styled.div`
+  position: relative;
+  z-index: 2;
+  background: ${theme.colors.backgroundMint};
+  border-radius: 20px;
+  overflow: hidden;
+`;
+
+export const ContentBody = styled.div`
+  padding: 20px;
+  border-bottom: 15px solid ${theme.colors.backgroundPink};
+  border-left: 15px solid ${theme.colors.backgroundPink};
+  border-right: 15px solid ${theme.colors.backgroundPink};
+`;
+
+export const Icon = styled.div`
+  width: 20px;
+`;
+
+export const ContentList = styled.div`
+  font-size: 16px;
+
+  & > .subtitle {
+    margin-bottom: 10px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  padding-bottom: 60%;
+`;
+
+export const ButtonMore = styled.div`
+  padding: 10px 20px;
+  color: ${theme.colors.backgroundMint};
+  background-color: ${theme.colors.tealMain};
+  margin: 40px 0 0 auto;
+  font-weight: 600;
+  text-transform: uppercase;
+  max-width: 130px;
+  text-align: center;
+  border-radius: 20px;
+`;
