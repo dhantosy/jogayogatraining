@@ -5,13 +5,13 @@ export const NotFound = styled.section`
   display: flex;
   flex-direction: column;
   height: calc(100vh - 200px);
-  background-color: ${theme.colors.backgroundBlue};
+  background-color: ${theme.colors.backgroundMint};
   align-items: center;
   justify-content: center;
 `;
 
 export const Content = styled.div`
-  color: ${theme.colors.white};
+  color: ${theme.colors.greenMain};
   text-align: center;
   padding-top: 100px;
 `;
@@ -20,7 +20,7 @@ export const Title = styled.h2`
   font-size: 100px;
   font-weight: 700;
   line-height: 1.2;
-  color: ${theme.colors.cyan};
+  color: ${theme.colors.orange};
   margin: 0;
 
   @media screen and (max-width: 1024px) {

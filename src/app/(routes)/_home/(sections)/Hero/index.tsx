@@ -1,7 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import Container from '@/app/_components/Container'
-import { Section, Content, VideoWrapper, Title, Subtitle, Button } from './styles'
+import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper } from './styles'
 
 export default function Hero() {
   return (
@@ -26,6 +27,16 @@ export default function Hero() {
           <Subtitle>JOGA YOGA TRAINING</Subtitle>
           <Title>Ignite Your Inner Light and Inspire the World</Title>
           <Subtitle className='bottom'>Yoga Alliance Certified Teacher Training Course in Bali</Subtitle>
+          <ImageWrapper>
+            <Image
+              src='/assets/images/logo-rys.png'
+              alt=''
+              sizes={`100vw, 33vw`}
+              fill
+              style={{ objectFit: 'cover' }}
+              className='image'
+            />
+          </ImageWrapper>
         </Content>
       </Container>
 

@@ -11,7 +11,9 @@ const theme = {
     green: '#21AF56',
     tealMain: '#54B7BF',
     tealBright: '#00BCC5',
-    pinkBright: '#FFC5CD'
+    pinkBright: '#FFC5CD',
+    red: '#FF3552',
+    greyLight: '#EBEBEB',
   },
 };
 

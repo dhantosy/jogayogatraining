@@ -99,6 +99,101 @@ const styles = css`
     color: inherit;
   }
 
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &[disabled] {
+      opacity: 0.6;
+    }
+  }
+
+  label {
+    color: #808080;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    min-height: 16px;
+    font-weight: 500;
+
+    > span {
+      color: #FF3552;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #EBEBEB;
+    background-color: #FFF;
+    padding: 8px 10px;
+    color: #3D4939;
+    border-radius: 5px;
+    font-size: inherit;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border: 1px solid #EBEBEB;
+    }
+  }
+
+  fieldset {
+    display: block;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 0 0 15px;
+    padding: 0;
+  }
+
+  textarea {
+    background: #FFF;
+    border: 1px solid #EBEBEB;
+    border-radius: 3px;
+    display: block;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    overflow: auto;
+    resize: none;
+    border-radius: 5px;
+    font-family: var(--font-poppins), sans-serif;
+    color: inherit;
+
+    &:focus,
+    &:active {
+      border: 1px solid #EBEBEB;
+      outline: 0;
+    }
+
+    &[readonly],
+    &[disabled] {
+      background-color: #f3f3f3;
+    }
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type='number']:hover,
+  input[type='number']:focus {
+    -moz-appearance: number-input;
+  }
+
   .swiper-wrapper {
     padding-bottom: 40px;
   }

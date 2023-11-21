@@ -4,9 +4,9 @@ import theme from '@/styles/theme';
 export const FooterNav = styled.footer`
   padding: 80px 0 40px;
   background-color: ${theme.colors.tealBright};
-  background-image: url('/assets/images/bg-footer.jpg');
+  background-image: url('/assets/images/bg-footer.png');
   background-position: left bottom;
-  background-size: 60%;
+  background-size: 55%;
   background-repeat: no-repeat;
   color: ${theme.colors.backgroundMint};
 `;
@@ -38,6 +38,8 @@ export const Logo = styled.div`
   display: flex;
   border-radius: 20px;
   overflow: hidden;
+  background-color: ${theme.colors.white};
+  padding: 20px;
 
   @media screen and (max-width: 1024px) {
     width: 100px;

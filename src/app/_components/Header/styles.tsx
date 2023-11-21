@@ -32,6 +32,7 @@ export const Menu = styled.menu`
 
 export const MenuItem = styled.div`
   position: relative;
+  text-align: center;
 
   @media screen and (max-width: 1024px) {
 
@@ -50,7 +51,7 @@ export const Logo = styled.div<{ $active?: boolean; }>`
   gap: 15px;
   align-items: center;
   position: absolute;
-  top: 15px;
+  top: 0;
   left: 40px;
   z-index: 10;
 
@@ -95,6 +96,7 @@ export const Text = styled.div`
 
   &.mobileMenu {
     text-align: center;
+    display: inline-block;
   }
 `;
 
@@ -144,14 +146,16 @@ export const MobileMenuContainer = styled.div<{ $isMobileMenuActive?: boolean; }
   top: 80px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 80px);
   background-color: ${theme.colors.backgroundPink};
   padding: 50px 20px;
   z-index: 9;
+  border-right: 15px solid ${theme.colors.white};
+  border-left: 15px solid ${theme.colors.white};
+  border-bottom: 15px solid ${theme.colors.white};
 `;
 
 export const TextMobile = styled.div`
-  display: inline-flex;
   gap: 15px;
   align-items: center;
   padding: 15px 0;

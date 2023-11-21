@@ -86,6 +86,7 @@ export const Subtitle = styled.h1`
   font-weight: 400;
   line-height: 1.2;
   font-family: var(--font-poppins), sans-serif;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1024px) {
     font-size: 18px;
@@ -116,5 +117,14 @@ export const Button = styled.button`
     font-size: 16px;
     color: ${theme.colors.white};
     margin-bottom: 20px;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 63px;
+  padding-bottom: 7%;
+
+  @media screen and (max-width: 1024px) {
   }
 `;

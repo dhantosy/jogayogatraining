@@ -15,12 +15,8 @@ import {
   HeaderNav,
   Menu,
   MenuItem,
-  Dropdown,
-  DropdownText,
-  TextHasDropdown,
   Icon,
   MobileMenuContainer,
-  LogoName,
 } from './styles'
 import { useScrollPosition}  from '@/hooks/useScrollPosition';
 import MobileMenuItem from './MobileMenuItem'
@@ -28,38 +24,42 @@ import MobileMenuItem from './MobileMenuItem'
 const headerMenus = [
   {
     parent: 'Yoga Teacher Training',
-    linkParent: '/beyond-bali'
+    linkParent: '/yoga-teacher-training'
   },
   {
     parent: 'About',
-    linkParent: '/beyond-bali'
+    linkParent: '/about'
+  },
+  {
+    parent: 'Blog',
+    linkParent: '/blog'
   }
 ];
 
 const headerMenusMobile = [
   {
     parent: 'Yoga Teacher Training',
-    linkParent: '/beyond-bali'
+    linkParent: '/yoga-teacher-training'
   },
   {
     parent: 'Teachers',
-    linkParent: '/beyond-bali'
+    linkParent: '/teachers'
   },
   {
     parent: 'Testimonials',
-    linkParent: '/beyond-bali'
+    linkParent: '/testimonials'
   },
   {
     parent: 'About',
-    linkParent: '/beyond-bali'
+    linkParent: '/about'
   },
   {
     parent: 'Blog',
-    linkParent: '/beyond-bali'
+    linkParent: '/blog'
   },
   {
     parent: 'FAQs',
-    linkParent: '/beyond-bali'
+    linkParent: '/faqs'
   }
 ]
 
@@ -135,24 +135,13 @@ export default function Header() {
           <Link href='/'>
             <Logo $active={active} className='desktop'>
               <Image
-                src="/assets/images/logo.png"
-                alt="Bali Stingray Diver"
+                src="/assets/images/logo-horizontal.png"
+                alt="Joga yoga training"
                 sizes={`100vw, 33vw`}
                 priority
-                width='100'
-                height='100'
+                width='200'
+                height='90'
               />
-            </Logo>
-            <Logo className='mobile'>
-              {/* <Image
-                src="/assets/images/logo-black.png"
-                alt="Bali Stingray Diver"
-                sizes={`100vw, 33vw`}
-                priority
-                width='50'
-                height='50'
-              /> */}
-              <LogoName>Joga Yoga Training</LogoName>
             </Logo>
           </Link>
           <Menu>

@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 40px 0;
+  padding: 40px 0 0;
+  position: relative;
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
@@ -49,14 +50,15 @@ export const Content = styled.div`
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
+  padding: 0 40px 0;
 
   &:after {
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
-    width: 105%;
+    width: 100%;
     height: 450px;
-    right: -25px;
+    left: 0;
     top: -123px;
     opacity: 0.2;
     border-radius: 20px;
@@ -72,10 +74,67 @@ export const ContentHeading = styled.div`
   margin: 0 0 20px;
   font-size: 20px;
   font-weight: 500;
+  position: relative;
+  z-index: 2;
+
+  &.subheading {
+    color: ${theme.colors.pinkMain};
+    font-size: 28px;
+  }
 `;
 
 export const ContentItem = styled.div`
   position: relative;
   z-index: 2;
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 50%;
+  width: 640px;
+
+  &.bottom {
+    padding-bottom: 50%;
+  }
+`;
+
+export const Gallery = styled.div`
+  position: relative;
+  padding: 150px 0 0;
+
+  & > .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+  }
+
+  & > .flex > .text {
+    flex: 1;
+    margin-top: 80px;
+    position: relative;
+    padding: 0 40px 0;
+    z-index: 3;
+
+    &:after {
+      content: '';
+      background-color: ${theme.colors.orange};
+      position: absolute;
+      width: 125%;
+      height: 380px;
+      left: 0;
+      top: -25px;
+      opacity: 0.2;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+  }
+
+  & > .flex > .image {
+    flex: 0 0 540px;
+  }
 `;
 

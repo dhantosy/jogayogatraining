@@ -66,8 +66,8 @@ export default function Footer() {
             <Link href='/'>
               <Logo>
                 <Image
-                  src='/assets/images/logo-bg.jpg'
-                  alt='Bali Stingray Diver'
+                  src='/assets/images/logo.png'
+                  alt='Joga Yoga'
                   sizes={`100vw, 33vw`}
                   width='150'
                   height='150'
@@ -114,7 +114,7 @@ export default function Footer() {
               </CopyrightSocialItem>
             </a>
           </CopyrightSocial>
-          Bali Stingray Divers © 2023. All Rights Reserved.
+          Joga Yoga Training © 2023. All Rights Reserved.
         </Copyright>
       </Container>
     </FooterNav>

@@ -50,7 +50,7 @@ export const Subtitle = styled.p`
 
 export const Content = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 50px;
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
@@ -68,6 +68,7 @@ export const ContentTitle = styled.div`
   font-size: 20px;
   font-weight: 500;
   margin: 0 0 20px;
+  text-transform: uppercase;
   color: ${theme.colors.pinkMain};
 `;
 
@@ -125,4 +126,19 @@ export const ButtonMore = styled.div`
   max-width: 130px;
   text-align: center;
   border-radius: 20px;
+`;
+
+export const Discount = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+  background-color: ${theme.colors.red};
+  color: ${theme.colors.backgroundMint};
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  opacity: 0.95;
 `;
