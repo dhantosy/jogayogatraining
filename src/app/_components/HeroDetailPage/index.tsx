@@ -25,6 +25,7 @@ export default function HeroDetailPage({ title, backgroundImage }: Props) {
               sizes={`100vw, 33vw`}
               fill
               style={{ objectFit: 'cover' }}
+              priority
             />
           </ImageWrapper>
         </Content>

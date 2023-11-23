@@ -201,6 +201,7 @@ export default function FormFields() {
                                 sizes={`100vw, 33vw`}
                                 fill
                                 style={{ objectFit: 'cover' }}
+                                priority
                               />
                             </ImageWrapper>
                           )

@@ -35,6 +35,7 @@ export default function Hero() {
               fill
               style={{ objectFit: 'cover' }}
               className='image'
+              priority
             />
           </ImageWrapper>
         </Content>

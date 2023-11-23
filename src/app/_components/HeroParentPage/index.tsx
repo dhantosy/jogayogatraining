@@ -28,6 +28,7 @@ export default function HeroParentPage({ title, subtitle, backgroundImage }: Pro
               sizes={`100vw, 33vw`}
               width='600'
               height='441'
+              priority
             />
           </ImageWrapper>
         </Content>
