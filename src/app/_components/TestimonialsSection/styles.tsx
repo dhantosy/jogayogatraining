@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 100px 0 60px;
+  padding: 0 0 60px;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0;
+    padding: 0 0 60px;
   }
 `;
 

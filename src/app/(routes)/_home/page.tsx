@@ -3,7 +3,7 @@ import About from './(sections)/About'
 import Benefits from './(sections)/Benefits'
 import Teachers from './(sections)/Teachers'
 import Trainings from './(sections)/Trainings'
-import Testimonials from './(sections)/Testimonials'
+import TestimonialsSection from '@/app/_components/TestimonialsSection'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Benefits />
       <Teachers />
       <Trainings />
-      <Testimonials />
+      <TestimonialsSection />
     </>
   )
 }

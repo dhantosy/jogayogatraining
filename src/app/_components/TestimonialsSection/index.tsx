@@ -51,7 +51,7 @@ const data = [
   },
 ]
 
-export default function Testimonials() {
+export default function TestimonialsSection() {
   return (
     <Section id='testimonials'>
       <Container>

@@ -202,6 +202,10 @@ const styles = css`
     background-color: #20C7CA;
   }
 
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+
 `;
 
 const GlobalStyles = createGlobalStyle`

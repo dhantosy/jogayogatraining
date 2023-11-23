@@ -13,6 +13,7 @@ const theme = {
     tealBright: '#00BCC5',
     pinkBright: '#FFC5CD',
     red: '#FF3552',
+    redLight: '#FF536C',
     greyLight: '#EBEBEB',
   },
 };

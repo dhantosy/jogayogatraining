@@ -5,54 +5,8 @@ import Container from '@/app/_components/Container'
 import { HiCalendarDays, HiMapPin, HiCheck } from "react-icons/hi2";
 
 import { Section, Title, Subtitle, Heading, Content, ContentHeading, ContentBody, ContentItem, ContentTitle, ContentDetail, ContentList, Icon, ImageWrapper, ButtonMore, Discount } from './styles'
+import trainings from '@/data/trainings';
 
-const data = [
-  {
-    photo: '/assets/images/course-1.jpg',
-    title: '200 Hour Yoga Teacher Training',
-    date: '8 January, 2024',
-    location: 'Joga Yoga, Canggu, Bali',
-    link: '',
-    list: [
-      '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
-    ],
-    discount: false,
-    discountText: 'Early Bird Discount',
-  },
-  {
-    photo: '/assets/images/course-2.jpg',
-    title: '200 Hour Yoga Teacher Training',
-    date: '4 March, 2024',
-    location: 'Joga Yoga, Canggu, Bali',
-    link: '',
-    list: [
-      '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
-    ],
-    discount: true,
-    discountText: '2 Seats Remaining',
-  },
-  {
-    photo: '/assets/images/course-3.jpg',
-    title: '200 Hour Yoga Teacher Training',
-    date: '6 May, 2024',
-    location: 'Joga Yoga, Canggu, Bali',
-    link: '',
-    list: [
-      '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
-    ],
-    discount: true,
-    discountText: 'Early Bird Discount',
-  }
-]
 
 export default function Trainings() {
   return (
@@ -63,10 +17,10 @@ export default function Trainings() {
           <Subtitle>Pick Your Date & Register Now</Subtitle>
         </Heading>
         <Content>
-          {data.map(({ photo, title, date, location, list, discount, discountText }) => {
+          {trainings.map(({ photo, title, startDate, location, list, discount, discountText }) => {
 
             return (
-              <ContentItem key={date}>
+              <ContentItem key={startDate}>
                 {discount && (
                   <Discount>
                     {discountText}
@@ -90,7 +44,7 @@ export default function Trainings() {
                         <Icon>
                           <HiCalendarDays />
                         </Icon>
-                        <div>{date}</div>
+                        <div>{startDate}</div>
                       </ContentDetail>
                       <ContentDetail>
                         <Icon>

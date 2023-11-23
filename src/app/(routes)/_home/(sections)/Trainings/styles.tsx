@@ -3,6 +3,7 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   padding: 80px 0 100px;
+  margin-bottom: 80px;
   background-color: ${theme.colors.orange};
   background-image: url('/assets/images/bg-pattern-3.jpg');
   background-position: center;
@@ -133,7 +134,7 @@ export const Discount = styled.div`
   width: 100%;
   height: 50px;
   z-index: 2;
-  background-color: ${theme.colors.red};
+  background-color: ${theme.colors.redLight};
   color: ${theme.colors.backgroundMint};
   font-weight: 700;
   text-align: center;
