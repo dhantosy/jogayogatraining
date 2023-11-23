@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link';
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { HiCalendarDays, HiMapPin, HiCheck } from "react-icons/hi2";
@@ -17,7 +18,7 @@ export default function Trainings() {
           <Subtitle>Pick Your Date & Register Now</Subtitle>
         </Heading>
         <Content>
-          {trainings.map(({ photo, title, startDate, location, list, discount, discountText }) => {
+          {trainings.map(({ photo, title, startDate, location, list, discount, discountText, link }) => {
 
             return (
               <ContentItem key={startDate}>
@@ -68,7 +69,9 @@ export default function Trainings() {
                       )
                     })}
                   </ContentList>
-                  <ButtonMore>See Detail</ButtonMore>
+                  <Link href={link}>
+                    <ButtonMore>See Detail</ButtonMore>
+                  </Link>
                 </ContentBody>
               </ContentItem>
             )

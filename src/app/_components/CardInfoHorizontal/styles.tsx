@@ -52,7 +52,7 @@ export const CardHorizontalContent = styled.div`
 export const CardHorizontalTitle = styled.h3`
   margin: 10px 0 20px;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   color: ${theme.colors.orange};
 `;
 
@@ -81,13 +81,13 @@ export const Icon = styled.div`
 `;
 
 export const Button = styled.div`
-  width: 200px;
+  width: 180px;
   border-radius: 20px;
   background-color: ${theme.colors.tealMain};
   color: ${theme.colors.backgroundMint};
   font-size: 16px;
   text-transform: uppercase;
-  padding: 8px 20px;
+  padding: 10px 20px;
   text-align: center;
   font-weight: 600;
 `;

@@ -51,7 +51,7 @@ export const Logo = styled.div<{ $active?: boolean; }>`
   gap: 15px;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 40px;
   z-index: 10;
 

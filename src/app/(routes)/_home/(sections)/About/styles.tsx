@@ -82,14 +82,6 @@ export const Content = styled.div`
   }
 `;
 
-
-export const More = styled.div`
-  display: flex;
-  gap: 10px;
-  margin: 30px 0 0;
-  font-size: 18px;
-`;
-
 export const Icon = styled.div`
   width: 20px;
 `;
@@ -97,4 +89,18 @@ export const Icon = styled.div`
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+`;
+
+export const More = styled.div`
+  display: flex;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.tealMain};
+  border-radius: 20px;
+  margin: 30px 0 0;
+  max-width: 150px;
+  justify-content: center;
 `;

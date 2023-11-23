@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {
-  FaArrowRight,
   FaRegEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
@@ -17,7 +16,6 @@ import {
   NavRight,
   Menu,
   MenuTitle,
-  MenuItem,
   Address,
   Copyright,
   Info,
@@ -27,33 +25,30 @@ import {
 } from './styles'
 import Container from '../Container'
 
-const photos = [
-  '/assets/images/gallery-2.jpg',
-  '/assets/images/gallery-5.jpg',
-  '/assets/images/gallery-1.jpg',
-  '/assets/images/gallery-3.jpg',
-  '/assets/images/gallery-4.jpg',
-  '/assets/images/gallery-6.jpg',
-];
-
 const menu = [
   {
     title: 'Yoga Teacher Training',
+    link: '/yoga-teacher-training',
   },
   {
     title: 'Teachers',
+    link: '/',
   },
   {
     title: 'Testimonials',
+    link: '/',
   },
   {
     title: 'About',
+    link: '/',
   },
   {
     title: 'Blog',
+    link: '/',
   },
   {
     title: 'FAQs',
+    link: '/',
   },
 ];
 
@@ -92,10 +87,12 @@ export default function Footer() {
             </div>
           </NavRight>
           <Menu>
-            {menu.map(({ title }) => {
+            {menu.map(({ title, link }) => {
               return (
                 <div key={title}>
-                  <MenuTitle>{title}</MenuTitle>
+                  <Link href={link}>
+                    <MenuTitle>{title}</MenuTitle>
+                  </Link>
                 </div>
               )
             })}
@@ -103,12 +100,12 @@ export default function Footer() {
         </Navigation>
         <Copyright>
           <CopyrightSocial>
-            <a href='https://www.instagram.com/balistingray/' target='_blank' aria-label='Bali Stingray Divers Instagram'>
+            <a href='https://www.instagram.com/jogayogatraining/' target='_blank' aria-label='Joga Yoga Training Instagram'>
               <CopyrightSocialItem>
                 <FaInstagram />
               </CopyrightSocialItem>
             </a>
-            <a href='https://www.facebook.com/stingraydiversbali' target='_blank' aria-label='Bali Stingray Divers Facebook'>
+            <a href='https://www.facebook.com/jogayogateacher/' target='_blank' aria-label='Joga Yoga Training Facebook'>
               <CopyrightSocialItem>
                 <FaFacebookSquare />
               </CopyrightSocialItem>

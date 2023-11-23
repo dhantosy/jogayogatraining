@@ -16,7 +16,7 @@ export default function About() {
         <Content>
           <ImageWrapper>
             <Image
-              src='/assets/images/gallery-1.jpg'
+              src='/assets/images/gallery/training-12.jpg'
               alt='YTT'
               sizes={`100vw, 33vw`}
               width='600'
@@ -27,8 +27,7 @@ export default function About() {
             <Subtitle>Welcome to our yoga alliance certified 100 and 200 hour Vinyasa Yoga Teacher Training! One of the most authentic and in-depth yoga teacher trainings on beautiful Bali island. We’ve sourced some of the best local & international certified yoga teachers to guide you on this inspiring journey.</Subtitle>
             <Link href='/'>
               <More>
-                <div>More About Us</div>
-                <Icon><HiArrowLongRight /></Icon>
+                <div>About Us</div>
               </More>
             </Link>
           </ContentSub>

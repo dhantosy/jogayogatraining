@@ -26,17 +26,17 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.balistingraydiver.com'),
+  // metadataBase: new URL('https://www.balistingraydiver.com'),
   alternates: {
     canonical: '/',
   },
   robots: 'index, follow',
-  title: 'Joga Yoga',
-  description: 'Dive Into the World of Underwater Exploration with Bali Stingray Divers, One of the Most Trusted Dive Center in Bali.',
-  keywords: 'Dive Center, Bali Dive Center, Scuba Dive Bali, Nusa Penida Diving, Tulamben Diving, Amed Diving, Menjangan Diving, Scuba Diving, Stingray, Bali, Diving',
+  title: 'Joga Yoga Training',
+  description: '',
+  keywords: '',
   openGraph: {
-    title: 'Bali Stingray Divers',
-    description: 'Dive Into the World of Underwater Exploration with Bali Stingray Divers, One of the Most Trusted Dive Center in Bali.',
+    title: 'Joga Yoga Training',
+    description: '',
     type: 'website',
     images: '/assets/images/banner-fb.jpg'
   }

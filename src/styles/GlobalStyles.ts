@@ -194,12 +194,45 @@ const styles = css`
     -moz-appearance: number-input;
   }
 
+  .select {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #EBEBEB;
+    background-color: #FFF;
+    cursor: pointer;
+  }
+
+  select {
+    background-color: transparent;
+    color: #3D4939;
+    width: 100%;
+    padding: 10px 45px 10px 15px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    appearance: none;
+    outline: 0;
+    background-image: none;
+    line-height: 21px;
+    border: none;
+    cursor: pointer;
+  }
+
   .swiper-wrapper {
     padding-bottom: 40px;
   }
 
   .swiper-pagination-bullet-active {
     background-color: #20C7CA;
+  }
+
+  .my-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .mb-40 {

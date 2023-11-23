@@ -79,7 +79,8 @@ export const ContentHeading = styled.div`
 
   &.subheading {
     color: ${theme.colors.pinkMain};
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 1.2;
   }
 `;
 
@@ -114,7 +115,6 @@ export const Gallery = styled.div`
 
   & > .flex > .text {
     flex: 1;
-    margin-top: 80px;
     position: relative;
     padding: 0 40px 0;
     z-index: 3;
@@ -124,9 +124,9 @@ export const Gallery = styled.div`
       background-color: ${theme.colors.orange};
       position: absolute;
       width: 125%;
-      height: 380px;
+      height: 300px;
       left: 0;
-      top: -25px;
+      top: 24px;
       opacity: 0.2;
       border-radius: 20px;
       overflow: hidden;
