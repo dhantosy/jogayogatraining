@@ -60,6 +60,7 @@ export const SuccessMessage = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 100px 0;
 
   .icon {
     position: relative;

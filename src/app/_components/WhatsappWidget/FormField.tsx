@@ -28,7 +28,7 @@ export default function FormField() {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
-      await fetch('./api/formValues.json');
+      await fetch('');
       setIsSafeToReset(true);
       setIsFormSubmitted(true);
     } catch (e) {

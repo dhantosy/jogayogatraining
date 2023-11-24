@@ -53,7 +53,8 @@ export default function FormFields() {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
-      await fetch('./api/formValues.json');
+      await fetch('');
+      document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' });
       setIsSafeToReset(true);
       setIsFormSubmitted(true);
     } catch (e) {

@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Container from '@/app/_components/Container'
 import FormFields from './FormFields';
 
@@ -10,6 +9,7 @@ export default function Form() {
 
   return (
     <Section>
+      <div id='register' />
       <Container>
         <FormFields />
       </Container>

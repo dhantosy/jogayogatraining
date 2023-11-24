@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import { format } from 'date-fns'
@@ -12,6 +12,11 @@ import FormField from './FormField';
 export default function WhatsappWidget() {
   const [chatExpand, setChatExpand] = useState(false);
   const [activeTab, setActiveTab] = useState('tab1');
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    setCurrentTime(format(new Date(), 'HH:mm'));
+  }, [])
 
   const handleTab1 = () => {
     setActiveTab('tab1');
@@ -49,12 +54,12 @@ export default function WhatsappWidget() {
           <ChatBubble>
             <div>Hey there 👋</div>
             <div>I`m here to help, so let me know what`s up and I`ll be happy to answer your questions.</div>
-            <ChatTime>{format(new Date(), 'HH:mm')}</ChatTime>
+            <ChatTime>{currentTime}</ChatTime>
           </ChatBubble>
         </ChatBody>
         <ChatFooter>
           <Link
-            href='https://api.whatsapp.com/send/?phone=6281246529722'
+            href='https://api.whatsapp.com/send/?phone=6282235386290'
             target='_blank'
             rel='noopener noreferrer'
           >
