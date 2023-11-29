@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 120px 0 80px;
+  padding: 80px 0;
   position: relative;
 
   @media screen and (max-width: 1024px) {

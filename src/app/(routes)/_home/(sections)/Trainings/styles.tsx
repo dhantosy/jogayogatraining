@@ -123,7 +123,6 @@ export const ButtonMore = styled.div`
   background-color: ${theme.colors.tealMain};
   margin: 40px 0 0 auto;
   font-weight: 600;
-  text-transform: uppercase;
   max-width: 130px;
   text-align: center;
   border-radius: 20px;

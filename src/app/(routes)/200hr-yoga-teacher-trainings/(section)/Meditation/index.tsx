@@ -11,7 +11,7 @@ export default function Meditation() {
       <Gallery>
         <div className='flex'>
           <div className='text'>
-            <ContentHeading>Daily Activities & Meditation</ContentHeading>
+            <ContentHeading>Activities & Meditation</ContentHeading>
             <ContentItem>
               <div>Wake up and stroll over to the yoga shala where our monk Dada will guide you through morning meditation followed by a morning Vinyasa or Hatha yoga class, it`s the perfect way to start the day.</div>
               <div>After a delicious vegan/vegetarian buffet breakfast we hold a daily in-depth lecture based on yoga philosophy or yoga anatomy & physiology. After lunch work on teaching skills, asanas, strength and flexibility, mantras, ayurveda medicine and adjustments.</div>

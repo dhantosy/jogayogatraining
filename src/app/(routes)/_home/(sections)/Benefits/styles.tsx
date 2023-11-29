@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 40px 0 0;
   position: relative;
 
   @media screen and (max-width: 1024px) {
@@ -124,7 +123,7 @@ export const Gallery = styled.div`
       background-color: ${theme.colors.orange};
       position: absolute;
       width: 125%;
-      height: 300px;
+      height: 360px;
       left: 0;
       top: 24px;
       opacity: 0.2;
@@ -138,3 +137,18 @@ export const Gallery = styled.div`
   }
 `;
 
+export const More = styled.div`
+  display: flex;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.tealMain};
+  border-radius: 20px;
+  margin: 30px 0 0;
+  max-width: 230px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+`;

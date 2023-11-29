@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { HiArrowLongRight } from "react-icons/hi2";
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, ImageWrapper, Content, More, Icon, ContentSub } from './styles'
 

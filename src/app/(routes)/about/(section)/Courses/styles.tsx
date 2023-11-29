@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 60px 0 80px;
+  padding: 100px 0 20px;
   position: relative;
-  margin-top: 20px;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0;
+    padding: 180px 0 20px;
   }
 `;
 
@@ -15,11 +14,11 @@ export const Heading = styled.div`
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+  padding: 0 30px;
 `;
 
 export const Title = styled.h2`
-  max-width: 860px;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.pinkMain};
@@ -33,10 +32,10 @@ export const Title = styled.h2`
 `;
 
 export const Subtitle = styled.p`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  max-width: 480px;
+  margin: 0;
   position: relative;
   z-index: 2;
 
@@ -52,6 +51,7 @@ export const ImageWrapper = styled.div`
   z-index: 2;
   border-radius: 20px;
   overflow: hidden;
+  top: 0;
 
   @media screen and (max-width: 1024px) {
     max-width: 150px;
@@ -63,17 +63,18 @@ export const ImageWrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 60px;
   position: relative;
+  padding: 0 30px;
 
   &:after {
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 80%;
-    height: 500px;
-    right: 0;
-    top: -170px;
+    height: 300px;
+    left: 0;
+    top: -55px;
     opacity: 0.2;
     border-radius: 20px;
   }
@@ -81,21 +82,27 @@ export const Content = styled.div`
   & > * {
     flex: 1;
   }
-`;
 
-
-export const More = styled.div`
-  padding: 10px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: ${theme.colors.white};
-  background-color: ${theme.colors.tealMain};
-  display: inline-block;
-  border-radius: 20px;
-  margin: 20px 0 0;
+  & > .image {
+    flex: 0 0 480px;
+  }
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+`;
+
+export const More = styled.div`
+  display: flex;
+  gap: 10px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: ${theme.colors.white};
+  background-color: ${theme.colors.tealMain};
+  border-radius: 20px;
+  margin: 30px 0 0;
+  max-width: 230px;
+  justify-content: center;
 `;

@@ -13,7 +13,7 @@ export const Section = styled.section`
     width: 100%;
     height: 76%;
     left: 0;
-    top: 30px;
+    top: 33px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;
@@ -39,8 +39,8 @@ export const Title = styled.h2`
 export const Subtitle = styled.p`
   position: relative;
   z-index: 2;
-  max-width: 540px;
-  margin: auto;
+  max-width: 860px;
+  margin: 0 auto 30px;
 `;
 
 export const ImageWrapper = styled.div`
