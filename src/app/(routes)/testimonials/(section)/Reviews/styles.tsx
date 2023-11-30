@@ -7,12 +7,20 @@ export const Section = styled.section`
   z-index: 2;
 `;
 
+export const Heading = styled.h2`
+  font-size: 36px;
+  color: ${theme.colors.pinkMain};
+  font-weight: 600;
+  margin: 40px 0 0;
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   align-items: flex-start;
   justify-content: space-between;
+  margin: 20px 0 0;
 
   & > div {
     flex: 0 0 calc(50% - 60px);
@@ -113,4 +121,41 @@ export const Rating = styled.div`
   width: 130px;
   margin: 20px 0 10px;
   color: ${theme.colors.orange};
+`;
+
+export const VideoSection = styled.div`
+  display: flex;
+  gap: 50px;
+  margin: 100px 0;
+  padding: 0 60px 0;
+  background-color: rgb(241 173 142 / 20%);
+  border-radius: 20px;
+`;
+
+export const VideoItem = styled.div`
+  flex: 0 0 235px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 39%;
+  position: relative;
+  z-index: 2;
+  top: -50px;
+
+  > div:after {
+    content: '';
+    background-color: ${theme.colors.orange};
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -20px;
+    top: 20px;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+
+  > iframe {
+    position: absolute;
+    z-index: 2;
+  }
 `;
