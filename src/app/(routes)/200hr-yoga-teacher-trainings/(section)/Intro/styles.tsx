@@ -4,7 +4,7 @@ import theme from '@/styles/theme'
 export const Section = styled.section`
   padding: 60px 0 80px;
   position: relative;
-  margin-top: 60px;
+  margin-top: 20px;
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
@@ -93,7 +93,6 @@ export const More = styled.div`
   display: inline-block;
   border-radius: 20px;
   margin: 20px 0 0;
-  text-transform: uppercase;
 `;
 
 export const ContentSub = styled.div`

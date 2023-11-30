@@ -14,7 +14,7 @@ export const Section = styled.section`
     width: calc(100% + 50px);
     height: 100%;
     left: -25px;
-    top: 30px;
+    top: 33px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;
@@ -31,7 +31,7 @@ export const Heading = styled.div`
 export const Title = styled.h2`
   margin: 0 0 20px;
   color: ${theme.colors.pinkMain};
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   position: relative;
   z-index: 2;

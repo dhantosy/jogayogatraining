@@ -30,7 +30,7 @@ export const Heading = styled.div`
 export const Title = styled.h2`
   margin: 0 0 20px;
   color: ${theme.colors.pinkMain};
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   position: relative;
   z-index: 2;

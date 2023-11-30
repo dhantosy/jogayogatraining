@@ -32,23 +32,23 @@ const menu = [
   },
   {
     title: 'Teachers',
-    link: '/',
+    link: '/teachers',
   },
   {
     title: 'Testimonials',
-    link: '/',
+    link: '/testimonials',
   },
   {
     title: 'About',
-    link: '/',
+    link: '/about',
   },
   {
     title: 'Blog',
-    link: '/',
+    link: '/blog',
   },
   {
     title: 'FAQs',
-    link: '/',
+    link: '/faqs',
   },
 ];
 

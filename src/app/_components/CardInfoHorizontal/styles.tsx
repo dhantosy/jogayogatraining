@@ -86,7 +86,6 @@ export const Button = styled.div`
   background-color: ${theme.colors.tealMain};
   color: ${theme.colors.backgroundMint};
   font-size: 16px;
-  text-transform: uppercase;
   padding: 10px 20px;
   text-align: center;
   font-weight: 600;

@@ -4,6 +4,11 @@ import theme from '@/styles/theme';
 export const Section = styled.section`
   background-color: ${theme.colors.backgroundPink};
   padding: 80px 0 50px;
+
+  .anchor {
+    position: relative;
+    top: -150px;
+  }
 `;
 
 export const Form = styled.div`
@@ -164,4 +169,28 @@ export const DiscountAmount = styled.div`
 export const DiscountedPrice = styled.div`
   font-size: 22px;
   font-weight: 600;
+`;
+
+export const Offer = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  background-color: ${theme.colors.redLight};
+  color: ${theme.colors.backgroundMint};
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+`;
+
+export const OfferItem = styled.div`
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  > div:first-child {
+    flex: 0 0 30px;
+    position: relative;
+    top: 3px;
+  }
 `;

@@ -4,7 +4,7 @@ import theme from '@/styles/theme'
 export const ContentHeading = styled.div`
   margin: 0 0 20px;
   color: ${theme.colors.pinkMain};
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
   position: relative;
   z-index: 2;
@@ -57,7 +57,7 @@ export const Gallery = styled.div`
       width: 125%;
       height: 400px;
       left: 0;
-      top: 28px;
+      top: 33px;
       opacity: 0.2;
       border-radius: 20px;
       overflow: hidden;

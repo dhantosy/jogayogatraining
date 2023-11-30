@@ -11,10 +11,8 @@ export const Section = styled.section`
 `;
 
 export const Heading = styled.div`
-  margin-bottom: -128px;
   position: relative;
   z-index: 3;
-  position: relative;
 `;
 
 export const Title = styled.h1`
@@ -26,6 +24,7 @@ export const Title = styled.h1`
   position: relative;
   z-index: 2;
   line-height: 1.2;
+  min-height: 163px;
 
   @media screen and (max-width: 1024px) {
     font-size: 28px;
@@ -41,4 +40,5 @@ export const ImageWrapper = styled.div`
 
 export const Content = styled.div`
   border: 18px solid ${theme.colors.white};
+  margin-top: -128px;
 `;
