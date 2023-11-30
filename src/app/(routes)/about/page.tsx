@@ -3,7 +3,7 @@ import Intro from './(section)/Intro'
 import Gallery from '@/app/_components/Gallery'
 import Community from './(section)/Community'
 import Experience from './(section)/Experience'
-import Courses from './(section)/Courses'
+import TrainingsCallToAction from '@/app/_components/TrainingsCallToAction'
 import TestimonialsSection from '@/app/_components/TestimonialsSection'
 import { galleryAbout } from '@/data/galleries'
 
@@ -21,9 +21,13 @@ export default function About() {
         title='Unforgettable Journey'
         images={galleryAbout}
       />
-      <Courses />
+      <TrainingsCallToAction
+        title='Intimate Yoga Teacher Training'
+        description={`Our training focuses on deepening one's understanding of yoga philosophy, asanas (postures), pranayama (breathing techniques), meditation, and teaching methodologies. It aims to empower aspiring yoga teachers to guide others on their journey towards physical, mental, and spiritual well-being.`}
+        photo='/assets/images/gallery/training-2.jpg'
+      />
       <div style={{
-        marginTop: '80px'
+        marginTop: '20px'
       }}>
         <TestimonialsSection />
       </div>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 100px 0 20px;
+  padding: 100px 0 0;
   position: relative;
 
   @media screen and (max-width: 1024px) {
@@ -47,11 +47,12 @@ export const Subtitle = styled.p`
 
 export const ImageWrapper = styled.div`
   display: inline-flex;
-  position: relative;
   z-index: 2;
   border-radius: 20px;
   overflow: hidden;
-  top: 0;
+  padding-bottom: 30%;
+  position: relative;
+  top: -77px;
 
   @media screen and (max-width: 1024px) {
     max-width: 150px;
@@ -71,7 +72,7 @@ export const Content = styled.div`
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
-    width: 80%;
+    width: 88%;
     height: 300px;
     left: 0;
     top: -55px;
@@ -84,13 +85,18 @@ export const Content = styled.div`
   }
 
   & > .image {
-    flex: 0 0 480px;
+    flex: 0 0 400px;
+  }
+
+  .link {
+    display: inline-block;
   }
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+  max-width: 620px;
 `;
 
 export const More = styled.div`
