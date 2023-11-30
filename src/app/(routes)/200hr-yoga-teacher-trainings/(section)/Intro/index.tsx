@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, ImageWrapper, Content, More, ContentSub } from './styles'
@@ -23,10 +22,10 @@ export default function About() {
             />
           </ImageWrapper>
           <ContentSub>
-            <Subtitle>Early bird price is available starting  from USD 1999, or IDR 17jt for local Indonesians which includes yoga teaching resources, daily yoga and meditation, healthy daily breakfast, the YTT teachers manual, airport pick up, unlimited purified drinking water, weekend excursions and much more. We do offer accommodation packages too.</Subtitle>
-            <a href='#yoga-journey'>
+            <Subtitle>Early bird price is available <strong>starting from USD 1999</strong>, or <strong>IDR 17jt</strong> for local Indonesians which includes yoga teaching resources, daily yoga and meditation, healthy daily breakfast, the YTT teachers manual, airport pick up, unlimited purified drinking water, weekend excursions and much more. We do offer accommodation packages too.</Subtitle>
+            <a href='#register'>
               <More>
-                <div>Start Journey</div>
+                <div>Check Price</div>
               </More>
             </a>
           </ContentSub>

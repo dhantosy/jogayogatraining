@@ -7,7 +7,6 @@ import { ContentHeading, ContentItem, ImageWrapper, Gallery } from './styles'
 export default function Meditation() {
   return (
     <Container>
-      <div id='yoga-journey' />
       <Gallery>
         <div className='flex'>
           <div className='text'>
