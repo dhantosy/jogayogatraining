@@ -5,7 +5,7 @@ export const Section = styled.section`
   padding: 0 0 60px;
 
   @media screen and (max-width: 1024px) {
-    padding: 0 0 60px;
+    padding: 0 0 40px;
   }
 `;
 
@@ -13,6 +13,12 @@ export const Heading = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.h2`
@@ -78,6 +84,13 @@ export const ImageWrapper = styled.div`
     top: 50px;
     opacity: 0.2;
     border-radius: 15px;
+
+    @media screen and (max-width: 1024px) {
+      width: 170%;
+      height: calc(100% + 30px);
+      left: 0;
+      top: 110px;
+    }
   }
 
   & > .image {
@@ -93,6 +106,15 @@ export const Top = styled.div`
 
   > * div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .info {
+      padding-left: 20px;
+    }
   }
 `;
 

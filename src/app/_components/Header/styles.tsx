@@ -39,10 +39,6 @@ export const MenuItem = styled.div`
     &.desktop {
       display: none;
     }
-
-    &.mobile {
-      display: block;
-    }
   }
 `;
 
@@ -55,34 +51,9 @@ export const Logo = styled.div<{ $active?: boolean; }>`
   left: 40px;
   z-index: 10;
 
-  &.mobile {
-    display: none;
-    padding: 0;
-  }
-
   @media screen and (max-width: 1024px) {
-
-    &.desktop {
-      display: none;
-    }
-
-    &.mobile {
-      display: flex;
-    }
-  }
-`;
-
-export const LogoName = styled.div`
-  color: ${theme.colors.greenMain};
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.2;
-
-  @media screen and (max-width: 360px) {
-    & {
-      font-size: 14px;
-    }
+    width: 100px;
+    left: 20px;
   }
 `;
 
@@ -104,40 +75,15 @@ export const TextHasDropdown = styled.div`
   padding: 30px 0;
 `;
 
-export const Dropdown = styled.div`
-  position: absolute;
-  background: ${theme.colors.white};
-  top: 50px;
-  left: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  color: ${theme.colors.greenMain};
-  padding: 10px 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-`;
-
-export const DropdownText = styled.div`
-  padding: 10px 25px;
-  opacity: 0.9;
-  font-weight: 500;
-  transition: font-weight 0.1s ease-in-out;
-
-  &:hover {
-    font-weight: 700;
-  }
-`;
-
 export const Icon = styled.div`
   width: 50px;
   padding: 17px 0 13px 0;
   line-height: 1;
   cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    width: 30px;
+  }
 `;
 
 export const MobileMenuContainer = styled.div<{ $isMobileMenuActive?: boolean; }>`
@@ -167,11 +113,15 @@ export const TextMobile = styled.div`
     color: ${theme.colors.orange};
     font-weight: 500;
   }
-`;
 
-export const IconMobileArrow = styled.div`
-  flex: 0 0 20px;
-  display: flex;
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+
+    &:hover {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
 `;
 
 export const HeaderContainer = styled.div`

@@ -133,7 +133,7 @@ export default function Header() {
       <HeaderContainer>
         <Navigation>
           <Link href='/'>
-            <Logo $active={active} className='desktop'>
+            <Logo $active={active}>
               <Image
                 src="/assets/images/logo-horizontal.png"
                 alt="Joga yoga training"

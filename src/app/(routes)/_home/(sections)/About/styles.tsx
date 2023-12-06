@@ -5,7 +5,7 @@ export const Section = styled.section`
   padding: 80px 0;
   position: relative;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     padding: 40px 0;
   }
 `;
@@ -14,6 +14,10 @@ export const Heading = styled.div`
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -27,6 +31,12 @@ export const Title = styled.h2`
 
   @media screen and (max-width: 1024px) {
     font-size: 28px;
+    max-width: 100%;
+    line-height: 1.2;
+  }
+
+  @media screen and (max-width: 655px) {
+    margin: 0 0 10px;
   }
 `;
 
@@ -43,6 +53,10 @@ export const Subtitle = styled.p`
     font-size: 16px;
     margin: 25px 0;
   }
+
+  @media screen and (max-width: 655px) {
+    margin: 0 0 20px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -52,11 +66,12 @@ export const ImageWrapper = styled.div`
   border-radius: 20px;
   overflow: hidden;
 
-  @media screen and (max-width: 1024px) {
-    max-width: 150px;
-    margin-top: 0;
-    top: 40px;
-    margin-left: -75px;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 655px) {
+    display: inline-flex;
   }
 `;
 
@@ -80,6 +95,29 @@ export const Content = styled.div`
   & > * {
     flex: 1;
   }
+
+  @media screen and (max-width: 1024px) {
+    &:after {
+      height: 350px;
+      right: 0;
+      top: -25px;
+    }
+  }
+
+  @media screen and (max-width: 655px) {
+    & {
+      flex-direction: column;
+    }
+      
+    &:after {
+      width: 100%;
+      height: 450px;
+      left: 0;
+      top: initial;
+      right: initial;
+      bottom: -30px;
+    }
+  }
 `;
 
 export const Icon = styled.div`
@@ -89,6 +127,15 @@ export const Icon = styled.div`
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 655px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 `;
 
 export const More = styled.div`

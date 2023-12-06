@@ -11,6 +11,7 @@ export const Section = styled.section`
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
+    margin-bottom: 40px;
   }
 `;
 
@@ -56,6 +57,10 @@ export const Content = styled.div`
   position: relative;
   z-index: 2;
 
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   & > div {
     flex: 1;
   }
@@ -82,6 +87,10 @@ export const ContentDetail = styled.div`
   &.bottom {
     align-items: flex-start;
     font-weight: 400;
+
+    > div:first-child {
+      flex: 0 0 20px;
+    }
   }
 `;
 

@@ -26,7 +26,8 @@ export const Title = styled.h2`
   color: ${theme.colors.pinkMain};
 
   @media screen and (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 `;
 
@@ -39,7 +40,8 @@ export const Subtitle = styled.p`
 
   @media screen and (max-width: 1024px) {
     font-size: 16px;
-    margin: 25px 0;
+    margin: 25px 0 0;
+    padding: 0 20px;
   }
 `;
 
@@ -56,7 +58,7 @@ export const Content = styled.div`
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 100%;
-    height: 450px;
+    height: calc(100% + 150px);
     left: 0;
     top: -123px;
     opacity: 0.2;
@@ -66,6 +68,17 @@ export const Content = styled.div`
 
   & > div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0 0;
+    padding: 0 20px;
+
+    &:after {
+      top: -85px;
+    }
   }
 `;
 
@@ -80,6 +93,14 @@ export const ContentHeading = styled.div`
     color: ${theme.colors.pinkMain};
     font-size: 32px;
     line-height: 1.2;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 0 10px;
+
+    &.subheading {
+      font-size: 28px;
+    }
   }
 `;
 
@@ -99,23 +120,30 @@ export const ImageWrapper = styled.div`
   &.bottom {
     padding-bottom: 50%;
   }
+
+  @media screen and (max-width: 1024px) {
+    &.bottom {
+      padding-bottom: 70%;
+      width: 100%;
+    }
+  }
 `;
 
 export const Gallery = styled.div`
   position: relative;
   padding: 150px 0 0;
 
-  & > .flex {
+  .flex {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
   }
 
-  & > .flex > .text {
+  .text {
     flex: 1;
     position: relative;
-    padding: 0 40px 0;
+    padding: 0 40px;
     z-index: 3;
 
     &:after {
@@ -132,8 +160,27 @@ export const Gallery = styled.div`
     }
   }
 
-  & > .flex > .image {
+  .image {
     flex: 0 0 540px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 110px 0 0;
+
+    .flex {
+      flex-direction: column-reverse;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .text {
+      padding: 0 20px;
+    }
+
+    & > .flex > .text:after {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 

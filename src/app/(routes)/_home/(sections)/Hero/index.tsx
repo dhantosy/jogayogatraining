@@ -34,7 +34,16 @@ export default function Hero() {
               sizes={`100vw, 33vw`}
               fill
               style={{ objectFit: 'cover' }}
-              className='image'
+              className='image desktop'
+              priority
+            />
+            <Image
+              src='/assets/images/logo-rys-black.png'
+              alt=''
+              sizes={`100vw, 33vw`}
+              fill
+              style={{ objectFit: 'cover' }}
+              className='image mobile'
               priority
             />
           </ImageWrapper>
