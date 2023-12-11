@@ -5,6 +5,10 @@ export const Section = styled.section`
   margin: 30px auto 40px;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto 20px;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -12,6 +16,12 @@ export const Heading = styled.h2`
   color: ${theme.colors.pinkMain};
   font-weight: 600;
   margin: 40px 0 0;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -25,6 +35,15 @@ export const Wrapper = styled.div`
   & > div {
     flex: 0 0 calc(50% - 60px);
   }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 30px;
+
+    & > div {
+      flex: 0 0 100%;
+    }
+  }
 `;
 
 export const CardHorizontal = styled.div`
@@ -32,7 +51,7 @@ export const CardHorizontal = styled.div`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 80px;
+    padding: 40px 0;
   }
 `;
 
@@ -41,6 +60,10 @@ export const CardHorizontalWrapper = styled.div`
   align-items: flex-start;
   gap: 30px;
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -50,6 +73,10 @@ export const ImageWrapper = styled.div`
   border-radius: 20px;
   overflow: hidden;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    padding-bottom: 20%;
+  }
 `;
 
 export const CardHorizontalContent = styled.div`
@@ -113,6 +140,15 @@ export const CardHorizontalBottom = styled.div`
     opacity: 0.2;
     border-radius: 20px;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 30px 20px 0px 20px;
+
+    &:after {
+      left: 0;
+      top: -140px;
+    }
+  }
 `;
 
 export const Rating = styled.div`
@@ -124,12 +160,40 @@ export const Rating = styled.div`
 `;
 
 export const VideoSection = styled.div`
-  display: flex;
-  gap: 50px;
-  margin: 100px 0;
-  padding: 0 60px 0;
-  background-color: rgb(241 173 142 / 20%);
-  border-radius: 20px;
+  position: relative;
+  margin: 60px 0 100px;
+
+  > div {
+    display: flex;
+    gap: 50px;
+    padding: 0 60px;
+    position: relative;
+  }
+
+  &:after {
+    content: '';
+    background-color: ${theme.colors.orange};
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 20px;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    margin: 30px 0 100px;
+
+    > div {
+      overflow-x: scroll;
+      justify-content: flex-start;
+      gap: 20px;
+      flex-wrap: nowrap;
+      padding: 0 20px;
+    }
+  }
 `;
 
 export const VideoItem = styled.div`
@@ -137,10 +201,10 @@ export const VideoItem = styled.div`
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  padding-bottom: 39%;
+  width: 235px;
+  height: 421px;
   position: relative;
   z-index: 2;
-  top: -50px;
 
   > div:after {
     content: '';

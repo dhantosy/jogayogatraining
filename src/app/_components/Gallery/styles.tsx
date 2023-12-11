@@ -10,7 +10,7 @@ export const GalleryContainer = styled.div`
   background-size: cover;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 80px;
+    padding: 40px 0;
   }
 `;
 
@@ -21,13 +21,17 @@ export const GalleryHeading = styled.h2`
   color: ${theme.colors.backgroundMint};
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 80px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 `;
 
 export const GalleryContent = styled.div`
   display: flex;
   gap: 30px;
+  margin: auto;
+  max-width: 1180px;
+  padding: 0 20px;
 
   > div {
     flex: 1;
@@ -65,6 +69,24 @@ export const GalleryContent = styled.div`
 
     .image {
       padding-bottom: 108%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    overflow-x: scroll;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
+
+    > div {
+      width: 230px;
+      flex: 0 0 230px;
+    }
+
+    .col-1,
+    .col-3,
+    .col-4 {
+      gap: 20px;
     }
   }
 `;

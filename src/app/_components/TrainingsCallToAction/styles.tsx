@@ -6,7 +6,7 @@ export const Section = styled.section`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 180px 0 20px;
+    padding: 60px 0 30px;
   }
 `;
 
@@ -15,6 +15,12 @@ export const Heading = styled.div`
   position: relative;
   z-index: 2;
   padding: 0 30px;
+  max-width: 700px;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 20px;
+    padding: 0;
+  }
 `;
 
 export const Title = styled.h2`
@@ -55,10 +61,8 @@ export const ImageWrapper = styled.div`
   top: -77px;
 
   @media screen and (max-width: 1024px) {
-    max-width: 150px;
-    margin-top: 0;
-    top: 40px;
-    margin-left: -75px;
+    top: 0;
+    padding-bottom: 50%;
   }
 `;
 
@@ -91,12 +95,34 @@ export const Content = styled.div`
   .link {
     display: inline-block;
   }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+
+    & > .image {
+      flex: 0 0 100%;
+    }
+
+    &:after {
+      top: initial;
+      width: 100%;
+      height: 100%;
+      bottom: 0px;
+    }
+  }
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
   max-width: 620px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px 30px;
+    max-width: 100%;
+  }
 `;
 
 export const More = styled.div`
@@ -111,4 +137,8 @@ export const More = styled.div`
   margin: 30px 0 0;
   max-width: 230px;
   justify-content: center;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0;
+  }
 `;

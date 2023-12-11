@@ -38,20 +38,24 @@ export default function FaqList() {
             <div className='content'>
               <div className='anchor' id='pricing-payments' />
               <Title>Pricing & Payments</Title>
-              {faqPricing.map(({ title, description }) => {
-                return (
-                  <FaqItem key={title} title={title} description={description} />
-                )
-              })}
+              <div>
+                {faqPricing.map(({ title, description }) => {
+                  return (
+                    <FaqItem key={title} title={title} description={description} />
+                  )
+                })}
+              </div>
             </div>
             <div className='content'>
               <div className='anchor' id='general' />
               <Title>General</Title>
-              {faqGeneral.map(({ title, description }) => {
-                return (
-                  <FaqItem key={title} title={title} description={description} />
-                )
-              })}
+              <div>
+                {faqGeneral.map(({ title, description }) => {
+                  return (
+                    <FaqItem key={title} title={title} description={description} />
+                  )
+                })}
+              </div>
             </div>
           </div>
         </ContentWrapper>

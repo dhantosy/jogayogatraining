@@ -3,15 +3,15 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   padding: 80px 0 100px;
-  margin-bottom: 80px;
+  margin: 80px 0 0;
   background-color: ${theme.colors.orange};
   background-image: url('/assets/images/bg-pattern-3.jpg');
   background-position: center;
   background-size: cover;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0;
-    margin-bottom: 40px;
+    padding: 40px 0 0;
+    margin: 40px 0;
   }
 `;
 
@@ -32,7 +32,8 @@ export const Title = styled.h2`
   color: ${theme.colors.backgroundMint};
 
   @media screen and (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 `;
 

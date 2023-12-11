@@ -99,6 +99,11 @@ export const MobileMenuContainer = styled.div<{ $isMobileMenuActive?: boolean; }
   border-right: 15px solid ${theme.colors.white};
   border-left: 15px solid ${theme.colors.white};
   border-bottom: 15px solid ${theme.colors.white};
+
+  @media screen and (max-width: 1024px) {
+    top: 63px;
+    height: calc(100% - 63px);
+  }
 `;
 
 export const TextMobile = styled.div`

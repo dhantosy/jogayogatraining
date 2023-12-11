@@ -8,6 +8,11 @@ export const ContentHeading = styled.div`
   font-weight: 500;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 `;
 
 export const ContentItem = styled.div`
@@ -16,6 +21,10 @@ export const ContentItem = styled.div`
 
   > div {
     margin: 15px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
   }
 `;
 
@@ -30,6 +39,10 @@ export const ImageWrapper = styled.div`
   &.bottom {
     padding-bottom: 50%;
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const Gallery = styled.div`
@@ -37,14 +50,14 @@ export const Gallery = styled.div`
   padding: 40px 0;
   margin-bottom: 60px;
 
-  & > .flex {
+  .flex {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
   }
 
-  & > .flex > .text {
+  .text {
     flex: 1;
     position: relative;
     padding: 0 40px 0;
@@ -64,8 +77,28 @@ export const Gallery = styled.div`
     }
   }
 
-  & > .flex > .image {
+  .image {
     flex: 0 0 540px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 0;
+    margin-bottom: 40px;
+
+    .flex {
+      flex-direction: column-reverse;
+      gap: 25px;
+    }
+
+    .text {
+      padding: 0;
+
+      &:after {
+        top: 40px;
+        width: 100%;
+        height: 90%;
+      }
+    }
   }
 `;
 
