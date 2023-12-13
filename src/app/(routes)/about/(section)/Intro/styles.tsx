@@ -73,6 +73,9 @@ export const ImageWrapper = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
+    width: 60px;
+    height: 60px;
+
     &.photo {
       width: 230px;
       padding-bottom: 40%;
@@ -84,6 +87,17 @@ export const ImageWrapper = styled.div`
     &.photo {
       padding-bottom: 75%;
     }
+  }
+`;
+
+export const Logos = styled.div`
+  display: flex;
+  gap: 20px;
+  max-width: 300px;
+  margin: auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 220px;
   }
 `;
 

@@ -13,7 +13,7 @@ export default function HeroDetailPage() {
           <Title>Become A Certified Yoga Teacher</Title>
           <Subtitle>200 Hours Yoga Teacher Training in Bali</Subtitle>
           <Desc>
-            <div>2 spots left available on the next training</div>
+            <div>2 spots left available on the upcoming training</div>
             <div>Jan 8th - Jan 29th, 2024</div>
             <Link href='/register'>
               <Button>

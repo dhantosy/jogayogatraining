@@ -35,8 +35,8 @@ export const GallerySubtitle = styled.p`
   color: ${theme.colors.backgroundMint};
 
   @media screen and (max-width: 1024px) {
-    font-size: 24px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.4;
   }
 `;
 

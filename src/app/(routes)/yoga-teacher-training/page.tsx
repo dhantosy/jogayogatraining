@@ -31,7 +31,7 @@ export default function YogaTeacherTraining() {
         images={galleryExcursion}
       />
       <div style={{
-        marginTop: '80px'
+        marginTop: '60px'
       }}>
         <GalleryLocation />
       </div>

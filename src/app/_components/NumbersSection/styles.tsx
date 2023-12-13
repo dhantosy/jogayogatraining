@@ -6,7 +6,7 @@ export const Section = styled.section`
   padding: 20px 0;
 
   @media screen and (max-width: 1024px) {
-    padding: 60px 0 10px;
+    padding: 0 0 20px;
   }
 `;
 
@@ -29,14 +29,15 @@ export const Title = styled.p`
   margin: auto;
 
   @media screen and (max-width: 1024px) {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.2;
-    margin: 20px;
+    margin: 20px 0;
   }
 
-  @media screen and (max-width: 640px) {
-    font-size: 18px;
-    line-height: 1.4;
+  @media screen and (max-width: 480px) {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 20px 0;
   }
 `;
 
@@ -85,7 +86,8 @@ export const Content = styled.div`
     padding: 0 20px;
 
     &:after {
-      top: -145px;
+      top: -42px;
+      height: calc(100% + 60px);
     }
   }
 `;

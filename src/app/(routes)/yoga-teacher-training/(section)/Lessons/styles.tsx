@@ -9,6 +9,10 @@ export const Section = styled.section`
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
   }
+
+  @media screen and (max-width: 640px) {
+    margin-top: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,8 +26,13 @@ export const Title = styled.h2`
   margin: 0 0 20px;
 
   @media screen and (max-width: 1024px) {
-    font-size: 24px;
+    font-size: 28px;
     margin: 25px 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin: 10px 0 0;
+    font-size: 24px;
   }
 `;
 
@@ -32,6 +41,7 @@ export const Subtitle = styled.p`
   position: relative;
   z-index: 2;
   margin-bottom: 30px;
+  font-weight: 500;
 
   @media screen and (max-width: 1024px) {
     font-size: 16px;
@@ -47,10 +57,7 @@ export const ImageWrapper = styled.div`
   display: flex;
 
   @media screen and (max-width: 1024px) {
-    max-width: 150px;
-    margin-top: 0;
-    top: 40px;
-    margin-left: -75px;
+    
   }
 `;
 
@@ -70,12 +77,31 @@ export const Content = styled.div`
     opacity: 0.2;
     border-radius: 20px;
   }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 20px;
+
+    &:after {
+      bottom: -20px;
+      top: initial;
+      height: 80%;
+      left: 0;
+      width: 100%;
+    }
+    
+  }
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
   margin-top: -95px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+    padding: 0 20px;
+  }
 `;
 
 export const Icon = styled.div`

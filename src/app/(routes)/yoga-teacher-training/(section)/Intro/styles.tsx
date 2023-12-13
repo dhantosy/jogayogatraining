@@ -6,7 +6,7 @@ export const Section = styled.section`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 90px 0 20px;
+    padding: 110px 0 0;
   }
 `;
 
@@ -28,6 +28,10 @@ export const Title = styled.h1`
   @media screen and (max-width: 1024px) {
     font-size: 28px;
   }
+
+  @media screen and (max-width: 640px) {
+    font-size: 24px;
+  }
 `;
 
 export const Subtitle = styled.h2`
@@ -36,6 +40,11 @@ export const Subtitle = styled.h2`
   font-weight: 500;
   text-align: center;
   color: ${theme.colors.pinkMain};
+
+  @media screen and (max-width: 640px) {
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -43,11 +52,23 @@ export const ImageWrapper = styled.div`
   z-index: 2;
   overflow: hidden;
   padding-bottom: 40%;
+
+  @media screen and (max-width: 1160px) {
+    padding-bottom: 50%;
+  }
 `;
 
 export const Content = styled.div`
   border: 18px solid ${theme.colors.white};
   margin-top: -258px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -195px;
+  }
+
+  @media screen and (max-width: 640px) {
+    margin-top: -60px;
+  }
 `;
 
 export const Desc = styled.div`
@@ -55,13 +76,21 @@ export const Desc = styled.div`
   margin: 60px 0 0;
   font-size: 18px;
   font-weight: 500;
+
+  @media screen and (max-width: 1024px) {
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 16px;
+  }
 `;
 
 export const Button = styled.div`
   padding: 8px 45px;
   font-weight: 600;
   border-radius: 20px;
-  background-color: ${theme.colors.pinkMain};
+  background-color: ${theme.colors.tealMain};
   color: ${theme.colors.backgroundMint};
   display: inline-block;
   margin: 20px 0 0;

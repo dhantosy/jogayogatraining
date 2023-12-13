@@ -19,6 +19,21 @@ export const Section = styled.section`
     border-radius: 20px;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 20px auto 60px;
+
+    &:after {
+      width: calc(100% - 40px);
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 97%;
+    }
+
+  }
 `;
 
 export const Heading = styled.div`
@@ -35,6 +50,11 @@ export const Title = styled.h2`
   font-weight: 500;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -59,5 +79,11 @@ export const TableScheduleItem = styled.div`
 
   &:last-child {
     border-bottom: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0;
   }
 `;

@@ -19,7 +19,7 @@ export const Section = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    margin: 0;
+    margin: 0 0 80px;
   }
 `;
 
@@ -51,7 +51,7 @@ export const Content = styled.div`
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
-  padding: 0 40px 0;
+  padding: 0 40px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -131,7 +131,9 @@ export const Content = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px) {
-    
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    margin: 20px 0;
+    padding: 0 20px;
   }
 `;

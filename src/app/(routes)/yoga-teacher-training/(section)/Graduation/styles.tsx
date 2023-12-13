@@ -18,6 +18,14 @@ export const Section = styled.section`
     border-radius: 20px;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto 40px;
+
+    &:after {
+      height: 82%;
+    }
+  }
 `;
 
 export const Heading = styled.div`
@@ -34,6 +42,11 @@ export const Title = styled.h2`
   font-weight: 500;
   position: relative;
   z-index: 2;
+  line-height: 1.2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -60,6 +73,15 @@ export const ImageWrapper = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
+    &.photo {
+      padding-bottom: 43%;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &.photo {
+      padding-bottom: 63%;
+    }
   }
 `;
 
@@ -72,5 +94,18 @@ export const Photos = styled.div`
 
   > div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0 20px;
+    overflow-x: scroll;
+    justify-content: flex-start;
+
+    & > div {
+      flex: 0 0 200px;
+    }
   }
 `;
