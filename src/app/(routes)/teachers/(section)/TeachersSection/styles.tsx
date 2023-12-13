@@ -4,6 +4,10 @@ import theme from '@/styles/theme'
 export const Section = styled.section`
   margin: 80px auto 0;
   z-index: 2;
+
+  @media screen and (max-width: 640px) {
+    margin: 20px auto 0;
+  }
 `;
 
 export const ProfileContainer = styled.div`
@@ -13,6 +17,20 @@ export const ProfileContainer = styled.div`
 
   & > div {
     flex: 0 0 calc(25% - 50px);
+  }
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 640px) {
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    & > div {
+      flex: 0 0 calc(50% - 20px);
+    }
   }
 `;
 
@@ -50,6 +68,10 @@ export const PopUpContent = styled.div`
   background-color: ${theme.colors.white};
   border-radius: 20px;
   position: relative;
+
+  @media screen and (max-width: 640px) {
+    padding: 20px;
+  }
 `;
 
 export const PopUpContentName = styled.div`
@@ -57,12 +79,22 @@ export const PopUpContentName = styled.div`
   color: ${theme.colors.pinkMain};
   margin: 10px 0 20px;
   font-weight: 500;
+
+  @media screen and (max-width: 640px) {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
 `;
 
 export const PopUpContentDesc = styled.div`
   padding: 30px 35px;
   border-radius: 20px;
   background-color: ${theme.colors.backgroundPink};
+
+  @media screen and (max-width: 640px) {
+    padding: 20px;
+    font-size: 15px;
+  }
 `;
 
 export const Icon = styled.div`

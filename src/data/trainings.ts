@@ -8,9 +8,9 @@ const trainings = [
     link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
+      'Healthy vegetarian breakfast',
+      'Excursions around Bali',
+      'FREE accommodation!'
     ],
     discount: false,
     discountText: 'Early Bird Discount',
@@ -25,9 +25,9 @@ const trainings = [
     link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
+      'Healthy vegetarian breakfast',
+      'Excursions around Bali',
+      'FREE accommodation!'
     ],
     discount: true,
     discountText: '2 Seats Remaining',
@@ -42,9 +42,9 @@ const trainings = [
     link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
-      'In-depth Yoga Philosophy',
-      'Traditional Balinese Opening Ceremony',
-      'And Many More!'
+      'Healthy vegetarian breakfast',
+      'Excursions around Bali',
+      'FREE accommodation!'
     ],
     discount: true,
     discountText: 'Early Bird Discount',

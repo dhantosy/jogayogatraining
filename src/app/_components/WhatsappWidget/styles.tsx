@@ -62,6 +62,12 @@ export const TabWrapperOuter = styled.div<{ $active?: boolean; }>`
     border-top: 15px solid ${theme.colors.backgroundMint};
     z-index: 9;
   }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    height: 530px;
+    right: 0;
+  }
 `;
 
 export const TabWrapperInner = styled.div`
@@ -87,6 +93,10 @@ export const TabTitle = styled.div`
     background-color: ${theme.colors.backgroundMint};
     color: ${theme.colors.tealMain};
   }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const TabContent = styled.div`
@@ -107,6 +117,10 @@ export const Chat = styled.div`
   border-radius: 20px;
   overflow: hidden;
   height: 416px;
+
+  @media screen and (max-width: 480px) {
+    height: 439px;
+  }
 `;
 
 export const ChatTitle = styled.div`

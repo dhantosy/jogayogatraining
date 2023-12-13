@@ -6,7 +6,8 @@ export const Section = styled.section`
   padding: 100px 0 20px;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 20px;
+    padding: 0;
+    margin-bottom: 80px;
   }
 `;
 
@@ -21,7 +22,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.pinkMain};
@@ -61,7 +62,7 @@ export const Content = styled.div`
     width: 100%;
     height: calc(100% + 150px);
     left: 0;
-    top: -123px;
+    top: -119px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;

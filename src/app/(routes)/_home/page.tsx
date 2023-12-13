@@ -13,8 +13,8 @@ export default function Home() {
     <>
       <Hero />
       <AccreditationSection />
-      <NumbersSection />
       <Journey />
+      <NumbersSection />
       <Trainings />
       <Benefits />
       <Teachers />

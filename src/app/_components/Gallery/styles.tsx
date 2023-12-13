@@ -15,7 +15,7 @@ export const GalleryContainer = styled.div`
 `;
 
 export const GalleryHeading = styled.h2`
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0 0 40px;
   color: ${theme.colors.backgroundMint};
@@ -23,6 +23,20 @@ export const GalleryHeading = styled.h2`
   @media screen and (max-width: 1024px) {
     font-size: 28px;
     line-height: 1.2;
+  }
+`;
+
+export const GallerySubtitle = styled.p`
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 40px;
+  white-space: pre-wrap;
+  text-align: center;
+  color: ${theme.colors.backgroundMint};
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 1.4;
   }
 `;
 

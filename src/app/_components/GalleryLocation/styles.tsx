@@ -3,7 +3,7 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   position: relative;
-  margin: 30px 0 120px;
+  margin: 0 0 80px;
 
   &:after {
     content: '';
@@ -12,7 +12,7 @@ export const Section = styled.section`
     width: 100%;
     height: calc(100% - 150px);
     left: 0;
-    top: 40px;
+    top: 35px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;
@@ -34,7 +34,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.pinkMain};

@@ -14,7 +14,7 @@ export const Section = styled.section`
 export const Heading = styled.h2`
   font-size: 36px;
   color: ${theme.colors.pinkMain};
-  font-weight: 600;
+  font-weight: 500;
   margin: 40px 0 0;
 
   @media screen and (max-width: 1024px) {
@@ -39,6 +39,7 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 30px;
+    margin: 0;
 
     & > div {
       flex: 0 0 100%;
@@ -51,7 +52,7 @@ export const CardHorizontal = styled.div`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 `;
 
@@ -63,6 +64,7 @@ export const CardHorizontalWrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    gap: 0;
   }
 `;
 
@@ -75,7 +77,7 @@ export const ImageWrapper = styled.div`
   z-index: 2;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: 20%;
+    width: 200px;
   }
 `;
 
@@ -86,6 +88,10 @@ export const CardHorizontalContent = styled.div`
   .link {
     display: inline-block;
     margin-top: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 20px 0;
   }
 `;
 
@@ -110,6 +116,14 @@ export const CardHorizontalDetail = styled.div`
 
     & > div:first-child {
       font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .flex {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 10px;
     }
   }
 `;
@@ -142,11 +156,12 @@ export const CardHorizontalBottom = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 30px 20px 0px 20px;
+    padding: 0 20px 0px 20px;
 
     &:after {
       left: 0;
-      top: -140px;
+      height: 350px;
+      top: -360px;
     }
   }
 `;
@@ -184,7 +199,7 @@ export const VideoSection = styled.div`
 
   @media screen and (max-width: 1024px) {
     position: relative;
-    margin: 30px 0 100px;
+    margin: 30px 0 40px;
 
     > div {
       overflow-x: scroll;

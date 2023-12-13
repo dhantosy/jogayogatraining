@@ -22,7 +22,7 @@ export default function TrainingsCallToAction({ title, description, photo}:Props
           <ContentSub>
             <Subtitle>{description}</Subtitle>
             <div className='link'>
-              <Link href='/200hr-yoga-teacher-trainings'>
+              <Link href='/yoga-teacher-training'>
                 <More>
                   <div>See Our Trainings</div>
                 </More>
