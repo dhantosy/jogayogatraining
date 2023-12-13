@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '',
   },
-  title: 'Yoga Teacher Training',
+  title: '200 Hour Yoga Teacher Trainings',
   description: '',
   keywords: '',
   openGraph: {
-    title: 'Yoga Teacher Training',
+    title: '200 Hour Yoga Teacher Trainings',
     description: '',
     type: 'website',
     images: ''

@@ -136,7 +136,7 @@ export const Button = styled.button`
 export const ImageWrapper = styled.div`
   position: relative;
   width: 63px;
-  padding-bottom: 7%;
+  height: 63px;
 
   .mobile {
     display: none;
@@ -144,7 +144,8 @@ export const ImageWrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     padding-bottom: 0;
-    height: 63px;
+    height: 55px;
+    width: 55px;
 
     .mobile {
       display: block;
@@ -154,4 +155,10 @@ export const ImageWrapper = styled.div`
       display: none;
     }
   }
+`;
+
+
+export const Logos = styled.div`
+  display: flex;
+  gap: 20px;
 `;

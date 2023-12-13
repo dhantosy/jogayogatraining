@@ -102,6 +102,11 @@ export default function Header() {
             </React.Fragment>
           )
         })}
+        <div id='btn-apply-header' className='apply-btn'>
+          <Link href='/register'>
+            Apply Now
+          </Link>
+        </div>
         <Icon onClick={handleMobileMenuClick}>
           <HiBars3 />
         </Icon>

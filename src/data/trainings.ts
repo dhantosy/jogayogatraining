@@ -5,7 +5,7 @@ const trainings = [
     startDate: '8 January, 2024',
     endDate: '28 January, 2024',
     location: 'Joga Yoga, Canggu, Bali',
-    link: '/200hr-yoga-teacher-trainings',
+    link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
       'In-depth Yoga Philosophy',
@@ -22,7 +22,7 @@ const trainings = [
     startDate: '4 March, 2024',
     endDate: '27 March, 2024',
     location: 'Joga Yoga, Canggu, Bali',
-    link: '/200hr-yoga-teacher-trainings',
+    link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
       'In-depth Yoga Philosophy',
@@ -39,7 +39,7 @@ const trainings = [
     startDate: '6 May, 2024',
     endDate: '24 May, 2024',
     location: 'Joga Yoga, Canggu, Bali',
-    link: '/200hr-yoga-teacher-trainings',
+    link: '/yoga-teacher-training',
     list: [
       '200hr Yoga Alliance Certificate',
       'In-depth Yoga Philosophy',

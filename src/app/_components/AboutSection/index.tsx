@@ -3,9 +3,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
-import { Section, Title, Subtitle, Heading, ImageWrapper, Content, More, Icon, ContentSub } from './styles'
+import { Section, Title, Subtitle, Heading, ImageWrapper, Content, More, ContentSub } from './styles'
 
-export default function About() {
+export default function AboutSection() {
   return (
     <Section>
       <Container>

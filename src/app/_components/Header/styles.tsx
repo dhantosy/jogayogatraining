@@ -28,6 +28,23 @@ export const Menu = styled.menu`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  .apply-btn {
+    padding: 8px 25px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: ${theme.colors.pinkMain};
+    color: ${theme.colors.backgroundMint};
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 10px;
+
+    .apply-btn {
+      font-size: 13px;
+      padding: 5px 15px;
+    }
+  }
 `;
 
 export const MenuItem = styled.div`

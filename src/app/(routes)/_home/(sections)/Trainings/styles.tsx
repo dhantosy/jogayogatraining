@@ -10,7 +10,7 @@ export const Section = styled.section`
   background-size: cover;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 0;
+    padding: 40px 0;
     margin: 40px 0;
   }
 `;
