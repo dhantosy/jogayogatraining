@@ -79,6 +79,12 @@ export const ImageWrapper = styled.div`
       flex: 0 0 230px;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    &.photo {
+      padding-bottom: 75%;
+    }
+  }
 `;
 
 export const Photos = styled.div`

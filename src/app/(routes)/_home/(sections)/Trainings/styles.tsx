@@ -60,6 +60,7 @@ export const Content = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+    margin: 40px 0 0;
   }
 
   & > div {

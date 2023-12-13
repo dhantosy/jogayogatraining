@@ -6,7 +6,7 @@ export const Section = styled.section`
   padding: 20px 0;
 
   @media screen and (max-width: 1024px) {
-    padding: 80px 0 10px;
+    padding: 60px 0 10px;
   }
 `;
 
@@ -85,7 +85,7 @@ export const Content = styled.div`
     padding: 0 20px;
 
     &:after {
-      top: -165px;
+      top: -145px;
     }
   }
 `;
