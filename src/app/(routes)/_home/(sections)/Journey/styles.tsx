@@ -3,10 +3,9 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   position: relative;
-  padding: 100px 0 20px;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0 20px;
+    padding: 40px 0;
   }
 `;
 
@@ -132,7 +131,7 @@ export const ImageWrapper = styled.div`
 
 export const Gallery = styled.div`
   position: relative;
-  padding: 150px 0 0;
+  padding: 100px 0 0;
 
   .flex {
     display: flex;
@@ -166,7 +165,7 @@ export const Gallery = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    padding: 110px 0 0;
+    padding: 20px 0 0;
 
     .flex {
       flex-direction: column-reverse;

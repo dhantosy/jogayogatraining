@@ -7,12 +7,13 @@ export const Section = styled.section`
   overflow: hidden;
   border: 18px solid ${theme.colors.white};
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1180px) {
     height: 80vh;
   }
 
   @media screen and (max-width: 1024px) {
     height: initial;
+    border: none;
   }
 `;
 
@@ -29,7 +30,7 @@ export const VideoWrapper = styled.div`
     display: block;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 6px);
     background-color: rgba(0,0,0,0.4);
     left: 0;
     top: 0;
@@ -38,7 +39,10 @@ export const VideoWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     position: relative;
     display: flex;
-    margin-top: 60px;
+    margin-top: 65px;
+    border: 20px solid ${theme.colors.white};
+    border-bottom: none;
+    z-index: 3;
 
     &:after {
       display: none;
@@ -55,16 +59,19 @@ export const Content = styled.div`
   min-height: 100vh;
   justify-content: center;
   color: ${theme.colors.white};
-  margin-top: 50px;
   max-width: 900px;
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1180px) {
     min-height: 100%;
   }
 
   @media screen and (max-width: 1024px) {
     color: ${theme.colors.greenMain};
-    margin-top: 20px;
+    background-color: #fbede7;
+    padding: 40px 20px 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin-top: -20px;
   }
 `;
 
@@ -77,7 +84,9 @@ export const Title = styled.h2`
   font-family: var(--font-poppins), sans-serif;
 
   @media screen and (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 5px;
   }
 `;
 
@@ -88,14 +97,18 @@ export const Subtitle = styled.h1`
   font-family: var(--font-poppins), sans-serif;
   margin-bottom: 20px;
 
+  &.bottom {
+    font-size: 18px;
+  }
+
   @media screen and (max-width: 1024px) {
     font-size: 18px;
     text-align: left;
-    margin: 20px 0 30px;
-  }
+    margin: 10px 0;
 
-  &.bottom {
-    font-size: 18px;
+    &.bottom {
+      margin: 10px 0 20px;
+    }
   }
 `;
 
@@ -123,8 +136,29 @@ export const Button = styled.button`
 export const ImageWrapper = styled.div`
   position: relative;
   width: 63px;
-  padding-bottom: 7%;
+  height: 63px;
+
+  .mobile {
+    display: none;
+  }
 
   @media screen and (max-width: 1024px) {
+    padding-bottom: 0;
+    height: 55px;
+    width: 55px;
+
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
   }
+`;
+
+
+export const Logos = styled.div`
+  display: flex;
+  gap: 20px;
 `;

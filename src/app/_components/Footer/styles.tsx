@@ -9,6 +9,10 @@ export const FooterNav = styled.footer`
   background-size: 55%;
   background-repeat: no-repeat;
   color: ${theme.colors.backgroundMint};
+
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0 80px;
+  }
 `;
 
 export const Navigation = styled.nav`
@@ -28,10 +32,6 @@ export const Menu = styled.menu`
   flex-direction: column;
   align-items: baseline;
   gap: 10px;
-
-  @media screen and (max-width: 1024px) {
-    gap: 40px;
-  }
 `;
 
 export const Logo = styled.div`

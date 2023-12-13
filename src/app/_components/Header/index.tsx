@@ -102,6 +102,11 @@ export default function Header() {
             </React.Fragment>
           )
         })}
+        <div id='btn-apply-header' className='apply-btn'>
+          <Link href='/register'>
+            Apply Now
+          </Link>
+        </div>
         <Icon onClick={handleMobileMenuClick}>
           <HiBars3 />
         </Icon>
@@ -133,7 +138,7 @@ export default function Header() {
       <HeaderContainer>
         <Navigation>
           <Link href='/'>
-            <Logo $active={active} className='desktop'>
+            <Logo $active={active}>
               <Image
                 src="/assets/images/logo-horizontal.png"
                 alt="Joga yoga training"

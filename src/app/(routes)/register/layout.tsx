@@ -1,3 +1,4 @@
+import TrainingsCallToAction from '@/app/_components/TrainingsCallToAction'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -5,18 +6,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '',
   },
-  title: '200 Hour Yoga Teacher Trainings',
+  title: 'Joga Yoga Trainings Registration Form',
   description: '',
   keywords: '',
   openGraph: {
-    title: '200 Hour Yoga Teacher Trainings',
+    title: 'Joga Yoga Trainings Registration Form',
     description: '',
     type: 'website',
     images: ''
   }
 }
 
-export default function TeacherTrainingDetailLayout({
+export default function RegisterLayout({
   children,
 }: {
   children: React.ReactNode

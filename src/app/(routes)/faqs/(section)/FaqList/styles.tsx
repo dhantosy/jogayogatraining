@@ -42,6 +42,11 @@ export const ContentWrapper = styled.div`
     position: absolute;
     top: -150px;
   }
+
+  @media screen and (max-width: 1024px) {
+    gap: 0;
+    flex-direction: column;
+  }
 `;
 
 export const Item = styled.div`
@@ -58,6 +63,10 @@ export const ItemTitle = styled.div`
   display: flex;
   gap: 20px;
   cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10px;
+  }
 `;
 
 export const ItemContent = styled.div<{ $isOpen?: boolean; }>`
@@ -83,6 +92,10 @@ export const ContentNav = styled.div`
   a {
     padding: 12px 5px;
     display: block;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
   }
 `;
 

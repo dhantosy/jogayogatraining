@@ -6,7 +6,7 @@ export const Section = styled.section`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 80px 0 20px;
+    padding: 90px 0 20px;
   }
 `;
 

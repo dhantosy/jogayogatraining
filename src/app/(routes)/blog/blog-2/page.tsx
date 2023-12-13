@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
-import { Article, BottomSection, Content, ContentBody, ContentParagraph, ContentTitle, ImageWrapper, Related, RelatedTitle } from './styles'
+import { Article, BottomSection, Content, ContentBody, ContentParagraph, ContentTitle, ImageWrapper, Related, RelatedTitle } from '../styles'
 import CardBlog from '@/app/_components/CardBlog'
 import { blogList } from '@/data/blogList'
 

@@ -18,6 +18,15 @@ export const Section = styled.section`
     border-radius: 20px;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto 60px;
+
+    &:after {
+      top: 45px;
+      height: 96%;
+    }
+  }
 `;
 
 export const Heading = styled.div`
@@ -34,6 +43,10 @@ export const Title = styled.h2`
   font-weight: 500;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 28px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -41,12 +54,16 @@ export const Subtitle = styled.p`
   z-index: 2;
   max-width: 860px;
   margin: 0 auto 30px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
   width: 84px;
-  padding-bottom: 7%;
+  height: 84px;
   margin: 20px auto;
 
   &.photo {
@@ -56,6 +73,11 @@ export const ImageWrapper = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
+    &.photo {
+      width: 230px;
+      padding-bottom: 40%;
+      flex: 0 0 230px;
+    }
   }
 `;
 
@@ -68,5 +90,13 @@ export const Photos = styled.div`
 
   > div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: nowrap;
   }
 `;

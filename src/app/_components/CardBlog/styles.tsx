@@ -30,6 +30,10 @@ export const CardTop = styled.div`
 export const CardContent = styled.div`
   padding: 30px 40px;
   background-color: ${theme.colors.backgroundPink};
+  
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 export const CardTitle = styled.h3`

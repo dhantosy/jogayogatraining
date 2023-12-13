@@ -3,7 +3,7 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   padding: 80px 0 100px;
-  margin-bottom: 80px;
+  margin: 80px 0 0;
   background-color: ${theme.colors.orange};
   background-image: url('/assets/images/bg-pattern-3.jpg');
   background-position: center;
@@ -11,6 +11,7 @@ export const Section = styled.section`
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
+    margin: 40px 0;
   }
 `;
 
@@ -31,7 +32,8 @@ export const Title = styled.h2`
   color: ${theme.colors.backgroundMint};
 
   @media screen and (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 `;
 
@@ -55,6 +57,10 @@ export const Content = styled.div`
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 
   & > div {
     flex: 1;
@@ -82,6 +88,10 @@ export const ContentDetail = styled.div`
   &.bottom {
     align-items: flex-start;
     font-weight: 400;
+
+    > div:first-child {
+      flex: 0 0 20px;
+    }
   }
 `;
 

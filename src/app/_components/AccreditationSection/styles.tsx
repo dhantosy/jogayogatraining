@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 100px 0 0;
+  padding: 80px 0;
   position: relative;
 
-  @media screen and (max-width: 1024px) {
-    padding: 60px 0 30px;
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
   }
 `;
 
@@ -14,34 +14,39 @@ export const Heading = styled.div`
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
-  padding: 0 30px;
-  max-width: 700px;
 
   @media screen and (max-width: 1024px) {
     margin-bottom: 20px;
-    padding: 0;
   }
 `;
 
 export const Title = styled.h2`
-  font-size: 36px;
+  max-width: 620px;
+  font-size: 42px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.pinkMain};
   position: relative;
   z-index: 2;
-  line-height: 1.2;
 
   @media screen and (max-width: 1024px) {
     font-size: 28px;
+    max-width: 100%;
+    line-height: 1.2;
+    margin: 0 0 50px;
+  }
+
+  @media screen and (max-width: 655px) {
+    margin: 0 0 10px;
   }
 `;
 
 export const Subtitle = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
-  margin: 0;
+  max-width: 520px;
+  margin: 40px 0 0;
   position: relative;
   z-index: 2;
 
@@ -49,37 +54,41 @@ export const Subtitle = styled.p`
     font-size: 16px;
     margin: 25px 0;
   }
+
+  @media screen and (max-width: 655px) {
+    margin: 0 0 20px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   display: inline-flex;
+  position: relative;
   z-index: 2;
   border-radius: 20px;
   overflow: hidden;
-  padding-bottom: 30%;
-  position: relative;
-  top: -77px;
 
-  @media screen and (max-width: 1024px) {
-    top: 0;
-    padding-bottom: 50%;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 655px) {
+    display: inline-flex;
   }
 `;
 
 export const Content = styled.div`
   display: flex;
-  gap: 60px;
+  gap: 30px;
   position: relative;
-  padding: 0 30px;
 
   &:after {
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
-    width: 88%;
-    height: 300px;
-    left: 0;
-    top: -55px;
+    width: 80%;
+    height: 450px;
+    right: 0;
+    top: -130px;
     opacity: 0.2;
     border-radius: 20px;
   }
@@ -88,40 +97,45 @@ export const Content = styled.div`
     flex: 1;
   }
 
-  & > .image {
-    flex: 0 0 400px;
-  }
-
-  .link {
-    display: inline-block;
-  }
-
   @media screen and (max-width: 1024px) {
-    flex-direction: column-reverse;
-    gap: 0;
-    padding: 0;
-
-    & > .image {
-      flex: 0 0 100%;
-    }
-
     &:after {
-      top: initial;
-      width: 100%;
-      height: 100%;
-      bottom: 0px;
+      height: 350px;
+      right: 0;
+      top: -25px;
     }
   }
+
+  @media screen and (max-width: 655px) {
+    & {
+      flex-direction: column;
+    }
+      
+    &:after {
+      width: 100%;
+      height: 450px;
+      left: 0;
+      top: initial;
+      right: initial;
+      bottom: -30px;
+    }
+  }
+`;
+
+export const Icon = styled.div`
+  width: 20px;
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
-  max-width: 620px;
 
   @media screen and (max-width: 1024px) {
-    padding: 0 20px 30px;
-    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 655px) {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 `;
 
@@ -135,10 +149,18 @@ export const More = styled.div`
   background-color: ${theme.colors.tealMain};
   border-radius: 20px;
   margin: 30px 0 0;
-  max-width: 230px;
+  max-width: 150px;
   justify-content: center;
+`;
 
-  @media screen and (max-width: 1024px) {
-    margin: 0;
+export const Logos = styled.div`
+  display: flex;
+  gap: 20px;
+  margin: 30px 0 0;
+
+  > div {
+    width: 63px;
+    height: 63px;
+    position: relative;
   }
 `;

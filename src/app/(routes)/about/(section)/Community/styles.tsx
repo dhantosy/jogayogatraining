@@ -6,7 +6,7 @@ export const Section = styled.section`
   position: relative;
 
   @media screen and (max-width: 1024px) {
-    padding: 40px 0;
+    padding: 0 0 40px;
   }
 `;
 
@@ -14,6 +14,10 @@ export const Heading = styled.div`
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 680px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -27,6 +31,7 @@ export const Title = styled.h2`
 
   @media screen and (max-width: 1024px) {
     font-size: 28px;
+    line-height: 1.2;
   }
 `;
 
@@ -43,6 +48,10 @@ export const Subtitle = styled.p`
     font-size: 16px;
     margin: 25px 0;
   }
+
+  @media screen and (max-width: 680px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -53,10 +62,7 @@ export const ImageWrapper = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 1024px) {
-    max-width: 150px;
-    margin-top: 0;
-    top: 40px;
-    margin-left: -75px;
+    
   }
 `;
 
@@ -79,6 +85,18 @@ export const Content = styled.div`
 
   & > * {
     flex: 1;
+  }
+
+  @media screen and (max-width: 680px) {
+    flex-direction: column;
+    gap: 0;
+
+    &:after {
+      width: 100%;
+      top: initial;
+      bottom: 0;
+      width: 100%;
+    }
   }
 `;
 

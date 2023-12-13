@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
                         />
                       </ImageWrapperInner>
                     </ImageWrapper>
-                    <div>
+                    <div className='info'>
                       <Name>{name}</Name>
                       <div>{country}</div>
                       <div>{job}</div>

@@ -5,7 +5,7 @@ export const Section = styled.section`
   padding: 0 0 60px;
 
   @media screen and (max-width: 1024px) {
-    padding: 0 0 60px;
+    padding: 20px 0 40px;
   }
 `;
 
@@ -13,6 +13,12 @@ export const Heading = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.h2`
@@ -22,7 +28,8 @@ export const Title = styled.h2`
   color: ${theme.colors.pinkMain};
 
   @media screen and (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 `;
 
@@ -35,6 +42,10 @@ export const Name = styled.h3`
   line-height: 1;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -63,6 +74,10 @@ export const BoxContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 30px 0 0;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -78,6 +93,13 @@ export const ImageWrapper = styled.div`
     top: 50px;
     opacity: 0.2;
     border-radius: 15px;
+
+    @media screen and (max-width: 1024px) {
+      width: 170%;
+      height: calc(100% + 30px);
+      left: 0;
+      top: 110px;
+    }
   }
 
   & > .image {
@@ -93,6 +115,15 @@ export const Top = styled.div`
 
   > * div {
     flex: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .info {
+      padding-left: 20px;
+    }
   }
 `;
 

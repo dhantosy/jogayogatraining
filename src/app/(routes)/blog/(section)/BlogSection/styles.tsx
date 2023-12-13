@@ -10,4 +10,14 @@ export const Section = styled.section`
   > div {
     flex: 1 1 calc(50% - 50px);
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 30px auto 20px;
+    flex-direction: column;
+    gap: 30px;
+
+    > div {
+      flex: 1 1 100%;
+    }
+  }
 `;
