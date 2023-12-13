@@ -10,17 +10,8 @@ export default function Graduation() {
       <Section>
         <Heading>
           <Title>Certified Yoga Teacher</Title>
-          <Subtitle>After completing the course and passing the exam, you will receive Yoga Alliance International accreditation.</Subtitle>
-          <ImageWrapper>
-            <Image
-              src='/assets/images/logo-rys-black.png'
-              alt=''
-              sizes={`100vw, 33vw`}
-              fill
-              style={{ objectFit: 'cover' }}
-              className='image'
-            />
-          </ImageWrapper>
+          <Subtitle>Upon completion of the 200 Hours Yoga Teacher Training, you will leave as an empowered, knowledgeable, and confident yoga teacher who can lead inspirational yoga classes for all levels.</Subtitle>
+          <Subtitle>You will be able to understand & teach Creative Vinyasa Flow Sequence (all level), Hatha Vinyasa Flow Sequence, Basic Ashtanga Vinyasa, Understanding the principles of Yin/Restorative Yoga, Yoga Nidra and Meditation.</Subtitle>
           <Photos>
             <ImageWrapper className='photo'>
               <Image

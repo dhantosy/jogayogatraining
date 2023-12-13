@@ -14,7 +14,7 @@ export const Section = styled.section`
 export const Heading = styled.h2`
   font-size: 36px;
   color: ${theme.colors.pinkMain};
-  font-weight: 600;
+  font-weight: 500;
   margin: 40px 0 0;
 
   @media screen and (max-width: 1024px) {

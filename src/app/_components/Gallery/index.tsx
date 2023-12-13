@@ -2,18 +2,24 @@
 
 import Image from 'next/image'
 import Container from '../Container';
-import { GalleryContainer, GalleryContent, GalleryHeading, ImageWrapper } from './styles'
+import { GalleryContainer, GalleryContent, GalleryHeading, GallerySubtitle, ImageWrapper } from './styles'
 
 type Props = {
-  title: string;
+  title?: string;
+  subtitle?: string;
   images: string[];
 };
 
-export default function Gallery({ title, images }: Props) {
+export default function Gallery({ title, subtitle, images }: Props) {
   return (
     <GalleryContainer>
       <Container>
-        <GalleryHeading>{title}</GalleryHeading>
+        {title && (
+          <GalleryHeading>{title}</GalleryHeading>
+        )}
+        {subtitle && (
+          <GallerySubtitle>{subtitle}</GallerySubtitle>
+        )}
       </Container>
       <GalleryContent>
         <div className='col-1'>

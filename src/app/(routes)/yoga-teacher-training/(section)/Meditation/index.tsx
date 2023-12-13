@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import { FaCirclePlus } from 'react-icons/fa6'
 import Container from '@/app/_components/Container'
-import { ContentHeading, ContentItem, ImageWrapper, Gallery } from './styles'
+import { ContentHeading, ContentItem, ImageWrapper, Gallery, ContentList, ListItem } from './styles'
 
 export default function Meditation() {
   return (
@@ -10,14 +11,27 @@ export default function Meditation() {
       <Gallery>
         <div className='flex'>
           <div className='text'>
-            <ContentHeading>Activities & Meditation</ContentHeading>
+            <ContentHeading>A Pathway to Personal Development and Well-Being</ContentHeading>
             <ContentItem>
-              <div>Wake up and stroll over to the yoga shala where our monk Dada will guide you through morning meditation followed by a morning Vinyasa or Hatha yoga class, it`s the perfect way to start the day.</div>
-              <div>After a delicious vegan/vegetarian buffet breakfast we hold a daily in-depth lecture based on yoga philosophy or yoga anatomy & physiology. After lunch work on teaching skills, asanas, strength and flexibility, mantras, ayurveda medicine and adjustments.</div>
-              <div>At night we light the candles and practise a yin yoga class, helping you feel reconnected and relaxed before a peaceful nights sleep.</div>
+              <div>Doing Yoga Teacher Training doesn’t necessarily mean you have to actually teach yoga.</div>
+              <div>You will find that Yoga Teacher Training brings a lot of benefits such as:</div>
+              <ContentList>
+                <ListItem>
+                  <div><FaCirclePlus /></div>
+                  <div>Physical & Emotional Growth</div>
+                </ListItem>
+                <ListItem>
+                  <div><FaCirclePlus /></div>
+                  <div>Deepen Your Yoga Knowledge</div>
+                </ListItem>
+                <ListItem>
+                  <div><FaCirclePlus /></div>
+                  <div>Network with Like-Minded People</div>
+                </ListItem>
+              </ContentList>
             </ContentItem>
           </div>
-          <ImageWrapper className='bottom'>
+          <ImageWrapper>
             <Image
               src='/assets/images/gallery/gallery-1.jpg'
               alt='yoga teacher training activity'

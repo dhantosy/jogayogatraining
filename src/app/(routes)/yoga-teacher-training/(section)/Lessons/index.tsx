@@ -3,15 +3,15 @@
 import Image from 'next/image'
 import { HiCheck } from "react-icons/hi2";
 import Container from '@/app/_components/Container'
-import { Section, Subtitle, ImageWrapper, Content, ContentSub, Icon, List } from './styles'
+import { Section, Subtitle, ImageWrapper, Content, ContentSub, Icon, List, Title } from './styles'
 
 const data = [
-  'Yoga Asana Fundamentals',
-  'In-depth Yoga Philosophy',
+  'Yoga Asana, Pranayamas & Kriyas',
+  'Traditional Yoga Techniques',
   'The Yoga Sutras of Patanjali',
-  'Singing Mantras from India',
-  'Teaching Methodology',
-  'Teaching skills & voice development',
+  'Singing Mantras',
+  'Teaching Methodology & Styles',
+  'Teaching skills, practice, & voice development',
   'Strength, Flexibility and Heart Openings',
   'Yoga Therapy & Alignment',
   'Sanskrit terminology',
@@ -19,7 +19,7 @@ const data = [
   'Nutrition & Yoga lifestyle',
   'Adjustments and Healing techniques',
   'Understanding the Bandhas & Gunas',
-  'Yoga Business in the modern world​'
+  'Business aspects of Yoga Teaching'
 ];
 
 export default function Lessons() {
@@ -40,6 +40,7 @@ export default function Lessons() {
           </div>
           <div>
             <ContentSub>
+              <Title>What You`ll Learn</Title>
               <Subtitle>This course provides an in-depth understanding of all aspects of yoga, including:</Subtitle>
               <div>
                 {data.map((text, index) => {

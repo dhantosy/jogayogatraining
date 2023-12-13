@@ -11,10 +11,23 @@ export const Section = styled.section`
   }
 `;
 
-export const Subtitle = styled.p`
+export const Title = styled.h2`
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 36px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  color: ${theme.colors.pinkMain};
+  margin: 0 0 20px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+    margin: 25px 0;
+  }
+`;
+
+export const Subtitle = styled.p`
   max-width: 480px;
   position: relative;
   z-index: 2;
@@ -51,9 +64,9 @@ export const Content = styled.div`
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 80%;
-    height: 640px;
+    height: 600px;
     right: 0;
-    top: -70px;
+    top: -66px;
     opacity: 0.2;
     border-radius: 20px;
   }
@@ -62,6 +75,7 @@ export const Content = styled.div`
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+  margin-top: -95px;
 `;
 
 export const Icon = styled.div`

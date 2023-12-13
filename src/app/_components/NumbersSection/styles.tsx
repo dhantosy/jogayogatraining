@@ -66,9 +66,9 @@ export const Content = styled.div`
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 100%;
-    height: calc(100% + 170px);
+    height: calc(100% + 120px);
     left: 0;
-    top: -116px;
+    top: -74px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, Content, ImageWrapper } from './styles'
 
-export default function Benefits() {
+export default function GalleryLocation() {
   return (
     <Container>
       <Section>

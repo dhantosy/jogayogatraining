@@ -1,41 +1,10 @@
 import styled from 'styled-components'
 import theme from '@/styles/theme'
 
-export const ContentHeading = styled.div`
-  margin: 0 0 20px;
-  color: ${theme.colors.pinkMain};
-  font-size: 36px;
-  font-weight: 500;
-  position: relative;
-  z-index: 2;
-`;
-
-export const ContentItem = styled.div`
-  position: relative;
-  z-index: 2;
-
-  > div {
-    margin: 15px 0;
-  }
-`;
-
-export const ImageWrapper = styled.div`
-  position: relative;
-  z-index: 3;
-  border-radius: 20px;
-  overflow: hidden;
-  padding-bottom: 50%;
-  width: 640px;
-
-  &.bottom {
-    padding-bottom: 50%;
-  }
-`;
-
 export const Gallery = styled.div`
   position: relative;
-  padding: 40px 0;
-  margin-bottom: 60px;
+  padding: 0 0 40px;
+  margin-bottom: 40px;
 
   & > .flex {
     display: flex;
@@ -55,9 +24,9 @@ export const Gallery = styled.div`
       background-color: ${theme.colors.orange};
       position: absolute;
       width: 125%;
-      height: 400px;
+      height: 90%;
       left: 0;
-      top: 33px;
+      top: 63px;
       opacity: 0.2;
       border-radius: 20px;
       overflow: hidden;
@@ -69,3 +38,54 @@ export const Gallery = styled.div`
   }
 `;
 
+
+export const ContentHeading = styled.div`
+  margin: 0 0 20px;
+  color: ${theme.colors.pinkMain};
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+`;
+
+export const ContentItem = styled.div`
+  position: relative;
+  z-index: 2;
+
+  > div {
+    margin: 15px 0;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 40%;
+  width: 540px;
+`;
+
+export const ContentList = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px 0;
+`;
+
+export const ListItem = styled.div`
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+
+  > div {
+    flex: 1;
+    align-items: center;
+  }
+  
+  > div:first-child {
+    position: relative;
+    flex: 0 0 18px;
+  }
+`;

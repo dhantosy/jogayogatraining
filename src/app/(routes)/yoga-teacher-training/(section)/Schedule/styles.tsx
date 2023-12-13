@@ -14,7 +14,7 @@ export const Section = styled.section`
     width: calc(100% + 50px);
     height: 100%;
     left: -25px;
-    top: 33px;
+    top: 35px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;

@@ -26,7 +26,7 @@ export const Heading = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.backgroundMint};
