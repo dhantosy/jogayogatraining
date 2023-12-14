@@ -79,7 +79,7 @@ export const Content = styled.div`
     align-items: center;
 
     > div {
-      flex: 0 0 100%;
+      flex: 0 0 auto;
     }
 
     .left-date-icon {
