@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { HiCheckCircle } from "react-icons/hi2"
 import { SuccessMessage } from './styles'
@@ -10,7 +10,10 @@ type Inputs = {
   message: string
 }
 
+const AppScriptUrl = 'https://script.google.com/macros/s/AKfycbzX1Ytplt_EDWddvFuqTxRv-pdS0tqq49-igcfWhDFBt6SF4lbVyapNQV0fZ0Ytzvpk/exec';
+
 export default function FormField() {
+  const formRef = useRef<HTMLFormElement>(null);
   const [isSafeToReset, setIsSafeToReset] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const {
@@ -26,9 +29,13 @@ export default function FormField() {
     reset(); // asynchronously reset your form values
   }, [isSafeToReset, reset]);
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async () => {
     try {
-      await fetch(`https://docs.google.com/forms/d/e/1FAIpQLSc_1vQg9a1RBCM-OOkVf75Afj-mpaRnpuiBdUi6MSso3SuSQQ/formResponse?&submit=Submit?usp=pp_url&entry.2100670051=${data.name}&entry.185455459=${data.email}&entry.1954859216=${data.subject}&entry.1823720354=${data.message}`);
+      await fetch(AppScriptUrl, {
+        redirect: "follow",
+        method: "POST",
+        body: new FormData(formRef.current),
+      });
       setIsSafeToReset(true);
       setIsFormSubmitted(true);
     } catch (e) {
@@ -37,7 +44,7 @@ export default function FormField() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
       {isFormSubmitted ? (
         <SuccessMessage>
           <div className="icon">
