@@ -182,6 +182,14 @@ export const Gallery = styled.div`
       height: 100%;
     }
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 20px 0 50px;
+
+    & > .flex > .text:after {
+      height: 96%;
+    }
+  }
 `;
 
 export const More = styled.div`
