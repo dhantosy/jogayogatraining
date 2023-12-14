@@ -42,10 +42,10 @@ const menu = [
     title: 'About',
     link: '/about',
   },
-  {
-    title: 'Blog',
-    link: '/blog',
-  },
+  // {
+  //   title: 'Blog',
+  //   link: '/blog',
+  // },
   {
     title: 'FAQs',
     link: '/faqs',

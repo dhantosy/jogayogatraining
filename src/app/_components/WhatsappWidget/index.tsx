@@ -52,8 +52,8 @@ export default function WhatsappWidget() {
         </div>
         <ChatBody>
           <ChatBubble>
-            <div>Hey there 👋</div>
-            <div>I`m here to help, so let me know what`s up and I`ll be happy to answer your questions.</div>
+            <div>Hello there 👋</div>
+            <div>I`m here to help, let me know if you have any questions and I`ll be happy to answer them.</div>
             <ChatTime>{currentTime}</ChatTime>
           </ChatBubble>
         </ChatBody>

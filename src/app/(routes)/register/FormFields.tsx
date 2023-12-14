@@ -181,9 +181,9 @@ export default function FormFields({ onStepChange }: Props) {
                     <div><strong>Please check your SPAM folder if you don’t see our reply email.</strong></div>
                     <div>
                       <Subtitle>
-                        Secure your spot with a refundable deposit of <strong>USD 150</strong>. Your deposit is fully refundable within 30 days.
+                        Secure your spot with a refundable deposit of <strong>AUD 300</strong>. Your deposit is fully refundable within 30 days.
                       </Subtitle>
-                      <a className='submit' href='https://stripe.com/' target='_blank'>
+                      <a className='submit' href='https://checkout.stripe.com/c/pay/cs_live_a1UJLawEfntfMHW9DlIwlpUVQsy9mGqtFRFqLYe6FdbWuzk2WodfsgpuUE#fidkdWxOYHwnPyd1blppbHNgWjR2TUFpM2N3Y2pBRmdjQj1RM1YxVUZQdScpJ3VpbGtuQH11anZgYUxhJz8nY19gYjdDNjFjME9OY0JqNz09J3gl' target='_blank'>
                         Pay a Deposit
                       </a>
                     </div>

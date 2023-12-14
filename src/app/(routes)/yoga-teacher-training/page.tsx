@@ -13,6 +13,7 @@ import AccreditationSection from '@/app/_components/AccreditationSection'
 import VideoTestimonial from '../testimonials/(section)/Reviews/VideoTestimonial'
 import { galleryExcursion } from '@/data/galleries'
 import Container from '@/app/_components/Container'
+import Teachers from '../_home/(sections)/Teachers'
 
 export default function YogaTeacherTraining() {
   return (
@@ -30,6 +31,7 @@ export default function YogaTeacherTraining() {
         subtitle='Embark on a profound journey of self-exploration and emotional healing practices such as journaling, and ecstatic dance to foster a deeper connection with your authentic self. We take an excursion to Dada the monks ashram, then a secret Hindu water temple, waterfall and huge rice terrace.'
         images={galleryExcursion}
       />
+      <Teachers />
       <div style={{
         marginTop: '60px'
       }}>
