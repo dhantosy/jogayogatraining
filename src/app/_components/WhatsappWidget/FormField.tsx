@@ -28,7 +28,7 @@ export default function FormField() {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     try {
-      await fetch('');
+      await fetch(`https://docs.google.com/forms/d/e/1FAIpQLSc_1vQg9a1RBCM-OOkVf75Afj-mpaRnpuiBdUi6MSso3SuSQQ/formResponse?&submit=Submit?usp=pp_url&entry.2100670051=${data.name}&entry.185455459=${data.email}&entry.1954859216=${data.subject}&entry.1823720354=${data.message}`);
       setIsSafeToReset(true);
       setIsFormSubmitted(true);
     } catch (e) {

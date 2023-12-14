@@ -13,7 +13,7 @@ export const Section = styled.section`
     width: 100%;
     height: 76%;
     left: 0;
-    top: 36px;
+    top: 30px;
     opacity: 0.2;
     border-radius: 20px;
     overflow: hidden;
@@ -24,6 +24,7 @@ export const Section = styled.section`
 
     &:after {
       height: 82%;
+      top: 23px;
     }
   }
 `;
