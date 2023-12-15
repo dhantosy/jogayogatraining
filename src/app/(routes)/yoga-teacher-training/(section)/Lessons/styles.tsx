@@ -46,6 +46,7 @@ export const Subtitle = styled.p`
   @media screen and (max-width: 1024px) {
     font-size: 16px;
     margin: 25px 0;
+    max-width: 100%;
   }
 `;
 
@@ -63,15 +64,22 @@ export const ImageWrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  gap: 50px;
+  gap: 40px;
   position: relative;
+
+  > div {
+    
+    &:first-child {
+      flex: 0 0 550px;
+    }
+  }
 
   &:after {
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 80%;
-    height: 600px;
+    height: calc(100% + 120px);
     right: 0;
     top: -66px;
     opacity: 0.2;
@@ -82,10 +90,16 @@ export const Content = styled.div`
     flex-direction: column;
     gap: 20px;
 
+    > div {
+      
+      &:first-child {
+        flex: 0 0 100%;
+      }
+    }
+
     &:after {
-      bottom: -20px;
-      top: initial;
-      height: 80%;
+      top: 0;
+      height: calc(100% + 20px);
       left: 0;
       width: 100%;
     }
@@ -109,10 +123,79 @@ export const Icon = styled.div`
   flex: 0 0 20px;
 `;
 
+export const ItemDetail = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 5px;
+
+  > div {
+    flex: 1;
+
+    &:first-child {
+      flex: 0 0 18px;
+      align-items: center;
+      display: flex;
+      position: relative;
+      top: 3px;
+    }
+  }
+`;
+
 export const List = styled.div`
   display: flex;
   gap: 10px;
   position: relative;
   margin-bottom: 5px;
   align-items: flex-start;
+`;
+
+export const Item = styled.div`
+  border-top: 1px solid ${theme.colors.greyLight};
+
+  &:first-child {
+    border-top: none;
+  }
+`;
+
+export const ItemTitle = styled.div`
+  padding: 10px 0;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    padding: 10px 0;
+  }
+`;
+
+export const ItemContent = styled.div<{ $isOpen?: boolean; }>`
+  display: ${props => props.$isOpen ? 'block' : 'none'};
+  padding: 0px 20px 20px;
+`;
+
+export const ContentNav = styled.div`
+  position: sticky;
+  top: 150px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: ${theme.colors.backgroundPink};
+
+  div {
+    border-bottom: 1px solid ${theme.colors.white};
+    
+    &:last-child {
+      border-bottom: none;
+    };
+  }
+
+  a {
+    padding: 12px 5px;
+    display: block;
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;

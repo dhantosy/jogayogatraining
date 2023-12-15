@@ -181,6 +181,7 @@ export const ChatFooter = styled.div`
 export const Form = styled.div`
   padding: 15px 10px 10px;
   height: 100%;
+  overflow: auto;
 
   > form {
     height: 100%;
@@ -213,4 +214,11 @@ export const SuccessMessage = styled.div`
     font-weight: 500;
     margin: 20px 0 10px;
   }
+`;
+
+
+export const ErrorMessage = styled.div`
+  text-align: center;
+  color: ${theme.colors.red};
+  margin: 10px 0;
 `;

@@ -83,3 +83,11 @@ export const More = styled.div`
 export const Icon = styled.div`
   width: 20px;
 `;
+
+export const IconClose = styled.div`
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  cursor: pointer;
+`;

@@ -85,5 +85,6 @@ export const TableScheduleItem = styled.div`
     flex-direction: column;
     gap: 0;
     padding: 10px 0;
+    align-items: center;
   }
 `;

@@ -239,6 +239,12 @@ const styles = css`
     margin-bottom: 40px;
   }
 
+  .grecaptcha-badge {
+    display: none !important;
+    opacity: 0;
+    visibility: hidden;
+  }
+
 `;
 
 const GlobalStyles = createGlobalStyle`
