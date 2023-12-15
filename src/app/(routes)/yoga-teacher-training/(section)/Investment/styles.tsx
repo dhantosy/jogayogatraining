@@ -74,6 +74,10 @@ export const Content = styled.div`
     gap: 5px;
   }
 
+  .left-date {
+    text-align: center;
+  }
+
   .left-date-item {
     display: flex;
     gap: 10px;

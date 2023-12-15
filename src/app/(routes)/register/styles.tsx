@@ -235,3 +235,9 @@ export const Subtitle = styled.div`
     margin: 20px 0;
   }
 `;
+
+export const ErrorMessage = styled.div`
+  text-align: center;
+  color: ${theme.colors.red};
+  margin: 10px 0;
+`;

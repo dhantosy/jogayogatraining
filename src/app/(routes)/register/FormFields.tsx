@@ -1,10 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha';
 import { format } from 'date-fns'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { HiCheckCircle } from 'react-icons/hi2'
-import { Back, Form, FormState, Subtitle, SuccessMessage } from './styles'
+import { Back, Form, FormState, Subtitle, SuccessMessage, ErrorMessage } from './styles'
 import Loader from '@/app/_components/Loader'
 
 type Inputs = {
@@ -30,6 +31,8 @@ export default function FormFields({ onStepChange }: Props) {
   const [isSafeToReset, setIsSafeToReset] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState('' as string);
+  const reCaptchaRef = useRef<ReCAPTCHA>();
 
   const {
     register,
@@ -59,21 +62,34 @@ export default function FormFields({ onStepChange }: Props) {
   }
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    reCaptchaRef.current.reset();
+    setRecaptchaError('');
     setIsLoading(true);
 
-    try {
-      await fetch(AppScriptUrl, {
-        redirect: 'follow',
-        method: 'POST',
-        body: getFormData(data),
-      });
+    const token = await reCaptchaRef.current.executeAsync();
+
+    if (!token) {
+      const message = 'Opps! Something is wrong.';
+      setRecaptchaError(message);
       setIsLoading(false);
-      setIsSafeToReset(true);
-      setCurrentStep(3);
-      onStepChange(3);
-    } catch (e) {
-      setIsLoading(false);
-      console.log(e);
+      return;
+    }
+
+    if (token) {
+      try {
+        await fetch(AppScriptUrl, {
+          redirect: 'follow',
+          method: 'POST',
+          body: getFormData(data),
+        });
+        setIsLoading(false);
+        setIsSafeToReset(true);
+        setCurrentStep(3);
+        onStepChange(3);
+      } catch (e) {
+        setIsLoading(false);
+        console.log(e);
+      }
     }
   };
 
@@ -184,6 +200,10 @@ export default function FormFields({ onStepChange }: Props) {
                         </select>
                       </div>
                     </fieldset>
+                    <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey='6LfoGjIpAAAAAEoGhNvN1iuM6EiezWFPVH3TqKcN' />
+                    {recaptchaError && (
+                      <ErrorMessage>{recaptchaError}</ErrorMessage>
+                    )}
                     <div style={{ textAlign: 'center' }}>
                       {isLoading ? <Loader /> : (
                         <>

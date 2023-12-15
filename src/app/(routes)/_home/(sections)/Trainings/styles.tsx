@@ -53,7 +53,7 @@ export const Subtitle = styled.p`
 
 export const Content = styled.div`
   display: flex;
-  gap: 50px;
+  gap: 48px;
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
@@ -61,10 +61,6 @@ export const Content = styled.div`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     margin: 40px 0 0;
-  }
-
-  & > div {
-    flex: 1;
   }
 `;
 
@@ -102,6 +98,7 @@ export const ContentItem = styled.div`
   background: ${theme.colors.backgroundMint};
   border-radius: 20px;
   overflow: hidden;
+  flex: 1;
 `;
 
 export const ContentBody = styled.div`
