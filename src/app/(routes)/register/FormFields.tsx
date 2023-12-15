@@ -134,7 +134,7 @@ export default function FormFields({ onStepChange }: Props) {
                       </fieldset>
                       <fieldset>
                         <label htmlFor='phone'>WhatsApp or Phone Number<span>*</span></label>
-                        <input type='text' id='phone' {...register('phone', {
+                        <input type='number' id='phone' {...register('phone', {
                           required: true
                         })} />
                       </fieldset>

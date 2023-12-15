@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha';
 import { format } from 'date-fns'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import Loader from '@/app/_components/Loader'
 import { HiCheckCircle } from 'react-icons/hi2'
-import { SuccessMessage } from './styles'
+import { ErrorMessage, SuccessMessage } from './styles'
 
 type Inputs = {
   name: string
@@ -18,6 +19,8 @@ export default function FormField() {
   const [isSafeToReset, setIsSafeToReset] = useState(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState('' as string);
+  const reCaptchaRef = useRef<ReCAPTCHA>();
 
   const {
     register,
@@ -41,20 +44,33 @@ export default function FormField() {
   }
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    reCaptchaRef.current.reset();
+    setRecaptchaError('');
     setIsLoading(true);
 
-    try {
-      await fetch(AppScriptUrl, {
-        redirect: 'follow',
-        method: 'POST',
-        body: getFormData(data),
-      });
-      setIsSafeToReset(true);
+    const token = await reCaptchaRef.current.executeAsync();
+
+    if (!token) {
+      const message = 'Opps! Something is wrong.';
+      setRecaptchaError(message);
       setIsLoading(false);
-      setIsFormSubmitted(true);
-    } catch (e) {
-      setIsLoading(false);
-      console.log(e);
+      return;
+    }
+
+    if (token) {
+      try {
+        await fetch(AppScriptUrl, {
+          redirect: 'follow',
+          method: 'POST',
+          body: getFormData(data),
+        });
+        setIsSafeToReset(true);
+        setIsLoading(false);
+        setIsFormSubmitted(true);
+      } catch (e) {
+        setIsLoading(false);
+        console.log(e);
+      }
     }
   };
 
@@ -96,6 +112,10 @@ export default function FormField() {
                 required: true
               })} />
             </fieldset>
+            <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey='6LfoGjIpAAAAAEoGhNvN1iuM6EiezWFPVH3TqKcN' />
+            {recaptchaError && (
+              <ErrorMessage>{recaptchaError}</ErrorMessage>
+            )}
             <div style={{ textAlign: 'center' }}>
               {isLoading ? <Loader /> : <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>}
             </div>

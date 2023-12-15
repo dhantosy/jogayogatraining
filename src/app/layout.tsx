@@ -70,6 +70,8 @@ export default function RootLayout({
           gtag('config', 'G-LH4FWQ4D99');
         `}
         </Script>
+
+        <Script src="https://www.google.com/recaptcha/api.js" />
       </head>
       <body className={`${cinzel.variable} ${poppins.variable}`} suppressHydrationWarning>
         <NextTopLoader
