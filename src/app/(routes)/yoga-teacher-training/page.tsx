@@ -6,14 +6,15 @@ import Schedule from './(section)/Schedule'
 import Lessons from './(section)/Lessons'
 import Graduation from './(section)/Graduation'
 import Investment from './(section)/Investment'
+import CertificationDetail from './(section)/CertificationDetail'
 import Gallery from '@/app/_components/Gallery'
+import Container from '@/app/_components/Container'
 import NumbersSection from '@/app/_components/NumbersSection'
 import GalleryLocation from '@/app/_components/GalleryLocation'
 import AccreditationSection from '@/app/_components/AccreditationSection'
+import Teachers from '../_home/(sections)/Teachers'
 import VideoTestimonial from '../testimonials/(section)/Reviews/VideoTestimonial'
 import { galleryExcursion } from '@/data/galleries'
-import Container from '@/app/_components/Container'
-import Teachers from '../_home/(sections)/Teachers'
 
 export default function YogaTeacherTraining() {
   return (
@@ -23,6 +24,7 @@ export default function YogaTeacherTraining() {
       <Meditation />
       <NumbersSection />
       <Lessons />
+      <CertificationDetail />
       <Schedule />
       <Graduation />
       <Investment />

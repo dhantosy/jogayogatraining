@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 80px 0 100px;
+  padding: 100px 0;
   position: relative;
   margin-top: 60px;
 

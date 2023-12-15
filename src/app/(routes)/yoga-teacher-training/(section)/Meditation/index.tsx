@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { FaCirclePlus } from 'react-icons/fa6'
+import { IoMdCheckmarkCircle } from "react-icons/io";
 import Container from '@/app/_components/Container'
 import { ContentHeading, ContentItem, ImageWrapper, Gallery, ContentList, ListItem } from './styles'
 
@@ -17,15 +17,15 @@ export default function Meditation() {
               <div>You will find that Yoga Teacher Training brings a lot of benefits such as:</div>
               <ContentList>
                 <ListItem>
-                  <div><FaCirclePlus /></div>
+                  <div><IoMdCheckmarkCircle /></div>
                   <div>Physical & Emotional Growth</div>
                 </ListItem>
                 <ListItem>
-                  <div><FaCirclePlus /></div>
+                  <div><IoMdCheckmarkCircle /></div>
                   <div>Deepen Your Yoga Knowledge</div>
                 </ListItem>
                 <ListItem>
-                  <div><FaCirclePlus /></div>
+                  <div><IoMdCheckmarkCircle /></div>
                   <div>Network with Like-Minded People</div>
                 </ListItem>
               </ContentList>
