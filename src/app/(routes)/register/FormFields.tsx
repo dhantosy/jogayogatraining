@@ -1,9 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { format } from 'date-fns'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { HiCheckCircle } from 'react-icons/hi2'
 import { Back, Form, FormState, Subtitle, SuccessMessage } from './styles'
+import Loader from '@/app/_components/Loader'
 
 type Inputs = {
   date: string;
@@ -22,9 +24,12 @@ type Props = {
   onStepChange: (data: number) => void
 };
 
+const AppScriptUrl = 'https://script.google.com/macros/s/AKfycby0315coCywupSWzlTYg9XHTi6YlJFabwzyYEDM_ELPVOjXPg1hO8h3mBvWD2T-yn2I/exec';
+
 export default function FormFields({ onStepChange }: Props) {
   const [isSafeToReset, setIsSafeToReset] = useState(false);
   const [currentStep, setCurrentStep] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
 
   const {
     register,
@@ -45,15 +50,29 @@ export default function FormFields({ onStepChange }: Props) {
     reset(); // asynchronously reset your form values
   }, [isSafeToReset, reset]);
 
+  const getFormData = (object: any) => {
+    const formData = new FormData();
+    formData.append('time', format(new Date(), 'yyyy MMMM dd, HH:mm'));
+    Object.keys(object).forEach(key => formData.append(key, object[key]));
+
+    return formData;
+  }
+
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    console.log(data);
+    setIsLoading(true);
 
     try {
-      await fetch('');
+      await fetch(AppScriptUrl, {
+        redirect: 'follow',
+        method: 'POST',
+        body: getFormData(data),
+      });
+      setIsLoading(false);
       setIsSafeToReset(true);
       setCurrentStep(3);
       onStepChange(3);
     } catch (e) {
+      setIsLoading(false);
       console.log(e);
     }
   };
@@ -165,10 +184,16 @@ export default function FormFields({ onStepChange }: Props) {
                         </select>
                       </div>
                     </fieldset>
-                    <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>
-                    <Back onClick={() => handleStepChange(1)}>
-                      Back to previous form
-                    </Back>
+                    <div style={{ textAlign: 'center' }}>
+                      {isLoading ? <Loader /> : (
+                        <>
+                          <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>
+                          <Back onClick={() => handleStepChange(1)}>
+                            Back to previous form
+                          </Back>
+                        </>
+                      )}
+                    </div>
                   </div>
                 </FormState>
                 <FormState $currentStep={currentStep}>

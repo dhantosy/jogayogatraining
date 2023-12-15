@@ -7,6 +7,10 @@ export const Section = styled.section`
   @media screen and (max-width: 1024px) {
     padding: 40px 0 60px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 40px 0 20px;
+  }
 `;
 
 export const Heading = styled.div`

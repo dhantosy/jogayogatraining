@@ -65,7 +65,7 @@ export const Content = styled.div`
 
   .left-content {
     margin: 15px 0 20px;
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
