@@ -106,6 +106,7 @@ export const ContentSub = styled.div`
 
 export const Icon = styled.div`
   width: 20px;
+  flex: 0 0 20px;
 `;
 
 export const List = styled.div`
@@ -113,4 +114,5 @@ export const List = styled.div`
   gap: 10px;
   position: relative;
   margin-bottom: 5px;
+  align-items: flex-start;
 `;

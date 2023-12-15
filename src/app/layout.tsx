@@ -10,6 +10,7 @@ import Footer from '@/app/_components/Footer'
 import Header from '@/app/_components/Header'
 import WhatsappWidget from '@/app//_components/WhatsappWidget'
 import Providers from '@/providers/Providers'
+import { urlsList } from '@/data/urls';
 
 const cinzel = DM_Sans({
   weight: ['400'],
@@ -26,19 +27,19 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.jogayogatraining.com'),
+  metadataBase: new URL(urlsList.baseUrl),
   alternates: {
     canonical: '/',
   },
   robots: 'index, follow',
   title: 'Joga Yoga Training',
-  description: '',
-  keywords: '',
+  description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
+  keywords: 'Joga Yoga, Yoga Teacher Training, YTT, Yoga Teacher Training in Bali, Yoga Teacher Training Canggu, YTT Bali, Yoga Training Bali',
   openGraph: {
     title: 'Joga Yoga Training',
-    description: '',
+    description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
     type: 'website',
-    images: '/assets/images/banner-fb.jpg'
+    images: '/assets/images/banner-photo.jpg'
   }
 };
 
@@ -57,17 +58,18 @@ export default function RootLayout({
         <link rel='mask-icon' href='/assets/favicons/safari-pinned-tab.svg' color='#fec5cd' />
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='theme-color' content='#ffffff' />
+        <meta name="google-site-verification" content="NiuqzthYGioELx2oOFPHEA65gIMercuMX6Q3mSm13ek" />
 
-        {/* <Script src='https://www.googletagmanager.com/gtag/js?id=G-HN4K455H6E' strategy='afterInteractive' />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-LH4FWQ4D99' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-HN4K455H6E');
+          gtag('config', 'G-LH4FWQ4D99');
         `}
-        </Script> */}
+        </Script>
       </head>
       <body className={`${cinzel.variable} ${poppins.variable}`} suppressHydrationWarning>
         <NextTopLoader
