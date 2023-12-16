@@ -10,10 +10,11 @@ const trainings = [
       '200hr Yoga Alliance Certificate',
       'Healthy vegetarian breakfast',
       'Excursions around Bali',
-      'FREE accommodation!'
+      'FREE accommodation',
+      '2 Spots Remaining!'
     ],
-    discount: false,
-    discountText: 'Early Bird Discount',
+    discount: true,
+    discountText: 'Last Minute Discount',
     description: 'You will love this transformative 200 hour yoga teacher training! Included in the training is our in-depth yoga teaching manual, yoga alliance certified YTT certificate, a range of experienced local and international yoga teachers, free airport pick up, healthy vegetarian breakfasts included, excursions around Bali and so much more. Click the button below to learn more detail.',
   },
   {
@@ -27,10 +28,10 @@ const trainings = [
       '200hr Yoga Alliance Certificate',
       'Healthy vegetarian breakfast',
       'Excursions around Bali',
-      'FREE accommodation!'
+      'FREE accommodation (for the first 10 sign ups!)'
     ],
     discount: true,
-    discountText: '2 Seats Remaining',
+    discountText: '$500 Early Bird Discount',
     description: 'You will love this transformative 200 hour yoga teacher training! Included in the training is our in-depth yoga teaching manual, yoga alliance certified YTT certificate, a range of experienced local and international yoga teachers, free airport pick up, healthy vegetarian breakfasts included, excursions around Bali and so much more. Click the button below to learn more detail.',
   },
   {
@@ -44,10 +45,10 @@ const trainings = [
       '200hr Yoga Alliance Certificate',
       'Healthy vegetarian breakfast',
       'Excursions around Bali',
-      'FREE accommodation!'
+      'FREE accommodation (for the first 10 sign ups!)'
     ],
     discount: true,
-    discountText: 'Early Bird Discount',
+    discountText: '$500 Early Bird Discount',
     description: 'You will love this transformative 200 hour yoga teacher training! Included in the training is our in-depth yoga teaching manual, yoga alliance certified YTT certificate, a range of experienced local and international yoga teachers, free airport pick up, healthy vegetarian breakfasts included, excursions around Bali and so much more. Click the button below to learn more detail.',
   }
 ]

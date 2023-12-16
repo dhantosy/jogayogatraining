@@ -14,7 +14,7 @@ export default function AccreditationSection() {
         <Content>
           <ImageWrapper>
             <Image
-              src='/assets/images/gallery/gallery-12.jpg'
+              src='/assets/images/course-3.jpg'
               alt='YTT'
               sizes={`100vw, 33vw`}
               width='600'

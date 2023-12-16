@@ -59,7 +59,7 @@ export const Content = styled.div`
   position: relative;
   z-index: 2;
 
-  & > * {
+  & > div {
     flex: 1;
   }
 
@@ -68,9 +68,13 @@ export const Content = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 
-    & > * {
-      flex: 0 0 calc(50% - 30px);
+    & > div {
+      flex: 0 0 100%;
     }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 30px 0 20px;
   }
 `;
 

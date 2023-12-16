@@ -114,6 +114,7 @@ export const Icon = styled.div`
 
 export const ContentList = styled.div`
   font-size: 16px;
+  min-height: 167px;
 
   & > .subtitle {
     margin-bottom: 10px;
@@ -149,4 +150,9 @@ export const Discount = styled.div`
   text-transform: uppercase;
   letter-spacing: 2.5px;
   opacity: 0.95;
+
+  @media screen and (max-width: 1024px) {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
 `;

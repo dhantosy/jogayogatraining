@@ -15,9 +15,10 @@ export const ContentItem = styled.div`
   position: relative;
   z-index: 2;
   cursor: pointer;
+  padding-bottom: 20px;
 
   &:hover .photo {
-    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+    filter: brightness( 110% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
   }
 
   &:hover > .image-wrapper {
@@ -34,6 +35,8 @@ export const ImageWrapper = styled.div`
   z-index: 2;
   border-radius: 20px;
   overflow: hidden;
+  padding-bottom: 87%;
+  width: 100%;
 
   &:after {
     content: '';
@@ -50,7 +53,7 @@ export const ImageWrapper = styled.div`
 
   & > .photo {
     z-index: 3;
-    filter: brightness( 110% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
     transition: filter 0.2s;
   }
 `;
@@ -60,7 +63,7 @@ export const Name = styled.h3`
   z-index: 2;
   text-align: center;
   font-size: 20px;
-  margin: 10px 0;
+  margin: 10px 0 0;
 `;
 
 export const More = styled.div`
@@ -71,4 +74,9 @@ export const More = styled.div`
 
 export const Icon = styled.div`
   width: 20px;
+`;
+
+export const Title = styled.div`
+  text-align: center;
+  margin-top: 0;
 `;

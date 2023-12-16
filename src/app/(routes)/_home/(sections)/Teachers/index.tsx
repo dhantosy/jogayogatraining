@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { HiArrowLongRight, HiMiniXCircle } from "react-icons/hi2"
 import Container from '@/app/_components/Container'
 import ProfileCard from '@/app/_components/ProfileCard'
@@ -13,6 +15,7 @@ type Props = {
   name: string;
   description?: string;
   photo: string;
+  title: string;
   onProfileClick: (param: Props) => void;
 };
 
@@ -44,11 +47,31 @@ export default function Teachers() {
           </Link>
         </Heading>
         <Content>
-          {teachers.slice(0, 4).map(({ name, description, photo }) => {
-            return (
-              <ProfileCard key={name} name={name} description={description} photo={photo} onProfileClick={handleClick} />
-            )
-          })}
+          <Swiper
+            loop
+            modules={[Autoplay, Pagination]}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              1: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+            slidesPerView={2}
+          >
+            {teachers.slice(0, 8).map(({ name, description, photo, title }) => {
+
+              return (
+                <SwiperSlide key={name}>
+                  <ProfileCard key={name} name={name} description={description} photo={photo} title={title} onProfileClick={handleClick} />
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
         </Content>
       </Container>
       {isActive && (

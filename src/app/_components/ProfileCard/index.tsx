@@ -1,13 +1,14 @@
 'use client'
 
 import Image from 'next/image'
-import { ContentItem, ImageWrapper, Name, ProfileCardItem } from './styles'
+import { ContentItem, ImageWrapper, Name, ProfileCardItem, Title } from './styles'
 
 type Props = {
   name: string;
   description?: string;
   photo: string;
-  onProfileClick: (param: Props) => void;
+  title?: string;
+  onProfileClick?: (param: Props) => void;
 };
 
 export default function ProfileCard(param: Props) {
@@ -20,12 +21,15 @@ export default function ProfileCard(param: Props) {
             src={param.photo}
             alt={param.name}
             sizes={`100vw, 33vw`}
-            width='300'
-            height='423'
+            fill
+            style={{ objectFit: 'cover' }}
             className='photo'
           />
         </ImageWrapper>
         <Name>{param.name}</Name>
+        {param.title && (
+          <Title>{param.title}</Title>
+        )}
       </ContentItem>
     </ProfileCardItem>
   )

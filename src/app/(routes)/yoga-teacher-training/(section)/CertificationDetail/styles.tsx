@@ -28,7 +28,7 @@ export const Section = styled.section`
       background-color: ${theme.colors.orange};
       position: absolute;
       width: 125%;
-      height: 95%;
+      height: 96%;
       left: 0;
       top: 26px;
       opacity: 0.2;
