@@ -7,7 +7,9 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaInstagram,
-  FaFacebookSquare
+  FaFacebookSquare,
+  FaYoutube,
+  FaTwitter,
 } from 'react-icons/fa'
 import {
   Navigation,
@@ -42,10 +44,10 @@ const menu = [
     title: 'About',
     link: '/about',
   },
-  // {
-  //   title: 'Blog',
-  //   link: '/blog',
-  // },
+  {
+    title: 'Blog',
+    link: '/blog',
+  },
   {
     title: 'FAQs',
     link: '/faqs',
@@ -61,11 +63,11 @@ export default function Footer() {
             <Link href='/'>
               <Logo>
                 <Image
-                  src='/assets/images/logo.png'
+                  src='/assets/images/logo-horizontal.png'
                   alt='Joga Yoga'
                   sizes={`100vw, 33vw`}
-                  width='150'
-                  height='150'
+                  width='200'
+                  height='90'
                 />
               </Logo>
             </Link>
@@ -108,6 +110,16 @@ export default function Footer() {
             <a href='https://www.facebook.com/jogayogateacher/' target='_blank' aria-label='Joga Yoga Training Facebook'>
               <CopyrightSocialItem>
                 <FaFacebookSquare />
+              </CopyrightSocialItem>
+            </a>
+            {/* <a href='https://www.facebook.com/jogayogateacher/' target='_blank' aria-label='Joga Yoga Training Facebook'>
+              <CopyrightSocialItem>
+                <FaTwitter />
+              </CopyrightSocialItem>
+            </a> */}
+            <a href='https://www.youtube.com/@jogayogabali' target='_blank' aria-label='Joga Yoga Training Youtube'>
+              <CopyrightSocialItem>
+                <FaYoutube />
               </CopyrightSocialItem>
             </a>
           </CopyrightSocial>

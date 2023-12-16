@@ -17,7 +17,7 @@ export default function Hero() {
           poster='/assets/images/video-poster.jpg'
         >
           <source
-            src='/assets/images/video.mp4'
+            src='/assets/images/video-joga-yoga.mp4'
             type='video/mp4'
           />
         </video>

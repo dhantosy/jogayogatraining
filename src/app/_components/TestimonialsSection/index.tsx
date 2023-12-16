@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
             }}
             slidesPerView={2}
           >
-            {data.slice(0, 4).map(({ name, photo, country, job, title, date }) => {
+            {data.slice(0, 6).map(({ name, photo, country, job, title, date }) => {
 
               return (
                 <SwiperSlide key={name}>

@@ -29,7 +29,7 @@ export default function CertificationDetail() {
                 </ListItem>
                 <ListItem>
                   <div><IoMdCheckmarkCircle /></div>
-                  <div>No prior experience required</div>
+                  <div>Lifetime access to our yoga community</div>
                 </ListItem>
                 <ListItem>
                   <div><IoMdCheckmarkCircle /></div>
@@ -41,6 +41,7 @@ export default function CertificationDetail() {
                   </div>
                 </ListItem>
               </ContentList>
+              <div>Upon completion this certificate enables you to teach anywhere in the world.</div>
             </ContentItem>
           </div>
           <ImageWrapper>

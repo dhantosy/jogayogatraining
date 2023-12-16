@@ -11,55 +11,24 @@ type Props = {
   name: string;
   description?: string;
   photo: string;
-  onProfileClick: (param: Props) => void;
 };
 
 export default function TeachersSection() {
-  const [isActive, setIsActive] = useState(false);
-  const [activeProfile, setActiveProfile] = useState({
-    name: '',
-    description: '',
-  })
-
-  const handleClick = (param: Props) => {
-    setActiveProfile({
-      name: param.name,
-      description: param?.description || '',
-    });
-    setIsActive(true);
-  }
 
   return (
     <Container>
       <Section>
         <ProfileContainer>
-          {teachers.slice(0, 4).map(({ name, description, photo }) => {
+          {teachers.map(({ name, description, photo, title }) => {
             return (
-              <ProfileCard key={name} name={name} description={description} photo={photo} onProfileClick={handleClick} />
+              <div key={name}>
+                <ProfileCard name={name} description={description} photo={photo} onProfileClick={() => {}} />
+                <div className='subtitle'>{title}</div>
+                <div className='desc'>{description}</div>
+              </div>
             )
           })}
         </ProfileContainer>
-        <ProfileContainer>
-          {teachers.slice(4, 7).map(({ name, description, photo }) => {
-            return (
-              <ProfileCard key={name} name={name} description={description} photo={photo} onProfileClick={handleClick} />
-            )
-          })}
-        </ProfileContainer>
-        {isActive && (
-          <PopUpContainerOuter>
-            <PopUpContainerOverlay onClick={() => setIsActive(false)} />
-            <PopUpContainerInner>
-              <PopUpContent>
-                <Icon onClick={() => setIsActive(false)}>
-                  <HiMiniXCircle />
-                </Icon>
-                <PopUpContentName>{activeProfile.name}</PopUpContentName>
-                <PopUpContentDesc>{activeProfile.description}</PopUpContentDesc>
-              </PopUpContent>
-            </PopUpContainerInner>
-          </PopUpContainerOuter>
-        )}
       </Section>
     </Container>
   )

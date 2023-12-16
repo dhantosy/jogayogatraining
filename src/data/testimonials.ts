@@ -3,7 +3,7 @@ export const data = [
     name: 'Dakota Mays',
     photo: '/assets/images/reviews/review-dakota.jpg',
     country: 'United States',
-    job: 'Influencer',
+    job: 'Yoga Instructor',
     title: 'This training was everything I could’ve asked for. After leaving, I was more than prepared to teach and start my full- time job as a yoga instructor. This isn’t a cookie - cutter training so expect to push yourself throughout the 24 - day training. I’m hopeful that my next training lives up to what this training offered me 🙏🏼',
     date: 'January 2022',
   },

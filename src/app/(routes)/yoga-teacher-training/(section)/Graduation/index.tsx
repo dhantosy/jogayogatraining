@@ -24,7 +24,7 @@ export default function Graduation() {
             </ImageWrapper>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/gallery/training-3.jpg'
+                src='/assets/images/gallery/training-13.jpg'
                 alt=''
                 sizes={`100vw, 33vw`}
                 fill

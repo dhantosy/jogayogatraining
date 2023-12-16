@@ -1,14 +1,14 @@
 export const blogList = [
   {
     link: '/blog/blog-1',
-    title: '3 Tips to Maintain Your Yoga Practice',
-    description: 'A common mistake people make when setting intentions is to focus too much on the WHY rather than the how. If you’ve ever tried to keep up a consistent yoga practice, you might have fallen into this trap if you simply tried to stay motivated by reminding yourself how good your practice makes you feel. It’s important to get clear on why you practice, but it’s often not enough. Knowing how to stick to a consistent practice is equally (if not more!) important.',
+    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non. Mattis enim ut tellus elementum sagittis vitae. Enim facilisis gravida neque convallis a cras semper. Fames ac turpis egestas maecenas pharetra convallis. Enim eu turpis egestas pretium aenean pharetra. Amet consectetur adipiscing elit pellentesque habitant morbi tristique.',
     photo: '/assets/images/gallery/training-12.jpg',
   },
   {
     link: '/blog/blog-2',
-    title: 'How to Prepare for Your Upcoming Yoga Teachers Training in Bali',
-    description: 'Congratulations! You have taken the first (and biggest) step, and signed up for your first 200HR yoga teacher training in Bali! Perhaps it’s been a while since you have travelled to Asia, or you’ll be travelling solo for the first time. This article aims to share some tips on how to prepare yourself for your upcoming yoga teacher training in Bali, Indonesia.',
+    title: 'Quis auctor elit sed vulputate mi. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.',
+    description: 'Nec ultrices dui sapien eget mi. Etiam non quam lacus suspendisse faucibus. Amet consectetur adipiscing elit ut aliquam. Eget gravida cum sociis natoque penatibus et magnis. Dignissim convallis aenean et tortor at risus. Eget felis eget nunc lobortis mattis aliquam. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Eu lobortis elementum nibh tellus molestie nunc non. Nisl suscipit adipiscing bibendum est ultricies integer. Vel pretium lectus quam id leo in vitae turpis massa.',
     photo: '/assets/images/gallery/gallery-5.jpg',
   },
 ];

@@ -22,10 +22,10 @@ export default function Blog1() {
             />
           </ImageWrapper>
           <Content>
-            <ContentTitle>3 Tips to Maintain Your Yoga Practice</ContentTitle>
+            <ContentTitle>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ContentTitle>
             <ContentBody>
               <ContentParagraph>
-                A common mistake people make when setting intentions is to focus too much on the WHY rather than the how. If you’ve ever tried to keep up a consistent yoga practice, you might have fallen into this trap if you simply tried to stay motivated by reminding yourself how good your practice makes you feel. It’s important to get clear on why you practice, but it’s often not enough. Knowing how to stick to a consistent practice is equally (if not more!) important.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non. Mattis enim ut tellus elementum sagittis vitae. Enim facilisis gravida neque convallis a cras semper. Fames ac turpis egestas maecenas pharetra convallis. Enim eu turpis egestas pretium aenean pharetra. Amet consectetur adipiscing elit pellentesque habitant morbi tristique.
               </ContentParagraph>
               <ContentParagraph>
                 Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. In vitae turpis massa sed elementum. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Senectus et netus et malesuada. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Mauris sit amet massa vitae tortor condimentum lacinia quis. Sapien et ligula ullamcorper malesuada proin. Diam donec adipiscing tristique risus nec feugiat in fermentum. Dui accumsan sit amet nulla facilisi. Eget mauris pharetra et ultrices neque ornare. Egestas sed tempus urna et pharetra pharetra massa. Donec enim diam vulputate ut pharetra sit amet aliquam id. Vitae nunc sed velit dignissim sodales ut eu sem.

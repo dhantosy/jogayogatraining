@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  margin: 80px auto 0;
+  margin: 40px auto 0;
   z-index: 2;
 
   @media screen and (max-width: 640px) {
@@ -14,9 +14,29 @@ export const ProfileContainer = styled.div`
   display: flex;
   gap: 50px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 
   & > div {
-    flex: 0 0 calc(25% - 50px);
+    flex: 0 0 calc(50% - 50px);
+    position: relative;
+
+    > div:first-child {
+      width: 250px;
+      margin: auto;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    margin: -20px 0 20px;
+  }
+
+  .desc {
+    text-align: center;
+    background-color: #FAECE5;
+    padding: 80px 40px 40px;
+    border-radius: 20px;
+    margin-top: -60px;
   }
 
   @media screen and (max-width: 1024px) {
@@ -25,11 +45,15 @@ export const ProfileContainer = styled.div`
 
   @media screen and (max-width: 640px) {
     align-items: flex-start;
-    gap: 20px;
+    gap: 60px;
     flex-wrap: wrap;
 
     & > div {
-      flex: 0 0 calc(50% - 20px);
+      flex: 0 0 100%;
+    }
+
+    .desc {
+      padding: 60px 20px 30px;
     }
   }
 `;

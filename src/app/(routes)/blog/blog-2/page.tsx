@@ -21,10 +21,10 @@ export default function Blog2() {
           />
         </ImageWrapper>
         <Content>
-          <ContentTitle>How to Prepare for Your Upcoming Yoga Teachers Training in Bali</ContentTitle>
+          <ContentTitle>Quis auctor elit sed vulputate mi. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.</ContentTitle>
           <ContentBody>
             <ContentParagraph>
-              Congratulations! You have taken the first (and biggest) step, and signed up for your first 200HR yoga teacher training in Bali! Perhaps it’s been a while since you have travelled to Asia, or you’ll be travelling solo for the first time. This article aims to share some tips on how to prepare yourself for your upcoming yoga teacher training in Bali, Indonesia.
+              Nec ultrices dui sapien eget mi. Etiam non quam lacus suspendisse faucibus. Amet consectetur adipiscing elit ut aliquam. Eget gravida cum sociis natoque penatibus et magnis. Dignissim convallis aenean et tortor at risus. Eget felis eget nunc lobortis mattis aliquam. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Eu lobortis elementum nibh tellus molestie nunc non. Nisl suscipit adipiscing bibendum est ultricies integer. Vel pretium lectus quam id leo in vitae turpis massa.
             </ContentParagraph>
             <ContentParagraph>
               Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. In vitae turpis massa sed elementum. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Senectus et netus et malesuada. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Mauris sit amet massa vitae tortor condimentum lacinia quis. Sapien et ligula ullamcorper malesuada proin. Diam donec adipiscing tristique risus nec feugiat in fermentum. Dui accumsan sit amet nulla facilisi. Eget mauris pharetra et ultrices neque ornare. Egestas sed tempus urna et pharetra pharetra massa. Donec enim diam vulputate ut pharetra sit amet aliquam id. Vitae nunc sed velit dignissim sodales ut eu sem.
