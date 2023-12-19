@@ -42,7 +42,8 @@ export const Logo = styled.div`
   padding: 20px;
 
   @media screen and (max-width: 1024px) {
-    width: 100px;
+    width: 180px;
+    padding: 10px 20px;
   }
 `;
 

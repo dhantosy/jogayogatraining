@@ -53,10 +53,10 @@ const headerMenusMobile = [
     parent: 'About',
     linkParent: '/about'
   },
-  // {
-  //   parent: 'Blog',
-  //   linkParent: '/blog'
-  // },
+  {
+    parent: 'Blog',
+    linkParent: '/blog'
+  },
   {
     parent: 'FAQs',
     linkParent: '/faqs'

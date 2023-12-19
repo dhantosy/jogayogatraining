@@ -30,11 +30,15 @@ export const Menu = styled.menu`
   gap: 40px;
 
   .apply-btn {
-    padding: 8px 25px;
     font-weight: 600;
     border-radius: 20px;
     background-color: ${theme.colors.pinkMain};
     color: ${theme.colors.backgroundMint};
+
+    > a {
+      padding: 8px 25px;
+      display: inline-block;
+    }
   }
 
   @media screen and (max-width: 1024px) {
@@ -42,7 +46,10 @@ export const Menu = styled.menu`
 
     .apply-btn {
       font-size: 13px;
-      padding: 5px 15px;
+      
+      > a {
+        padding: 5px 15px;
+      }
     }
   }
 `;
