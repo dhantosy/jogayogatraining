@@ -33,7 +33,7 @@ export default function Meditation() {
           </div>
           <ImageWrapper>
             <Image
-              src='/assets/images/gallery/training-12.jpg'
+              src='/assets/images/gallery/excursion-1.jpg'
               alt='yoga teacher training activity'
               sizes={`100vw, 33vw`}
               fill

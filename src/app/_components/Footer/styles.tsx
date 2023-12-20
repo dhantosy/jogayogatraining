@@ -19,11 +19,28 @@ export const Navigation = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
+
+  .featured {
+    margin: 0 0 50px;
+    font-size: 16px;
+
+    > div {
+
+      &:first-child {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+  }
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 50px;
 
+    .featured {
+      margin: 0;
+    }
   }
 `;
 
@@ -49,7 +66,7 @@ export const Logo = styled.div`
 
 export const Copyright = styled.div`
   font-size: 14px;
-  margin-top: 100px;
+  margin-top: 80px;
 `;
 
 export const Address = styled.address`
@@ -61,13 +78,21 @@ export const Address = styled.address`
 
 export const NavRight = styled.div`
   display: flex;
-  gap: 50px;
-  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  > a:first-child {
+    flex: 0 0 200px;
+  }
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
+    gap: 20px;
+
+    > a:first-child {
+      flex: initial;
+    }
   }
 `;
 

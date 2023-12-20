@@ -33,6 +33,10 @@ export default function CertificationDetail() {
                 </ListItem>
                 <ListItem>
                   <div><IoMdCheckmarkCircle /></div>
+                  <div>Upon completion this certificate enables you to teach anywhere in the world.</div>
+                </ListItem>
+                <ListItem>
+                  <div><IoMdCheckmarkCircle /></div>
                   <div>Taught in: English
                     <div className='text-small'>
                       (Joga Yoga teachers can also speak
@@ -41,7 +45,6 @@ export default function CertificationDetail() {
                   </div>
                 </ListItem>
               </ContentList>
-              <div>Upon completion this certificate enables you to teach anywhere in the world.</div>
             </ContentItem>
           </div>
           <ImageWrapper>

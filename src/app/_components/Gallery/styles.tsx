@@ -27,7 +27,7 @@ export const GalleryHeading = styled.h2`
 `;
 
 export const GallerySubtitle = styled.p`
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 500;
   margin: 0 0 40px;
   white-space: pre-wrap;

@@ -73,12 +73,12 @@ export const Content = styled.div`
 
 export const Desc = styled.div`
   text-align: center;
-  margin: 60px 0 0;
+  margin: 10px 0 0;
   font-size: 18px;
   font-weight: 500;
 
   @media screen and (max-width: 1024px) {
-    margin: 20px 0;
+    margin: 10px 0 0;
   }
 
   @media screen and (max-width: 640px) {
@@ -93,6 +93,6 @@ export const Button = styled.div`
   background-color: ${theme.colors.tealMain};
   color: ${theme.colors.backgroundMint};
   display: inline-block;
-  margin: 20px 0 0;
+  margin: 20px 0;
   text-transform: uppercase;
 `;

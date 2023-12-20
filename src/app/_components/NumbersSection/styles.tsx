@@ -67,7 +67,7 @@ export const Content = styled.div`
     background-color: ${theme.colors.orange};
     position: absolute;
     width: 100%;
-    height: calc(100% + 120px);
+    height: calc(100% + 340px);
     left: 0;
     top: -74px;
     opacity: 0.2;
@@ -87,7 +87,7 @@ export const Content = styled.div`
 
     &:after {
       top: -42px;
-      height: calc(100% + 60px);
+      height: calc(100% + 160px);
     }
   }
 `;
@@ -98,7 +98,7 @@ export const ContentHeading = styled.div`
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   gap: 15px;
 
   > div:first-child {
@@ -141,5 +141,35 @@ export const Icon = styled.div`
   @media screen and (max-width: 640px) {
     width: 30px;
     height: 30px;
+  }
+`;
+
+export const VideoWrapper = styled.div`
+  position: relative;
+  max-width: 640px;
+  margin: 0px auto 0;
+  width: 100%;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 3;
+  
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 240px;
+    margin: 30px 0 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 180px;
+  }
+
+  @media screen and (max-width: 320px) {
+    height: 150px;
   }
 `;
