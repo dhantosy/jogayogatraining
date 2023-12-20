@@ -88,6 +88,12 @@ export default function Footer() {
               </Info>
             </div>
           </NavRight>
+          <div className='featured'>
+            <div>Featured On</div>
+            <div>Honey combers</div>
+            <div>Body Factory Bali</div>
+            <div>Serenity Eco Guesthouse</div>
+          </div>
           <Menu>
             {menu.map(({ title, link }) => {
               return (

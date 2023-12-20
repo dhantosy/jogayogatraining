@@ -4,7 +4,7 @@ import Container from '@/app/_components/Container'
 import { PiCertificateBold } from "react-icons/pi";
 import { GrYoga } from 'react-icons/gr';
 import { FaStar } from 'react-icons/fa6';
-import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon } from './styles'
+import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon, VideoWrapper } from './styles'
 
 export default function NumbersSection() {
   return (
@@ -48,6 +48,9 @@ export default function NumbersSection() {
             </ContentHeading>
           </ContentItem>
         </Content>
+        <VideoWrapper>
+          <iframe src="https://www.youtube.com/embed/EyMeJcJyGKk?si=gYfS4RWeW3e266sv" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+        </VideoWrapper>
       </Container>
     </Section>
   )

@@ -216,7 +216,6 @@ export const SuccessMessage = styled.div`
   }
 `;
 
-
 export const ErrorMessage = styled.div`
   text-align: center;
   color: ${theme.colors.red};

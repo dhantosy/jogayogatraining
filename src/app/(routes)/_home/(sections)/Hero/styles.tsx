@@ -165,4 +165,8 @@ export const ImageWrapper = styled.div`
 export const Logos = styled.div`
   display: flex;
   gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `;

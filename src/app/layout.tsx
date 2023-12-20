@@ -2,13 +2,15 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 
+import { Suspense } from 'react'
 import type { Metadata } from 'next'
 import Script from 'next/script';
 import NextTopLoader from 'nextjs-toploader'
 import { DM_Sans, Poppins } from 'next/font/google'
 import Footer from '@/app/_components/Footer'
 import Header from '@/app/_components/Header'
-import WhatsappWidget from '@/app//_components/WhatsappWidget'
+import { FacebookPixelEvents } from '@/app/_components/FacebookPixel';
+import WhatsappWidget from '@/app/_components/WhatsappWidget'
 import Providers from '@/providers/Providers'
 import { urlsList } from '@/data/urls';
 
@@ -84,6 +86,9 @@ export default function RootLayout({
           <Footer />
           <WhatsappWidget />
         </Providers>
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
       </body>
     </html>
   )

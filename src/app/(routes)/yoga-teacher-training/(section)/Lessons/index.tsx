@@ -3,19 +3,19 @@
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import LessonItem from './LessonItem';
-import { Section, Subtitle, ImageWrapper, Content, ContentSub, Icon, List, Title } from './styles'
+import { Section, Subtitle, ImageWrapper, Content, ContentSub, Title } from './styles'
 
 const dataLearn = [
   {
     title: 'Techniques, Training and Practice',
     list: [
-      'Asanas',
-      'Pranayamas',
+      'Asana Fundamentals',
+      'Pranayamas - Breathing Techniques',
       'Kriyas',
-      'Chanting',
-      'Mantra',
-      'Meditation',
-      'Traditional yoga techniques',
+      'Chanting & Music',
+      'Sutras & Mantras from India',
+      'Learn meditation from a monk',
+      'Traditional yoga practises & techniques',
       'Analytical training in how to teach',
       'Guided practice of the techniques themselves'
     ],
@@ -68,7 +68,7 @@ export default function Lessons() {
           <div>
             <ImageWrapper>
               <Image
-                src='/assets/images/gallery/training-10.jpg'
+                src='/assets/images/gallery/training-12.jpg'
                 alt='YTT'
                 sizes={`100vw, 33vw`}
                 width='600'

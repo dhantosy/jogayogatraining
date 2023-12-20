@@ -113,21 +113,13 @@ export const ContentItem = styled.div`
 
 export const ImageWrapper = styled.div`
   position: relative;
-  z-index: 3;
   border-radius: 20px;
   overflow: hidden;
-  padding-bottom: 50%;
-  width: 640px;
-
-  &.bottom {
-    padding-bottom: 50%;
-  }
+  padding-bottom: 63%;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 1024px) {
-    &.bottom {
-      padding-bottom: 70%;
-      width: 100%;
-    }
+    
   }
 `;
 

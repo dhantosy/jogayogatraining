@@ -107,6 +107,10 @@ export const ContentHeading = styled.div`
 export const ContentItem = styled.div`
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -151,7 +155,7 @@ export const Gallery = styled.div`
       background-color: ${theme.colors.orange};
       position: absolute;
       width: 125%;
-      height: 360px;
+      height: 410px;
       left: 0;
       top: 64px;
       opacity: 0.2;
@@ -174,7 +178,11 @@ export const Gallery = styled.div`
     }
 
     .text {
-      padding: 0 20px;
+      padding: 0;
+
+      &:after {
+        top: 22px;
+      }
     }
 
     & > .flex > .text:after {
@@ -184,10 +192,11 @@ export const Gallery = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    padding: 20px 0 50px;
+    padding: 20px 0 0;
 
     & > .flex > .text:after {
       height: 96%;
+      top: 50px;
     }
   }
 `;
@@ -206,4 +215,8 @@ export const More = styled.div`
   justify-content: center;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width: 1024px) {
+    margin: 30px 20px 0;
+  }
 `;
