@@ -49,7 +49,7 @@ export default function NumbersSection() {
           </ContentItem>
         </Content>
         <VideoWrapper>
-          <iframe src="https://www.youtube.com/embed/EyMeJcJyGKk?si=gYfS4RWeW3e266sv" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
+          <iframe src="https://www.youtube.com/embed/EyMeJcJyGKk?si=gYfS4RWeW3e266sv" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
         </VideoWrapper>
       </Container>
     </Section>

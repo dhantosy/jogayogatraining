@@ -15,15 +15,22 @@ export default function Investment() {
         <Content>
           <div className='left'>
             <div>
-              <div className='price-original'>USD 2399</div>
-              <div className='price-discount'>USD 1999</div>
+              <div className='price-original'>USD 3450</div>
+              <div className='price-discount'>USD 2999</div>
             </div>
             <div className='left-content'>
-              <div>Last Minute Discounted Price - 15% OFF!</div>
               <div className='left-date'>
                 <div className='left-date-item'>
                   <div className='left-date-icon'><HiCalendarDays /></div>
-                  <div>8 January 2024</div>
+                  <div>8 - 29 January 2024</div>
+                </div>
+                <div className='left-date-item'>
+                  <div className='left-date-icon'><HiCalendarDays /></div>
+                  <div>4 - 25 March 2024</div>
+                </div>
+                <div className='left-date-item'>
+                  <div className='left-date-icon'><HiCalendarDays /></div>
+                  <div>6 - 27 May 2024</div>
                 </div>
               </div>
             </div>

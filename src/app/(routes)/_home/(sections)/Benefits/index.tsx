@@ -1,6 +1,8 @@
 'use client'
 
 import Image from 'next/image'
+import { Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, Content, ContentHeading, ContentItem, ImageWrapper } from './styles'
 
@@ -14,16 +16,36 @@ export default function Benefits() {
         </Heading>
         <Content>
           <ContentItem>
-            <ImageWrapper>
-              <Image
-                src='/assets/images/decision-food.jpg'
-                alt='YTT'
-                sizes={`100vw, 33vw`}
-                fill
-                style={{ objectFit: 'cover' }}
-                className='image'
-              />
-            </ImageWrapper>
+            <Swiper
+              loop
+              navigation={true}
+              modules={[Navigation]}
+            >
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/food-1.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/food-2.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+            </Swiper>
             <ContentHeading>
               <div className='number'>01.</div>
               <div>Organic Food</div>
@@ -31,16 +53,48 @@ export default function Benefits() {
             <div>We take pride in our healthy and delicious vegetarian & vegan menu. We make sure the food is sourced locally and organically grown. The food is based on an alkaline diet, staying away from most acidic food. We also cater for gluten free & lacto free diets upon request.</div>
           </ContentItem>
           <ContentItem>
-            <ImageWrapper>
-              <Image
-                src='/assets/images/decision-teachers.jpg'
-                alt='YTT'
-                sizes={`100vw, 33vw`}
-                fill
-                style={{ objectFit: 'cover' }}
-                className='image'
-              />
-            </ImageWrapper>
+            <Swiper
+              loop
+              navigation={true}
+              modules={[Navigation]}
+            >
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/teacher-1.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/teacher-2.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/teacher-3.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+            </Swiper>
             <ContentHeading>
               <div className='number'>02.</div>
               <div>Best Certified Yoga Teachers</div>
@@ -48,16 +102,48 @@ export default function Benefits() {
             <div>All teachers have their 200 RYT or 500 RYT from Yoga Alliance and have devoted their life to the practise of yoga on and off the mat. This training is catered for people of all levels who want to deepen their knowledge of yoga. Please see our 5 star reviews.</div>
           </ContentItem>
           <ContentItem>
-            <ImageWrapper>
-              <Image
-                src='/assets/images/decision-place.jpg'
-                alt='YTT'
-                sizes={`100vw, 33vw`}
-                fill
-                style={{ objectFit: 'cover' }}
-                className='image'
-              />
-            </ImageWrapper>
+            <Swiper
+              loop
+              navigation={true}
+              modules={[Navigation]}
+            >
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/location-1.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/location-2.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/location-3.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+            </Swiper>
             <ContentHeading>
               <div className='number'>03.</div>
               <div>Stunning Location</div>

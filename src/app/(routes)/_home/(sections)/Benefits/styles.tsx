@@ -85,7 +85,7 @@ export const Content = styled.div`
 `;
 
 export const ContentHeading = styled.div`
-  margin: 0 0 20px;
+  margin: -40px 0 20px;
   font-size: 20px;
   font-weight: 500;
   position: relative;
@@ -98,7 +98,7 @@ export const ContentHeading = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    margin: 0 0 10px;
+    margin: -40px 0 10px;
 
     &.subheading {
       font-size: 28px;
@@ -109,6 +109,7 @@ export const ContentHeading = styled.div`
 export const ContentItem = styled.div`
   position: relative;
   z-index: 2;
+  overflow: hidden;
 `;
 
 export const ImageWrapper = styled.div`

@@ -19,8 +19,10 @@ export default function HeroDetailPage() {
                 Apply Now
               </Button>
             </Link>
-            <div>2 spots left available on the upcoming training</div>
-            <div>Jan 8th - Jan 29th, 2024</div>
+            <div>Upcoming YTT Dates:</div>
+            <div>8 - 29 January, 2024</div>
+            <div>4 - 25 March, 2024</div>
+            <div>6 - 27 May, 2024</div>
           </Desc>
         </Container>
       </Heading>

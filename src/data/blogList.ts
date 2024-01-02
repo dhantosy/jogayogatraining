@@ -1,14 +1,14 @@
 export const blogList = [
   {
-    link: '/blog/blog-1',
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit scelerisque in dictum non. Mattis enim ut tellus elementum sagittis vitae. Enim facilisis gravida neque convallis a cras semper. Fames ac turpis egestas maecenas pharetra convallis. Enim eu turpis egestas pretium aenean pharetra. Amet consectetur adipiscing elit pellentesque habitant morbi tristique.',
-    photo: '/assets/images/gallery/training-12.jpg',
+    link: '/blog/nurturing-souls-through-yoga-teaching',
+    title: 'Nurturing Souls Through Yoga Teaching',
+    description: 'Welcome to the sacred space where the mat unfolds into a canvas for transformation. Teaching yoga is not just an occupation, it`s a soulful art. In this blog, we explore the intricacies of guiding others through the practice of yoga, from creating a nurturing environment to fostering mindfulness and self-discovery.',
+    photo: '/assets/images/blog/soul-yoga.jpg',
   },
   {
-    link: '/blog/blog-2',
-    title: 'Quis auctor elit sed vulputate mi. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat.',
-    description: 'Nec ultrices dui sapien eget mi. Etiam non quam lacus suspendisse faucibus. Amet consectetur adipiscing elit ut aliquam. Eget gravida cum sociis natoque penatibus et magnis. Dignissim convallis aenean et tortor at risus. Eget felis eget nunc lobortis mattis aliquam. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Eu lobortis elementum nibh tellus molestie nunc non. Nisl suscipit adipiscing bibendum est ultricies integer. Vel pretium lectus quam id leo in vitae turpis massa.',
-    photo: '/assets/images/gallery/gallery-5.jpg',
+    link: '/blog/a-guide-to-yoga-teacher-training',
+    title: 'A Guide To Yoga Teacher Training',
+    description: 'Welcome to the transformative journey of Yoga Teacher Training (YTT). Whether you`re an avid yogi seeking a deeper practice or aspiring to guide others on their yogic journey, YTT is an enriching experience that goes beyond the physical postures.In this blog, we`ll explore the profound aspects of yoga teacher training, from self-discovery to teaching methodologies, and how it can shape not just your practice but your entire outlook on life.',
+    photo: '/assets/images/blog/guide-yoga.jpg',
   },
 ];

@@ -58,6 +58,7 @@ export const Content = styled.div`
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 
   & > div {
     flex: 1;

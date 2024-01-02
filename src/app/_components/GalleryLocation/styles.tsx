@@ -62,7 +62,7 @@ export const Subtitle = styled.p`
 export const Content = styled.div`
   display: flex;
   gap: 40px;
-  margin: 60px 0 0;
+  margin: 40px 0 20px;
   position: relative;
   z-index: 2;
   padding: 0 40px 0;
@@ -73,8 +73,10 @@ export const Content = styled.div`
     flex: 0 0 calc(50% - 40px);
   }
 
-  @media screen and (max-width: 1024px) {
-    flex-wrap: nowrap;
+  @media screen and (max-width: 640px) {
+    padding: 0;
+    gap: 15px;
+    /* flex-wrap: nowrap;
     gap: 10px;
     margin: 0;
     padding: 40px 20px;
@@ -83,6 +85,10 @@ export const Content = styled.div`
 
     & > div {
       flex: 0 0 200px;
+    } */
+
+    & > div {
+      flex: 0 0 calc(50% - 15px);
     }
   }
 `;
@@ -116,11 +122,7 @@ export const ImageWrapper = styled.div`
   overflow: hidden;
   padding-bottom: 25%;
 
-  @media screen and (max-width: 1024px) {
-    padding-bottom: 25%;
-  }
-
   @media screen and (max-width: 640px) {
-    padding-bottom: 55%;
+    border-radius: 10px;
   }
 `;

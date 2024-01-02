@@ -230,6 +230,23 @@ const styles = css`
     background-color: #20C7CA;
   }
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-size: 30px;
+    color: #fff;
+    background-color: #DF928E;
+    margin-top: -40px;
+    height: 27px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
   .my-20 {
     margin-top: 20px;
     margin-bottom: 20px;

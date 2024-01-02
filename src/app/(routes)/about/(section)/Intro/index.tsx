@@ -56,7 +56,7 @@ export default function Intro() {
             </ImageWrapper>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/gallery/training-3.jpg'
+                src='/assets/images/gallery/training-13.jpg'
                 alt=''
                 sizes={`100vw, 33vw`}
                 fill
@@ -65,7 +65,7 @@ export default function Intro() {
             </ImageWrapper>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/gallery/training-11.jpg'
+                src='/assets/images/course-1.jpg'
                 alt=''
                 sizes={`100vw, 33vw`}
                 fill

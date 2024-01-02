@@ -116,9 +116,9 @@ export default function FormFields({ onStepChange }: Props) {
                             required: true
                           })}>
                             <option value='' disabled>Please Select Date</option>
-                            <option value='january'>8 January, 2024</option>
-                            <option value='march'>4 March, 2024</option>
-                            <option value='may'>6 May, 2024</option>
+                            <option value='january'>8 January -  29 January, 2024</option>
+                            <option value='march'>4 March - 25 March, 2024</option>
+                            <option value='may'>6 May - 27 May, 2024</option>
                           </select>
                         </div>
                       </fieldset>
