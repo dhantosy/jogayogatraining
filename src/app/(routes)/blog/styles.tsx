@@ -92,6 +92,11 @@ export const BlogWrapper = styled.div`
 
   @media screen and (max-width: 1024px) {
     margin: 100px 0 20px;
+    flex-direction: column;
+
+    > div {
+      flex: 1;
+    }
   }
 `;
 
@@ -104,7 +109,7 @@ export const BottomSection = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    margin: 0 auto;
+    margin: 0;
   }
 `;
 
