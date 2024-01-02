@@ -2,8 +2,8 @@ const trainings = [
   {
     photo: '/assets/images/course-1.jpg',
     title: '200 Hour Yoga Teacher Training',
-    startDate: '8 January, 2024',
-    endDate: '28 January, 2024',
+    startDate: '8 - 29 January, 2024',
+    endDate: '29 January, 2024',
     location: 'Joga Yoga, Canggu, Bali',
     link: '/yoga-teacher-training',
     list: [
@@ -20,8 +20,8 @@ const trainings = [
   {
     photo: '/assets/images/course-2.jpg',
     title: '200 Hour Yoga Teacher Training',
-    startDate: '4 March, 2024',
-    endDate: '27 March, 2024',
+    startDate: '4 - 25 March, 2024',
+    endDate: '25 March, 2024',
     location: 'Joga Yoga, Canggu, Bali',
     link: '/yoga-teacher-training',
     list: [
@@ -37,8 +37,8 @@ const trainings = [
   {
     photo: '/assets/images/course-3.jpg',
     title: '200 Hour Yoga Teacher Training',
-    startDate: '6 May, 2024',
-    endDate: '24 May, 2024',
+    startDate: '6 - 27 May, 2024',
+    endDate: '27 May, 2024',
     location: 'Joga Yoga, Canggu, Bali',
     link: '/yoga-teacher-training',
     list: [

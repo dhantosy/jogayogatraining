@@ -19,7 +19,7 @@ export default function Experience() {
           </div>
           <ImageWrapper className='bottom'>
             <Image
-              src='/assets/images/gallery/gallery-4.jpg'
+              src='/assets/images/gallery/gallery-3.jpg'
               alt='yoga teacher training activity'
               sizes={`100vw, 33vw`}
               fill

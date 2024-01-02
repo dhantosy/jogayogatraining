@@ -3,27 +3,22 @@ import theme from '@/styles/theme'
 
 export const Article = styled.article`
   position: relative;
-  margin: 180px 0 100px;
-
-  @media screen and (max-width: 1024px) {
-    margin: 100px 0 20px;
-  }
 `;
 
 export const ImageWrapper = styled.div`
   position: relative;
-  padding-bottom: 40%;
+  padding-bottom: 50%;
   border-radius: 20px;
   overflow: hidden;
 
   @media screen and (max-width: 1024px) {
-    padding-bottom: 60%;
+    padding-bottom: 75%;
   }
 `;
 
 export const Content = styled.div`
   max-width: 900px;
-  margin: 60px auto;
+  margin: 0 auto;
 
   @media screen and (max-width: 1024px) {
     max-width: 100%;
@@ -32,7 +27,7 @@ export const Content = styled.div`
 `;
 
 export const ContentTitle = styled.h1`
-  font-size: 40px;
+  font-size: 36px;
   color: ${theme.colors.pinkMain};
   font-weight: 600;
 
@@ -55,19 +50,21 @@ export const ContentBody = styled.div`
 
 export const ContentParagraph = styled.p`
 
+  a {
+    color: ${theme.colors.tealMain};
+    text-decoration: underline;
+  }
 `;
 
 export const Related = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 30px;
   padding: 20px;
 
-  & > div {
-    flex: 0 0 calc(33.33% - 30px);
-  }
-
   @media screen and (max-width: 1024px) {
     overflow-x: scroll;
+    flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
     flex-wrap: nowrap;
@@ -80,9 +77,31 @@ export const Related = styled.div`
   }
 `;
 
+export const BlogWrapper = styled.div`
+  display: flex;
+  gap: 50px;
+  margin: 180px 0 60px;
+
+  > div {
+    flex: 1 1 calc(40% - 50px);
+
+    &:first-child {
+      flex: 1 1 calc(60% - 50px);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 100px 0 20px;
+  }
+`;
+
 export const BottomSection = styled.div`
-  margin: 0 auto 40px;
-  max-width: 1180px;
+  margin: 0 auto;
+  
+  > div {
+    position: sticky;
+    top: 100px;
+  }
 
   @media screen and (max-width: 1024px) {
     margin: 0 auto;
@@ -91,11 +110,22 @@ export const BottomSection = styled.div`
 
 export const RelatedTitle = styled.h3`
   font-size: 28px;
-  margin: 0 0 20px;
+  margin: 0;
   font-weight: 600;
   padding: 0 20px 0;
 
   @media screen and (max-width: 1024px) {
     margin: 20px 0 0;
+  }
+`;
+
+export const ContentSubtitle = styled.span`
+  font-size: 20px;
+  display: block;
+  font-weight: 600;
+  margin: 15px 0 5px;
+
+  @media screen and (max-width: 1024px) {
+    
   }
 `;

@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import { Suspense } from 'react'
 import type { Metadata } from 'next'
@@ -62,14 +63,14 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
         <meta name="google-site-verification" content="NiuqzthYGioELx2oOFPHEA65gIMercuMX6Q3mSm13ek" />
 
-        <Script src='https://www.googletagmanager.com/gtag/js?id=G-LH4FWQ4D99' strategy='afterInteractive' />
+        <Script src='https://www.googletagmanager.com/gtag/js?id=G-2BYQGXQFSM' strategy='afterInteractive' />
         <Script id='google-analytics' strategy='afterInteractive'>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-LH4FWQ4D99');
+          gtag('config', 'G-2BYQGXQFSM');
         `}
         </Script>
 

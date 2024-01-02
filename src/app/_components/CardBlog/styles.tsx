@@ -28,7 +28,7 @@ export const CardTop = styled.div`
 `;
 
 export const CardContent = styled.div`
-  padding: 30px 40px;
+  padding: 30px 20px;
   background-color: ${theme.colors.backgroundPink};
   
   @media screen and (max-width: 768px) {
@@ -43,7 +43,6 @@ export const CardTitle = styled.h3`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 56px;
 `;
 
 export const CardDescription = styled.p`
