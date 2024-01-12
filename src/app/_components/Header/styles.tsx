@@ -123,6 +123,7 @@ export const MobileMenuContainer = styled.div<{ $isMobileMenuActive?: boolean; }
   border-right: 15px solid ${theme.colors.white};
   border-left: 15px solid ${theme.colors.white};
   border-bottom: 15px solid ${theme.colors.white};
+  overflow-y: auto;
 
   @media screen and (max-width: 1024px) {
     top: 63px;
@@ -145,6 +146,7 @@ export const TextMobile = styled.div`
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+    padding: 10px 0;
 
     &:hover {
       font-size: 18px;

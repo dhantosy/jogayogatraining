@@ -26,33 +26,7 @@ import {
   CopyrightSocialItem
 } from './styles'
 import Container from '../Container'
-
-const menu = [
-  {
-    title: 'Yoga Teacher Training',
-    link: '/yoga-teacher-training',
-  },
-  {
-    title: 'Teachers',
-    link: '/teachers',
-  },
-  {
-    title: 'Testimonials',
-    link: '/testimonials',
-  },
-  {
-    title: 'About',
-    link: '/about',
-  },
-  {
-    title: 'Blog',
-    link: '/blog',
-  },
-  {
-    title: 'FAQs',
-    link: '/faqs',
-  },
-];
+import { menusMain } from '@/data/menus'
 
 export default function Footer() {
   return (
@@ -95,7 +69,7 @@ export default function Footer() {
             <div>Serenity Eco Guesthouse</div>
           </div>
           <Menu>
-            {menu.map(({ title, link }) => {
+            {menusMain.map(({ title, link }) => {
               return (
                 <div key={title}>
                   <Link href={link}>

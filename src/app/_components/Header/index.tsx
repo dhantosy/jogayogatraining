@@ -20,48 +20,7 @@ import {
 } from './styles'
 import { useScrollPosition}  from '@/hooks/useScrollPosition';
 import MobileMenuItem from './MobileMenuItem'
-
-const headerMenus = [
-  {
-    parent: 'Yoga Teacher Training',
-    linkParent: '/yoga-teacher-training'
-  },
-  {
-    parent: 'About',
-    linkParent: '/about'
-  },
-  // {
-  //   parent: 'Blog',
-  //   linkParent: '/blog'
-  // }
-];
-
-const headerMenusMobile = [
-  {
-    parent: 'Yoga Teacher Training',
-    linkParent: '/yoga-teacher-training'
-  },
-  {
-    parent: 'Teachers',
-    linkParent: '/teachers'
-  },
-  {
-    parent: 'Testimonials',
-    linkParent: '/testimonials'
-  },
-  {
-    parent: 'About',
-    linkParent: '/about'
-  },
-  {
-    parent: 'Blog',
-    linkParent: '/blog'
-  },
-  {
-    parent: 'FAQs',
-    linkParent: '/faqs'
-  }
-]
+import { menusMain, menusHeader } from '@/data/menus'
 
 export default function Header() {
   const pathname = usePathname();
@@ -88,14 +47,14 @@ export default function Header() {
   function HeaderItemMenuDesktop() {
     return (
       <Menu>
-        {headerMenus.map(({ parent, linkParent }) => {
+        {menusHeader.map(({ title, link }) => {
 
           return (
-            <React.Fragment key={parent}>
+            <React.Fragment key={title}>
               <MenuItem className='desktop'>
                 <Text>
-                  <Link href={linkParent}>
-                    {parent}
+                  <Link href={link}>
+                    {title}
                   </Link>
                 </Text>
               </MenuItem>
@@ -118,13 +77,13 @@ export default function Header() {
 
     return (
       <div>
-        {headerMenusMobile.map(({ parent, linkParent }) => {
+        {menusMain.map(({ title, link }) => {
 
           return (
-            <React.Fragment key={parent}>
+            <React.Fragment key={title}>
               <MobileMenuItem
-                parent={parent}
-                linkParent={linkParent}
+                parent={title}
+                linkParent={link}
               />
             </React.Fragment>
           )
