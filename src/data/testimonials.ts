@@ -80,3 +80,22 @@ export const data = [
     date: 'March 2022',
   },
 ];
+
+export const retreat = [
+  {
+    name: 'Patrick Di Battista',
+    photo: '/assets/images/reviews/review-patrick.jpg',
+    country: 'Austria',
+    job: 'School Teacher',
+    title: 'Joe and the crew from Joga Yoga simply changed our lives. This may sounds big but the time we spend with them was just perfect for all of us. We are a family of 5 and Joe kindly offered to bring our kids to all the classes and activities. So not only we could learn and grow but also our kids learned from Joe, Dada, Puspa, the other teachers and people we met there.',
+    date: 'February 2022',
+  },
+  {
+    name: 'Laura Poelman',
+    photo: '/assets/images/reviews/review-laura.jpg',
+    country: 'Austria',
+    job: 'Freelancer',
+    title: 'A life changing event in the most beautiful setting. It was exactly what I needed in this time of my life. I’m incredibly grateful for everything I have learned. A big warm thank you from the bottom of my heart to all the teachers and everyone who made it possible, and to my fellow yogi/classmates. Each and every one of you brought something different to the table and I loved it! Would recommend 100% and do it again!',
+    date: 'March 2022',
+  },
+]
