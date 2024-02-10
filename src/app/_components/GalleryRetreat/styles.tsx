@@ -3,7 +3,7 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   position: relative;
-  margin: 0 0 80px;
+  margin: 0 0 40px;
 
   &:after {
     content: '';
