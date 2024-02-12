@@ -119,7 +119,7 @@ export const Content = styled.div`
       left: 0;
       top: initial;
       right: initial;
-      bottom: -30px;
+      bottom: initial;
     }
   }
 `;
@@ -153,6 +153,10 @@ export const ContentItem = styled.div`
   @media screen and (max-width: 1024px) {
     padding: 0 20px;
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 0;
+  }
 `;
 
 export const ContentList = styled.section`
@@ -160,6 +164,11 @@ export const ContentList = styled.section`
   gap: 20px;
   margin: 30px 0;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 `;
 
 export const ListItem = styled.div`
@@ -182,6 +191,7 @@ export const ListItem = styled.div`
 
   @media screen and (max-width: 640px) {
     align-items: flex-start;
+    gap: 10px;
 
     > div:first-child {
       top: 3px;

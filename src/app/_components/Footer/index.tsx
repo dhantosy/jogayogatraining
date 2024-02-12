@@ -9,7 +9,6 @@ import {
   FaInstagram,
   FaFacebookSquare,
   FaYoutube,
-  FaTwitter,
 } from 'react-icons/fa'
 import {
   Navigation,
@@ -58,7 +57,7 @@ export default function Footer() {
               </Info>
               <Info>
                 <InfoIcon><FaPhoneAlt /></InfoIcon>
-                <a href='tel:+6282235386290'>+62 822 3538 6290</a>
+                <a href='tel:+6281339850195'>+6281339850195</a>
               </Info>
             </div>
           </NavRight>
@@ -103,7 +102,7 @@ export default function Footer() {
               </CopyrightSocialItem>
             </a>
           </CopyrightSocial>
-          Joga Yoga Training © 2023. All Rights Reserved.
+          Joga Yoga Training © 2024. All Rights Reserved.
         </Copyright>
       </Container>
     </FooterNav>

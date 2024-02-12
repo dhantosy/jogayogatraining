@@ -82,9 +82,9 @@ export const Content = styled.div`
 export const Title = styled.h2`
   font-size: 80px;
   font-weight: 600;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   color: ${theme.colors.pinkMain};
-  line-height: 1;
+  line-height: 1.1;
   font-family: var(--font-poppins), sans-serif;
 
   @media screen and (max-width: 1024px) {

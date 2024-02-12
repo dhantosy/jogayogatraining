@@ -23,11 +23,7 @@ export default function YogaRetreat() {
       <Graduation />
       <Investment />
       <Teachers />
-      <div style={{
-        marginTop: '60px'
-      }}>
-        <GalleryRetreat />
-      </div>
+      <GalleryRetreat />
       <Reviews />
       <CTABottom />
     </>

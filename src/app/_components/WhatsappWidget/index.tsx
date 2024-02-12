@@ -59,7 +59,7 @@ export default function WhatsappWidget() {
         </ChatBody>
         <ChatFooter>
           <Link
-            href='https://api.whatsapp.com/send/?phone=6282235386290'
+            href='https://api.whatsapp.com/send/?phone=6281339850195'
             target='_blank'
             rel='noopener noreferrer'
           >
