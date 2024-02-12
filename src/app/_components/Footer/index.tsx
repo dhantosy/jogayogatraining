@@ -9,7 +9,6 @@ import {
   FaInstagram,
   FaFacebookSquare,
   FaYoutube,
-  FaTwitter,
 } from 'react-icons/fa'
 import {
   Navigation,
@@ -26,33 +25,7 @@ import {
   CopyrightSocialItem
 } from './styles'
 import Container from '../Container'
-
-const menu = [
-  {
-    title: 'Yoga Teacher Training',
-    link: '/yoga-teacher-training',
-  },
-  {
-    title: 'Teachers',
-    link: '/teachers',
-  },
-  {
-    title: 'Testimonials',
-    link: '/testimonials',
-  },
-  {
-    title: 'About',
-    link: '/about',
-  },
-  {
-    title: 'Blog',
-    link: '/blog',
-  },
-  {
-    title: 'FAQs',
-    link: '/faqs',
-  },
-];
+import { menusMain } from '@/data/menus'
 
 export default function Footer() {
   return (
@@ -84,7 +57,7 @@ export default function Footer() {
               </Info>
               <Info>
                 <InfoIcon><FaPhoneAlt /></InfoIcon>
-                <a href='tel:+6282235386290'>+62 822 3538 6290</a>
+                <a href='tel:+6281339850195'>+6281339850195</a>
               </Info>
             </div>
           </NavRight>
@@ -95,7 +68,7 @@ export default function Footer() {
             <div>Serenity Eco Guesthouse</div>
           </div>
           <Menu>
-            {menu.map(({ title, link }) => {
+            {menusMain.map(({ title, link }) => {
               return (
                 <div key={title}>
                   <Link href={link}>
@@ -129,7 +102,7 @@ export default function Footer() {
               </CopyrightSocialItem>
             </a>
           </CopyrightSocial>
-          Joga Yoga Training © 2023. All Rights Reserved.
+          Joga Yoga Training © 2024. All Rights Reserved.
         </Copyright>
       </Container>
     </FooterNav>

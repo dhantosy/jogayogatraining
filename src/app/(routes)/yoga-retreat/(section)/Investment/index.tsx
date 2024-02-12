@@ -23,7 +23,7 @@ export default function Investment() {
                 <div>Early Bird Price - 15% OFF</div>
                 <div className='left-date-item'>
                   <div className='left-date-icon'><HiCalendarDays /></div>
-                  <div>March 28th - April 1st, 2024</div>
+                  <div>March 28th - April 2nd, 2024</div>
                 </div>
               </div>
             </div>

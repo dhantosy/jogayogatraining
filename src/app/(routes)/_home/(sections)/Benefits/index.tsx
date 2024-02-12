@@ -36,7 +36,55 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
+                    src='/assets/images/decision-food.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
                     src='/assets/images/food-2.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/food-3.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/food-4.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/food-5.jpg'
                     alt='YTT'
                     sizes={`100vw, 33vw`}
                     fill
@@ -94,6 +142,18 @@ export default function Benefits() {
                   />
                 </ImageWrapper>
               </SwiperSlide>
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/decision-teachers.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
             </Swiper>
             <ContentHeading>
               <div className='number'>02.</div>
@@ -107,6 +167,18 @@ export default function Benefits() {
               navigation={true}
               modules={[Navigation]}
             >
+              <SwiperSlide>
+                <ImageWrapper>
+                  <Image
+                    src='/assets/images/decision-place.jpg'
+                    alt='YTT'
+                    sizes={`100vw, 33vw`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    className='image'
+                  />
+                </ImageWrapper>
+              </SwiperSlide>
               <SwiperSlide>
                 <ImageWrapper>
                   <Image

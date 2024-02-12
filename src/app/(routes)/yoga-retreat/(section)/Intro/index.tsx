@@ -13,14 +13,14 @@ export default function HeroDetailPage() {
           <Title>MIND - BODY - SOUL</Title>
           <Subtitle>Holistic approach for your wellness in 5 days</Subtitle>
           <Desc>
-            <div>Special Retreat with Joga Yoga in Bali</div>
+            <div>Are You Ready for an Unforgettable Adventure? Special Retreat with Joga Yoga in Bali</div>
             <Link href='/register'>
               <Button>
                 Apply Now
               </Button>
             </Link>
             <div>4 spots left available on the next retreat</div>
-            <div>March 28th - April 1st, 2024</div>
+            <div>March 28th - April 2nd, 2024</div>
           </Desc>
         </Container>
       </Heading>

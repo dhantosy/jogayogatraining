@@ -7,7 +7,6 @@ export const Section = styled.section`
 
   @media screen and (max-width: 768px) {
     padding: 40px 0;
-    margin: 0 0 40px;
   }
 `;
 
@@ -36,9 +35,8 @@ export const Title = styled.h2`
     margin: 0 0 50px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 655px) {
     margin: 0 0 10px;
-    font-size: 24px;
   }
 `;
 
@@ -56,7 +54,7 @@ export const Subtitle = styled.p`
     margin: 25px 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 655px) {
     margin: 0 0 20px;
   }
 `;
@@ -72,7 +70,7 @@ export const ImageWrapper = styled.div`
     display: block;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 655px) {
     display: inline-flex;
   }
 `;
@@ -103,7 +101,6 @@ export const Content = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-
     &:after {
       height: 350px;
       right: 0;
@@ -111,27 +108,18 @@ export const Content = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 655px) {
     & {
       flex-direction: column;
-    }
-
-    & > div {
-      flex: 1;
-
-      &:first-child {
-        flex: 1;
-        padding-bottom: 40%;
-      }
     }
       
     &:after {
       width: 100%;
-      height: 103%;
+      height: 450px;
       left: 0;
-      top: 0;
+      top: initial;
       right: initial;
-      bottom: 0;
+      bottom: initial;
     }
   }
 `;
@@ -148,7 +136,7 @@ export const ContentSub = styled.div`
     padding-right: 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 655px) {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -166,7 +154,7 @@ export const ContentItem = styled.div`
     padding: 0 20px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     padding: 0;
   }
 `;
@@ -177,9 +165,9 @@ export const ContentList = styled.section`
   margin: 30px 0;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     flex-direction: column;
-    gap: 0;
+    gap: 10px;
   }
 `;
 
@@ -203,6 +191,7 @@ export const ListItem = styled.div`
 
   @media screen and (max-width: 640px) {
     align-items: flex-start;
+    gap: 10px;
 
     > div:first-child {
       top: 3px;

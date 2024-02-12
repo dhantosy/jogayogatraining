@@ -25,8 +25,8 @@ export default function Hero() {
       <Container>
         <Content>
           <Subtitle>JOGA YOGA TRAINING</Subtitle>
-          <Title>Ignite Your Inner Light and Inspire the World</Title>
-          <Subtitle className='bottom'>Yoga Alliance Certified Teacher Training Course in Bali</Subtitle>
+          <Title>Joga Yoga Teacher Training, Certified Yoga School in Bali</Title>
+          {/* <Subtitle className='bottom'>Yoga Alliance Certified Teacher Training Course in Bali</Subtitle> */}
           <Logos>
             <ImageWrapper>
               <Image

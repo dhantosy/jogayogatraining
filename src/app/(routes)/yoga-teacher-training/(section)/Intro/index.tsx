@@ -20,9 +20,8 @@ export default function HeroDetailPage() {
               </Button>
             </Link>
             <div>Upcoming YTT Dates:</div>
-            <div>8 - 29 January, 2024</div>
-            <div>4 - 25 March, 2024</div>
             <div>6 - 27 May, 2024</div>
+            <div>August, 2024</div>
           </Desc>
         </Container>
       </Heading>

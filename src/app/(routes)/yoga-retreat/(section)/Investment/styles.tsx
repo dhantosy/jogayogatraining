@@ -3,7 +3,7 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   position: relative;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 
   &:after {
     content: '';
@@ -19,7 +19,7 @@ export const Section = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    margin: 0 0 40px;
+    margin: 0 0 20px;
   }
 `;
 

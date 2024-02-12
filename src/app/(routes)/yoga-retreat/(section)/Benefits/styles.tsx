@@ -82,13 +82,6 @@ export const Content = styled.div`
       top: -85px;
     }
   }
-
-  @media screen and (max-width: 768px) {
-    &:after {
-      top: -35px;
-      height: calc(100% + 60px);
-    }
-  }
 `;
 
 export const ContentHeading = styled.div`
