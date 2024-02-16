@@ -45,7 +45,7 @@ export default function WhatsappWidget() {
               />
             </ImageWrapper>
             <div>
-              <div className='name'>Audy</div>
+              <div className='name'>Joga Yoga Team</div>
               <div>Typically replies in a few hours</div>
             </div>
           </ChatTitle>

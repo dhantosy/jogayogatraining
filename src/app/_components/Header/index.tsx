@@ -99,12 +99,12 @@ export default function Header() {
           <Link href='/'>
             <Logo $active={active}>
               <Image
-                src="/assets/images/logo-horizontal.png"
+                src="/assets/images/logo-new.png"
                 alt="Joga yoga training"
                 sizes={`100vw, 33vw`}
                 priority
-                width='200'
-                height='90'
+                width='130'
+                height='130'
               />
             </Logo>
           </Link>

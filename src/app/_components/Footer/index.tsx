@@ -36,11 +36,11 @@ export default function Footer() {
             <Link href='/'>
               <Logo>
                 <Image
-                  src='/assets/images/logo-horizontal.png'
+                  src='/assets/images/logo-new.png'
                   alt='Joga Yoga'
                   sizes={`100vw, 33vw`}
-                  width='200'
-                  height='90'
+                  width='150'
+                  height='150'
                 />
               </Logo>
             </Link>

@@ -14,7 +14,7 @@ export default function Trainings() {
     <Section>
       <Container>
         <Heading>
-          <Title>Our Available Trainings</Title>
+          <Title>Our Upcoming Trainings</Title>
           <Subtitle>Pick Your Date & Register Now</Subtitle>
         </Heading>
         <Content>

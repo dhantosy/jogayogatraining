@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
-import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos } from './styles'
+import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos, TitleSmall } from './styles'
 
 export default function Hero() {
   return (
@@ -24,9 +24,11 @@ export default function Hero() {
       </VideoWrapper>
       <Container>
         <Content>
-          <Subtitle>JOGA YOGA TRAINING</Subtitle>
-          <Title>Joga Yoga Teacher Training, Certified Yoga School in Bali</Title>
-          {/* <Subtitle className='bottom'>Yoga Alliance Certified Teacher Training Course in Bali</Subtitle> */}
+          {/* <Subtitle>JOGA YOGA TRAINING</Subtitle> */}
+          <Title>Joga Yoga Training</Title>
+          <TitleSmall>A Health Conscious
+            Community in Bali</TitleSmall>
+          <Subtitle className='bottom'>Yoga alliance certified teacher training and retreats</Subtitle>
           <Logos>
             <ImageWrapper>
               <Image

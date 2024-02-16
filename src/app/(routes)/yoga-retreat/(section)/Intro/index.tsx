@@ -27,7 +27,7 @@ export default function HeroDetailPage() {
       <Content>
         <ImageWrapper>
           <Image
-            src='/assets/images/yoga-retreat.jpg'
+            src='/assets/images/gallery/training-9.jpg'
             alt='Joga Yoga Training - Yoga Retreat'
             sizes={`100vw, 33vw`}
             fill
