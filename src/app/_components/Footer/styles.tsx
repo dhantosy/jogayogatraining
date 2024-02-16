@@ -53,14 +53,14 @@ export const Menu = styled.menu`
 
 export const Logo = styled.div`
   display: flex;
-  border-radius: 20px;
+  border-radius: 50%;
+  background-color: #fff;
   overflow: hidden;
-  background-color: ${theme.colors.white};
-  padding: 20px;
+  padding: 1px;
+  width: 150px;
+  height: 150px;
 
   @media screen and (max-width: 1024px) {
-    width: 180px;
-    padding: 10px 20px;
   }
 `;
 

@@ -36,7 +36,7 @@ const trainings = [
   {
     photo: '/assets/images/course-1.jpg',
     title: '200 Hour Yoga Teacher Training',
-    startDate: 'August, 2024',
+    startDate: '1 - 22 July, 2024',
     endDate: 'August, 2024',
     location: 'Joga Yoga, Canggu, Bali',
     link: '/yoga-teacher-training',

@@ -76,7 +76,7 @@ export const Logo = styled.div<{ $active?: boolean; }>`
   z-index: 10;
 
   @media screen and (max-width: 1024px) {
-    width: 100px;
+    width: 90px;
     left: 20px;
   }
 `;

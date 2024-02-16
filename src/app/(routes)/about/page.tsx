@@ -12,7 +12,7 @@ export default function About() {
     <>
       <HeroDetailPage
         title='About Us'
-        backgroundImage='/assets/images/about-us.jpg'
+        backgroundImage='/assets/images/about-us-1.jpg'
       />
       <Intro />
       <Community />

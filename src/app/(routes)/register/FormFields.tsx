@@ -118,7 +118,8 @@ export default function FormFields({ onStepChange }: Props) {
                             <option value='' disabled>Please Select Date</option>
                             <option value='yoga_retreat_march'>Yoga Retreat - 28 March -  2 April, 2024</option>
                             <option value='may'>YTT - 6 May - 27 May, 2024</option>
-                            <option value='august'>YTT - August, 2024</option>
+                            <option value='august'>YTT - 1 - 22 July, 2024</option>
+                            <option value='november'>YTT - 4 - 25 November, 2024</option>
                           </select>
                         </div>
                       </fieldset>

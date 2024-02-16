@@ -82,13 +82,29 @@ export const Content = styled.div`
 export const Title = styled.h2`
   font-size: 80px;
   font-weight: 600;
-  margin: 0 0 40px;
+  margin: 0 0 15px;
   color: ${theme.colors.pinkMain};
   line-height: 1.1;
   font-family: var(--font-poppins), sans-serif;
 
   @media screen and (max-width: 1024px) {
     font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 5px;
+  }
+`;
+
+export const TitleSmall = styled.h2`
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: ${theme.colors.pinkMain};
+  line-height: 1.1;
+  font-size: 40px;
+  font-family: var(--font-poppins), sans-serif;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
     line-height: 1.2;
     margin: 0 0 5px;
   }
