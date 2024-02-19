@@ -43,7 +43,9 @@ export const Subtitle = styled.h2`
 
   @media screen and (max-width: 640px) {
     font-size: 18px;
-    margin: 10px 0 0;
+    margin: 10px auto 0;
+    max-width: 300px;
+    line-height: 1.3;
   }
 `;
 
@@ -83,6 +85,10 @@ export const Desc = styled.div`
 
   @media screen and (max-width: 640px) {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    max-width: 
   }
 `;
 

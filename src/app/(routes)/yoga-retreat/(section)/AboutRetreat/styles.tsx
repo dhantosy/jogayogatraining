@@ -2,11 +2,13 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 80px 0;
+  padding: 0 0 80px;
   position: relative;
+  margin: -70px 0 0;
 
-  @media screen and (max-width: 768px) {
-    padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 40px 0 60px;
+    margin: 0;
   }
 `;
 

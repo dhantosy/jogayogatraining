@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import theme from '@/styles/theme'
 
 export const Section = styled.section`
-  padding: 80px 0;
+  padding: 100px 0 0;
   position: relative;
 
-  @media screen and (max-width: 768px) {
-    padding: 40px 0;
+  @media screen and (max-width: 1024px) {
+    padding: 60px 0 30px;
   }
 `;
 
@@ -14,40 +14,38 @@ export const Heading = styled.div`
   margin-bottom: 40px;
   position: relative;
   z-index: 2;
+  padding: 0 30px;
+  max-width: 730px;
 
   @media screen and (max-width: 1024px) {
     margin-bottom: 20px;
+    padding: 0;
   }
 `;
 
 export const Title = styled.h2`
-  max-width: 620px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
   margin: 0;
   color: ${theme.colors.pinkMain};
   position: relative;
   z-index: 2;
+  line-height: 1.2;
 
   @media screen and (max-width: 1024px) {
     font-size: 28px;
-    max-width: 100%;
-    line-height: 1.2;
-    margin: 0 0 50px;
   }
 
-  @media screen and (max-width: 655px) {
-    margin: 0 0 10px;
-    font-size: 25px;
+  @media screen and (max-width: 480px) {
+    font-size: 24px;
   }
 `;
 
 export const Subtitle = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1.4;
-  max-width: 520px;
-  margin: 40px 0 0;
+  line-height: 1.5;
+  margin: 0;
   position: relative;
   z-index: 2;
 
@@ -55,41 +53,33 @@ export const Subtitle = styled.p`
     font-size: 16px;
     margin: 25px 0;
   }
-
-  @media screen and (max-width: 655px) {
-    margin: 0 0 20px;
-  }
 `;
 
 export const ImageWrapper = styled.div`
-  display: inline-flex;
-  position: relative;
-  z-index: 2;
   border-radius: 20px;
   overflow: hidden;
+  padding-bottom: 120%;
+  position: relative;
 
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-
-  @media screen and (max-width: 655px) {
-    display: inline-flex;
+  @media screen and (max-width: 1024px) {
+    /* padding-bottom: 50%; */
   }
 `;
 
 export const Content = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 60px;
   position: relative;
+  padding: 0 30px;
 
   &:after {
     content: '';
     background-color: ${theme.colors.orange};
     position: absolute;
-    width: 80%;
-    height: 450px;
-    right: 0;
-    top: -130px;
+    width: 88%;
+    height: 300px;
+    left: 0;
+    top: -55px;
     opacity: 0.2;
     border-radius: 20px;
   }
@@ -98,45 +88,43 @@ export const Content = styled.div`
     flex: 1;
   }
 
+  & > .image {
+    flex: 0 0 450px;
+    top: -150px;
+  }
+
+  .link {
+    display: inline-block;
+  }
+
   @media screen and (max-width: 1024px) {
-    &:after {
-      height: 350px;
-      right: 0;
-      top: -25px;
-    }
-  }
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
 
-  @media screen and (max-width: 655px) {
-    & {
-      flex-direction: column;
-    }
-      
-    &:after {
+    & > .image {
+      flex: 0 0 100%;
       width: 100%;
-      height: 450px;
-      left: 0;
+      top: 0;
+    }
+
+    &:after {
       top: initial;
-      right: initial;
-      bottom: -30px;
+      width: 100%;
+      height: 100%;
+      bottom: 0px;
     }
   }
-`;
-
-export const Icon = styled.div`
-  width: 20px;
 `;
 
 export const ContentSub = styled.div`
   position: relative;
   z-index: 2;
+  max-width: 620px;
 
   @media screen and (max-width: 1024px) {
-    padding-right: 20px;
-  }
-
-  @media screen and (max-width: 655px) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 0 20px 30px;
+    max-width: 100%;
   }
 `;
 
@@ -150,18 +138,15 @@ export const More = styled.div`
   background-color: ${theme.colors.tealMain};
   border-radius: 20px;
   margin: 30px 0 0;
-  max-width: 150px;
+  max-width: 320px;
   justify-content: center;
-`;
 
-export const Logos = styled.div`
-  display: flex;
-  gap: 20px;
-  margin: 30px 0 0;
+  @media screen and (max-width: 1024px) {
+    margin: 0;
+  }
 
-  > div {
-    width: 63px;
-    height: 63px;
-    position: relative;
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 `;

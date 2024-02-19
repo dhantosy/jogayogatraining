@@ -46,7 +46,7 @@ export const Title = styled.h2`
   line-height: 1.2;
 
   @media screen and (max-width: 1024px) {
-    font-size: 28px;
+    font-size: 30px;
   }
 `;
 

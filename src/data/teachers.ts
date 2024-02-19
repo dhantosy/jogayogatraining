@@ -42,3 +42,31 @@ export const teachers = [
     description: 'Marylene is a Yoga Alliance RYT-500 yoga teacher and PhD graduate in Osteopathy who specializes in Yoga anatomy, therapeutic applications of yoga, corporate yoga and yoga for depression, stress, and anxiety. Coming from a corporate career, she perfectly understands how everyday demands can get in the way of a healthy body and healthy mind. Passionate about the human body, she makes it her mission to teach her student the safe alignments and benefits of yoga.',
   },
 ];
+
+export const teachersRetreat = [
+  {
+    photo: '/assets/images/teachers/teacher-dakota.png',
+    name: 'Dakota Mays',
+    title: 'Yoga Teacher',
+    description: 'A yoga instructor, movement specialist, handstand coach, and retreat facilitator. Join Dakota on an epic holistic yoga retreat with Joga Yoga Training!',
+  },
+  {
+    photo: '/assets/images/teachers/teacher-joseph.png',
+    name: 'Joseph',
+    title: 'Yoga Teacher',
+    description: 'Joe has devoted the last ten years studying yoga and music, discovering that yoga can help to realize true happiness, inner peace, and strength in day-to-day life. He studied music and Chinese medicine while balancing this with yoga practice to maintain a clear mind and reduce stress. He then traveled to India and Bali to study yoga and has now made Bali his home. Exploring the art and science of yoga has given him enthusiasm for sharing the knowledge and physical practice to benefit all of us.',
+  },
+  {
+    photo: '/assets/images/teachers/teacher-dada.png',
+    name: 'Dada',
+    title: 'Balinese Monk',
+    description: 'Dada has been a practising monk for over 20 years. He was searching for spiritual answers since childhood and finally introduced to holistic practices of yoga pose, meditation, and Tantra and Rajadhiraja Yoga in 1993. In 1999, after several years working in the corporate world, Dada’s strong vision for spirituality led him to a major turning point in his life when he decided to leave his job and immerse himself fully in a devoted path of yoga. He went on to pursue training in India as a sannyasin, senior yoga monk.',
+  },
+  {
+    photo: '/assets/images/teachers/teacher-nina.png',
+    name: 'Nina',
+    title: 'Yoga Teacher',
+    description: 'Nina always has a great deal of passion for living a healthier and a peaceful life and her pursuits for happiness guided her to learn and teach yoga. Nina believes yoga can play an instrumental role in revolutionizing one’s life for the better and wants to use her knowledge for the sole purpose of helping others. Her primary objective is to ignite the process of deep personal transformation by sharing her knowledge and understanding of the art and science of traditional yoga.',
+  },
+];
+
