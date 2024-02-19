@@ -72,6 +72,10 @@ export const ContentHeading = styled.div`
   z-index: 2;
 
   @media screen and (max-width: 1024px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 360px) {
     font-size: 28px;
   }
 `;

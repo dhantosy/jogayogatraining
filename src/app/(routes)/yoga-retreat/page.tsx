@@ -8,14 +8,16 @@ import Lessons from './(section)/Lessons'
 import Graduation from './(section)/Graduation'
 import Investment from './(section)/Investment'
 import CTABottom from './(section)/CTABottom'
+import Teachers from './(section)/Teachers'
 import Reviews from './(section)/Reviews'
+import SpecialGuest from './(section)/SpecialGuest'
 import GalleryRetreat from '@/app/_components/GalleryRetreat'
-import Teachers from '../_home/(sections)/Teachers'
 
 export default function YogaRetreat() {
   return (
     <>
       <Intro />
+      <SpecialGuest />
       <AboutRetreat />
       <Benefits />
       <Schedule />

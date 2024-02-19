@@ -28,7 +28,7 @@ export const Title = styled.h2`
   color: ${theme.colors.pinkMain};
 
   @media screen and (max-width: 1024px) {
-    font-size: 28px;
+    font-size: 31px;
     line-height: 1.2;
   }
 `;

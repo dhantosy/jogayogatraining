@@ -26,11 +26,7 @@ export const Title = styled.h1`
   line-height: 1.2;
 
   @media screen and (max-width: 1024px) {
-    font-size: 28px;
-  }
-
-  @media screen and (max-width: 640px) {
-    font-size: 24px;
+    font-size: 30px;
   }
 `;
 
@@ -42,7 +38,7 @@ export const Subtitle = styled.h2`
   color: ${theme.colors.pinkMain};
 
   @media screen and (max-width: 640px) {
-    font-size: 18px;
+    font-size: 22px;
     margin: 10px 0 0;
   }
 `;
@@ -82,7 +78,7 @@ export const Desc = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
