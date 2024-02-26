@@ -12,15 +12,15 @@ export default function SpecialGuest() {
     <Section>
       <Container>
         <Heading>
-          <Title>Dokota Mays and Joga Yoga present Bio-Hacking Holistic Yoga Retreat</Title>
+          <Title>Dakota Mays and Joga Yoga present Bio-Hacking Holistic Yoga Retreat</Title>
         </Heading>
         <Content>
           <ContentSub>
             <Subtitle><strong>Dakota Mays</strong> - yoga instructor, movement specialist, handstand coach, and retreat facilitator. Join Dakota and Joseph on this epic holistic yoga retreat! Limited places available.</Subtitle>
             <div className='link'>
-              <a href='https://www.tiktok.com/@maysyoga_' target='_blank'>
+              <a href='https://www.instagram.com/maysyoga/' target='_blank'>
                 <More>
-                  <div>Check Dakota Mays` TikTok</div>
+                  <div>Check out Dakota Here</div>
                 </More>
               </a>
             </div>

@@ -2,25 +2,39 @@
 
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
-import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos, TitleSmall } from './styles'
+import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos, TitleSmall, HeroMobile } from './styles'
+import useScreenSize from '@/hooks/useScreenSize'
 
 export default function Hero() {
+  const screenSize = useScreenSize();
+
   return (
     <Section id='intro-banner'>
       <VideoWrapper>
-        <video
-          autoPlay
-          loop
-          muted
-          webkit-playsinline='true'
-          playsInline
-          poster='/assets/images/video-poster.jpg'
-        >
-          <source
-            src='/assets/images/video-joga-yoga.mp4'
-            type='video/mp4'
+        {screenSize.width > 768 && (
+          <video
+            autoPlay
+            loop
+            muted
+            poster='/assets/images/video-poster.jpg'
+          >
+            <source
+              src='/assets/images/video-joga-yoga.mp4'
+              type='video/mp4'
+            />
+          </video>
+        )}
+        <HeroMobile>
+          <Image
+            src='/assets/images/joga-yoga.jpg'
+            alt=''
+            sizes={`100vw, 33vw`}
+            fill
+            style={{ objectFit: 'cover' }}
+            className='hero'
+            priority
           />
-        </video>
+        </HeroMobile>
       </VideoWrapper>
       <Container>
         <Content>

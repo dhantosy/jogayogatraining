@@ -52,6 +52,12 @@ export const VideoWrapper = styled.div`
       border-radius: 20px 20px 0 0;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    & > video {
+      display: none;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -184,5 +190,18 @@ export const Logos = styled.div`
 
   @media screen and (max-width: 1024px) {
     display: none;
+  }
+`;
+
+export const HeroMobile = styled.div`
+  display: none;
+  padding-bottom: 50%;
+  width: 100%;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    display: block;
   }
 `;

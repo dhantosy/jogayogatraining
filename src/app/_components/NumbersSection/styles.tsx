@@ -90,6 +90,13 @@ export const Content = styled.div`
       height: calc(100% + 160px);
     }
   }
+
+  @media screen and (max-width: 768px) {
+
+    &:after {
+      height: calc(100% + 60px);
+    }
+  }
 `;
 
 export const ContentHeading = styled.div`
@@ -160,16 +167,7 @@ export const VideoWrapper = styled.div`
     left: 0;
   }
 
-  @media screen and (max-width: 640px) {
-    height: 240px;
-    margin: 30px 0 0;
-  }
-
-  @media screen and (max-width: 375px) {
-    height: 180px;
-  }
-
-  @media screen and (max-width: 320px) {
-    height: 150px;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
