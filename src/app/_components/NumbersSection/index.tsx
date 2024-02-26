@@ -5,10 +5,10 @@ import { PiCertificateBold } from "react-icons/pi";
 import { GrYoga } from 'react-icons/gr';
 import { FaStar } from 'react-icons/fa6';
 import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon, VideoWrapper } from './styles'
-import useScreenSize from '@/hooks/useScreenSize'
+import useWindowSize from '@/hooks/useWindowSize'
 
 export default function NumbersSection() {
-  const screenSize = useScreenSize();
+  const size = useWindowSize();
 
   return (
     <Section>
@@ -51,7 +51,7 @@ export default function NumbersSection() {
             </ContentHeading>
           </ContentItem>
         </Content>
-        {screenSize.width > 768 && (
+        {size.width > 768 && (
           <VideoWrapper>
             <iframe src="https://www.youtube.com/embed/EyMeJcJyGKk?si=gYfS4RWeW3e266sv" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
           </VideoWrapper>

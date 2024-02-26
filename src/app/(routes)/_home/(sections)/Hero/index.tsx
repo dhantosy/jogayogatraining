@@ -3,15 +3,15 @@
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos, TitleSmall, HeroMobile } from './styles'
-import useScreenSize from '@/hooks/useScreenSize'
+import useWindowSize from '@/hooks/useWindowSize'
 
 export default function Hero() {
-  const screenSize = useScreenSize();
+  const size = useWindowSize();
 
   return (
     <Section id='intro-banner'>
       <VideoWrapper>
-        {screenSize.width > 768 && (
+        {size.width > 768 && (
           <video
             autoPlay
             loop
