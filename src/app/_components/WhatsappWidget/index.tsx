@@ -36,7 +36,7 @@ export default function WhatsappWidget() {
           <ChatTitle>
             <ImageWrapper>
               <Image
-                src='/assets/images/logo.png'
+                src='/assets/images/teachers/teacher-joseph.jpg'
                 alt=''
                 sizes={`100vw, 33vw`}
                 fill
