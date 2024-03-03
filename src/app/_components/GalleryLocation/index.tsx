@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, Content, ImageWrapper } from './styles'
@@ -16,7 +16,8 @@ export default function GalleryLocation() {
         </Heading>
         <Swiper
           loop
-          modules={[Autoplay, Pagination]}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           pagination={{ clickable: true }}
         >
           <SwiperSlide>
