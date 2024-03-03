@@ -76,6 +76,7 @@ export const Content = styled.div`
   @media screen and (max-width: 640px) {
     padding: 0;
     gap: 15px;
+    margin: 20px 0;
     /* flex-wrap: nowrap;
     gap: 10px;
     margin: 0;

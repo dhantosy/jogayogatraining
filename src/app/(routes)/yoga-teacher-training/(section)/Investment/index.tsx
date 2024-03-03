@@ -16,9 +16,10 @@ export default function Investment() {
           <div className='left'>
             <div>
               <div className='price-original'>USD 3450</div>
-              <div className='price-discount'>USD 2999</div>
+              <div className='price-discount'>USD 2450</div>
             </div>
             <div className='left-content'>
+              <div>USD 1000 Early Bird Discount</div>
               <div className='left-date'>
                 <div className='left-date-item'>
                   <div className='left-date-icon'><HiCalendarDays /></div>
@@ -43,7 +44,7 @@ export default function Investment() {
             <div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Tuition with experienced teachers in an intimate small-class setting</div>
+                <div>Tuition with experienced teachers in a small-class setting</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
@@ -56,6 +57,10 @@ export default function Investment() {
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
                 <div>Excursions around Bali</div>
+              </div>
+              <div className='list'>
+                <div className='icon'><HiCheck /></div>
+                <div>Lifetime subscription to our online student portal</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>

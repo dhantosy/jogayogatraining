@@ -66,6 +66,10 @@ export default function Footer() {
             <div>Honey combers</div>
             <div>Body Factory Bali</div>
             <div>Serenity Eco Guesthouse</div>
+            <div><a href='https://www.yovada.com/yoga-teacher-training.html' target='_blank'>Yovada</a></div>
+            <div>Coastline Yoga</div>
+            <div>Women Fitness</div>
+            <div>Yoga Alliance</div>
           </div>
           <Menu>
             {menusMain.map(({ title, link }) => {
