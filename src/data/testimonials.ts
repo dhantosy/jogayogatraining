@@ -12,7 +12,7 @@ export const data = [
     photo: '/assets/images/reviews/review-beth.jpg',
     country: 'United Kingdom',
     job: 'Paediatric Nurse',
-    title: 'One of the most important and life changing experiences ofr my life, my training with Joga Yoga exceed my highest expectations. Learning from experts, within their differning fields of yoga and philosophy, with an intimate group in a stunning setting, created such joy, connection and growth for me on a mental, physical and spiritual level. My training has given me the knowledge, skills and confidence to begin teaching private and group classes.Thank you!',
+    title: 'One of the most important and life changing experiences for my life, my training with Joga Yoga exceed my highest expectations. Learning from experts, within their differning fields of yoga and philosophy, with an intimate group in a stunning setting, created such joy, connection and growth for me on a mental, physical and spiritual level. My training has given me the knowledge, skills and confidence to begin teaching private and group classes.Thank you!',
     date: 'April 2022',
   },
   {

@@ -3,6 +3,7 @@ import theme from '@/styles/theme'
 
 export const ProfileCardItem = styled.div`
   position: relative;
+  padding: 0 30px;
 `;
 
 export const ContentHeading = styled.div`

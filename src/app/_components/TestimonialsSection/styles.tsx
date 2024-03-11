@@ -146,3 +146,7 @@ export const ImageWrapperInner = styled.div`
   z-index: 2;
 `;
 
+export const SlideItem = styled.div`
+  padding: 0 50px;
+`;
+

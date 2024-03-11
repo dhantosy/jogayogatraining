@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { HiArrowLongRight, HiMiniXCircle } from "react-icons/hi2"
 import Container from '@/app/_components/Container'
@@ -43,16 +43,21 @@ export default function Teachers() {
         <Content>
           <Swiper
             loop
-            modules={[Autoplay, Pagination]}
+            navigation
+            modules={[Autoplay, Pagination, Navigation]}
             pagination={{ clickable: true }}
             breakpoints={{
               1: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              480: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 0,
               },
               768: {
                 slidesPerView: 4,
-                spaceBetween: 50,
+                spaceBetween: 0,
               },
             }}
             slidesPerView={2}
