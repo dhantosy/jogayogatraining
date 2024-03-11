@@ -57,7 +57,7 @@ export default function Footer() {
               </Info>
               <Info>
                 <InfoIcon><FaPhoneAlt /></InfoIcon>
-                <a href='tel:+6281339850195'>+6281339850195</a>
+                <a href='tel:+6282235386290'>+6282235386290</a>
               </Info>
             </div>
           </NavRight>
