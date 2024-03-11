@@ -22,7 +22,7 @@ export default function FormFields({ onStepChange }: Props) {
                       <HiCheckCircle />
                     </div>
                     <div className='title'>Payment Successful!</div>
-                    <div>Thank you for your deposit payment, we will secure your spot for your upcoming Yoga Teacher Training with us. We are looking forward to your arrival!</div>
+                    <div>Thank you for your deposit payment, we will secure your spot with us. We are looking forward to your arrival!</div>
                   </SuccessMessage>
                 </FormState>
               </div>
