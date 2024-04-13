@@ -28,15 +28,6 @@ const nextConfig = {
       },
     ];
   },
-  async redirects() {
-    return [
-      {
-        source: '/fun-diving',
-        destination: '/',
-        permanent: true,
-      },
-    ];
-  },
   poweredByHeader: false,
 }
 

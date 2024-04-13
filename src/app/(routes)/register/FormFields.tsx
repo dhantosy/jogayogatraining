@@ -116,10 +116,11 @@ export default function FormFields({ onStepChange }: Props) {
                             required: true
                           })}>
                             <option value='' disabled>Please Select Date</option>
-                            <option value='yoga_retreat_march'>Yoga Retreat - 28 March -  2 April, 2024</option>
-                            <option value='may'>YTT - 6 May - 27 May, 2024</option>
-                            <option value='august'>YTT - 1 - 22 July, 2024</option>
-                            <option value='november'>YTT - 4 - 25 November, 2024</option>
+                            <option value='100hour'>100-Hour Yoga Teachers Training</option>
+                            <option value='may'>200-Hour Yoga Teachers Training, 6 May - 27 May, 2024</option>
+                            <option value='july_100hr'>100-Hour Yoga Teachers Training, 1 - 22 July, 2024</option>
+                            <option value='july_200hr'>200-Hour Yoga Teachers Training, 1 - 22 July, 2024</option>
+                            <option value='november'>200-Hour Yoga Teachers Training, 4 - 25 November, 2024</option>
                           </select>
                         </div>
                       </fieldset>
