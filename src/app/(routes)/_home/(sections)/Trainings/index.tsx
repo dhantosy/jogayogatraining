@@ -41,12 +41,14 @@ export default function Trainings() {
                   <ContentHeading>
                     <ContentTitle>{title}</ContentTitle>
                     <div>
-                      <ContentDetail>
-                        <Icon>
-                          <HiCalendarDays />
-                        </Icon>
-                        <div>{startDate}</div>
-                      </ContentDetail>
+                      {startDate && (
+                        <ContentDetail>
+                         <Icon>
+                            <HiCalendarDays />
+                          </Icon>
+                          <div>{startDate}</div>
+                        </ContentDetail>
+                      )}
                       <ContentDetail>
                         <Icon>
                           <HiMapPin />

@@ -11,7 +11,7 @@ export default function HeroDetailPage() {
       <Heading>
         <Container>
           <Title>Become A Certified Yoga Teacher</Title>
-          <Subtitle>200 Hours Yoga Teacher Training in Bali</Subtitle>
+          <Subtitle>100 and 200 Hours Yoga Teacher Training in Bali</Subtitle>
           <Desc>
             <div>Start the new year with a new journey in 21 days</div>
             <Link href='/register'>

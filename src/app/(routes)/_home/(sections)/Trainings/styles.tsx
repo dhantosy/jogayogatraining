@@ -99,6 +99,8 @@ export const ContentItem = styled.div`
   border-radius: 20px;
   overflow: hidden;
   flex: 1;
+  flex-direction: column;
+  display: flex;
 `;
 
 export const ContentBody = styled.div`
@@ -106,6 +108,7 @@ export const ContentBody = styled.div`
   border-bottom: 15px solid ${theme.colors.backgroundPink};
   border-left: 15px solid ${theme.colors.backgroundPink};
   border-right: 15px solid ${theme.colors.backgroundPink};
+  height: 100%;
 `;
 
 export const Icon = styled.div`

@@ -4,10 +4,6 @@ export const menusMain = [
     link: '/yoga-teacher-training',
   },
   {
-    title: 'Yoga Retreat',
-    link: '/yoga-retreat',
-  },
-  {
     title: 'Teachers',
     link: '/teachers',
   },
@@ -33,10 +29,6 @@ export const menusHeader = [
   {
     title: 'Yoga Teacher Training',
     link: '/yoga-teacher-training'
-  },
-  {
-    title: 'Yoga Retreat',
-    link: '/yoga-retreat',
   },
   {
     title: 'About',
