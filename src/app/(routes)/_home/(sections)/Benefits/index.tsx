@@ -5,6 +5,21 @@ import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, Content, ContentHeading, ContentItem, ImageWrapper } from './styles'
+import ImageFoodOne from 'public/assets/images/food-1.jpg';
+import ImageFoodTwo from 'public/assets/images/decision-food.jpg';
+import ImageFoodThree from 'public/assets/images/food-2.jpg';
+import ImageFoodFour from 'public/assets/images/food-3.jpg';
+import ImageFoodFive from 'public/assets/images/food-4.jpg';
+import ImageFoodSix from 'public/assets/images/food-5.jpg';
+import ImageTeacherOne from 'public/assets/images/teacher-1.jpg';
+import ImageTeacherTwo from 'public/assets/images/teacher-2.jpg';
+import ImageTeacherThree from 'public/assets/images/teacher-3.jpg';
+import ImageTeacherFour from 'public/assets/images/decision-teachers.jpg';
+import ImagePlaceOne from 'public/assets/images/decision-place.jpg';
+import ImagePlaceTwo from 'public/assets/images/location-1.jpg';
+import ImagePlaceThree from 'public/assets/images/location-2.jpg';
+import ImagePlaceFour from 'public/assets/images/location-3.jpg';
+
 
 export default function Benefits() {
   return (
@@ -24,7 +39,9 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/food-1.jpg'
+                    src={ImageFoodOne.src}
+                    placeholder='blur'
+                    blurDataURL={ImageFoodOne.blurDataURL}
                     alt='YTT'
                     sizes={`100vw, 33vw`}
                     fill
@@ -36,8 +53,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/decision-food.jpg'
+                    src={ImageFoodTwo.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageFoodTwo.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -48,8 +67,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/food-2.jpg'
+                    src={ImageFoodThree.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageFoodThree.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -60,8 +81,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/food-3.jpg'
+                    src={ImageFoodFour.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageFoodFour.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -72,8 +95,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/food-4.jpg'
+                    src={ImageFoodFive.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageFoodFive.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -84,8 +109,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/food-5.jpg'
+                    src={ImageFoodSix.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageFoodSix.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -109,8 +136,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/teacher-1.jpg'
+                    src={ImageTeacherOne.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageTeacherOne.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -121,8 +150,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/teacher-2.jpg'
+                    src={ImageTeacherTwo.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageTeacherTwo.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -133,8 +164,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/teacher-3.jpg'
+                    src={ImageTeacherThree.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageTeacherThree.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -145,8 +178,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/decision-teachers.jpg'
+                    src={ImageTeacherFour.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImageTeacherFour.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -170,8 +205,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/decision-place.jpg'
+                    src={ImagePlaceOne.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImagePlaceOne.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -182,8 +219,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/location-1.jpg'
+                    src={ImagePlaceTwo.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImagePlaceTwo.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -194,8 +233,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/location-2.jpg'
+                    src={ImagePlaceThree.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImagePlaceThree.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}
@@ -206,8 +247,10 @@ export default function Benefits() {
               <SwiperSlide>
                 <ImageWrapper>
                   <Image
-                    src='/assets/images/location-3.jpg'
+                    src={ImagePlaceFour.src}
                     alt='YTT'
+                    placeholder='blur'
+                    blurDataURL={ImagePlaceFour.blurDataURL}
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}

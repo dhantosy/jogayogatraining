@@ -179,10 +179,12 @@ export const VideoSection = styled.div`
   margin: 60px 0 100px;
 
   > div {
-    display: flex;
+    /* display: flex;
     gap: 50px;
-    padding: 0 60px;
+    padding: 0 60px; */
     position: relative;
+    /* justify-content: flex-start;
+    flex-wrap: nowrap; */
   }
 
   &:after {
@@ -202,24 +204,23 @@ export const VideoSection = styled.div`
     margin: 30px 0 40px;
 
     > div {
-      overflow-x: scroll;
-      justify-content: flex-start;
       gap: 20px;
-      flex-wrap: nowrap;
       padding: 0 20px;
     }
   }
 `;
 
 export const VideoItem = styled.div`
-  flex: 0 0 235px;
+  /* flex: 0 0 235px; */
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  width: 235px;
-  height: 421px;
+  /* width: 235px;
+  height: 421px; */
   position: relative;
   z-index: 2;
+  padding-bottom: 150%;
+  margin: 0 25px;
 
   > div:after {
     content: '';

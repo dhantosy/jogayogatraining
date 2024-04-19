@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, ImageWrapper, Content, More, ContentSub, Logos } from './styles'
+import ImageCourse from 'public/assets/images/course-3.jpg';
 
 export default function AccreditationSection() {
   return (
@@ -14,7 +15,9 @@ export default function AccreditationSection() {
         <Content>
           <ImageWrapper>
             <Image
-              src='/assets/images/course-3.jpg'
+              src={ImageCourse.src}
+              placeholder='blur'
+              blurDataURL={ImageCourse.blurDataURL}
               alt='YTT'
               sizes={`100vw, 33vw`}
               width='600'

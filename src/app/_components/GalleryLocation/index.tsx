@@ -5,6 +5,14 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Container from '@/app/_components/Container'
 import { Section, Title, Subtitle, Heading, Content, ImageWrapper } from './styles'
+import ImageLocationOne from 'public/assets/images/gallery/location-1.jpg';
+import ImageLocationTwo from 'public/assets/images/gallery/location-2.jpg';
+import ImageLocationThree from 'public/assets/images/gallery/location-3.jpg';
+import ImageLocationFour from 'public/assets/images/gallery/location-4.jpg';
+import ImageLocationFive from 'public/assets/images/gallery/location-5.jpg';
+import ImageLocationSix from 'public/assets/images/gallery/location-6.jpg';
+import ImageLocationSeven from 'public/assets/images/gallery/location-7.jpg';
+import ImageLocationEight from 'public/assets/images/gallery/location-8.jpg';
 
 export default function GalleryLocation() {
   return (
@@ -24,8 +32,10 @@ export default function GalleryLocation() {
             <Content>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-1.jpg'
-                  alt='YTT'
+                  src={ImageLocationOne.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationOne.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -34,8 +44,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-2.jpg'
-                  alt='YTT'
+                  src={ImageLocationTwo.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationTwo.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -44,8 +56,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-3.jpg'
-                  alt='YTT'
+                  src={ImageLocationThree.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationThree.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -54,8 +68,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-4.jpg'
-                  alt='YTT'
+                  src={ImageLocationFour.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationFour.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -68,8 +84,10 @@ export default function GalleryLocation() {
             <Content>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-5.jpg'
-                  alt='YTT'
+                  src={ImageLocationFive.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationFive.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -78,8 +96,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-6.jpg'
-                  alt='YTT'
+                  src={ImageLocationSix.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationSix.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -88,8 +108,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-7.jpg'
-                  alt='YTT'
+                  src={ImageLocationSeven.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationSeven.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}
@@ -98,8 +120,10 @@ export default function GalleryLocation() {
               </ImageWrapper>
               <ImageWrapper>
                 <Image
-                  src='/assets/images/gallery/location-8.jpg'
-                  alt='YTT'
+                  src={ImageLocationEight.src}
+                  placeholder='blur'
+                  blurDataURL={ImageLocationEight.blurDataURL}
+                  alt='Joga Yoga Teachers Training Location'
                   sizes={`100vw, 33vw`}
                   fill
                   style={{ objectFit: 'cover' }}

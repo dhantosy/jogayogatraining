@@ -1,13 +1,14 @@
 import HeroDetailPage from '@/app/_components/HeroDetailPage'
 import Reviews from './(section)/Reviews'
 import TrainingsCallToAction from '@/app/_components/TrainingsCallToAction'
+import ImageTraining from 'public/assets/images/gallery/training-8.jpg'
 
 export default function Testimonials() {
   return (
     <>
       <HeroDetailPage
         title='Our Testimonials'
-        backgroundImage='/assets/images/gallery/training-8.jpg'
+        backgroundImage={ImageTraining}
       />
       <Reviews />
       <TrainingsCallToAction

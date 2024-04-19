@@ -29,8 +29,10 @@ export default function Trainings() {
                 )}
                 <ImageWrapper>
                   <Image
-                    src={photo}
-                    alt=''
+                    src={photo.src}
+                    placeholder='blur'
+                    blurDataURL={photo.blurDataURL}
+                    alt='Yoga Teachers Training Bali Canggu'
                     sizes={`100vw, 33vw`}
                     fill
                     style={{ objectFit: 'cover' }}

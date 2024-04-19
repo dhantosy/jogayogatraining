@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, ContentHeading, ContentItem, ImageWrapper, Gallery, More } from './styles'
+import ImageGallery from 'public/assets/images/gallery/gallery-7.jpg';
 
 export default function Journey() {
   return (
@@ -22,7 +23,9 @@ export default function Journey() {
             </div>
             <ImageWrapper className='bottom'>
               <Image
-                src='/assets/images/gallery/gallery-7.jpg'
+                src={ImageGallery.src}
+                placeholder='blur'
+                blurDataURL={ImageGallery.blurDataURL}
                 alt='YTT'
                 sizes={`100vw, 33vw`}
                 fill

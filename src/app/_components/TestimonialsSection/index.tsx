@@ -48,8 +48,10 @@ export default function TestimonialsSection() {
                       <ImageWrapper>
                         <ImageWrapperInner>
                           <Image
-                            src={photo}
-                            alt=''
+                            src={photo.src}
+                            alt='Graduates Testimonial'
+                            placeholder='blur'
+                            blurDataURL={photo.blurDataURL}
                             sizes={`100vw, 33vw`}
                             fill
                             style={{ objectFit: 'cover' }}

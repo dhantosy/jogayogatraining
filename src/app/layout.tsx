@@ -74,7 +74,7 @@ export default function RootLayout({
         `}
         </Script>
 
-        <Script src="https://www.google.com/recaptcha/api.js" />
+        <Script src="https://www.google.com/recaptcha/api.js" strategy='afterInteractive' />
       </head>
       <body className={`${cinzel.variable} ${poppins.variable}`} suppressHydrationWarning>
         <NextTopLoader

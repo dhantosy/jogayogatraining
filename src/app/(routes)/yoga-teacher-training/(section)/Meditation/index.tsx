@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import Container from '@/app/_components/Container'
 import { ContentHeading, ContentItem, ImageWrapper, Gallery, ContentList, ListItem } from './styles'
+import ImageExcursion from 'public/assets/images/gallery/excursion-1.jpg'
 
 export default function Meditation() {
   return (
@@ -33,7 +34,9 @@ export default function Meditation() {
           </div>
           <ImageWrapper>
             <Image
-              src='/assets/images/gallery/excursion-1.jpg'
+              src={ImageExcursion.src}
+              placeholder='blur'
+              blurDataURL={ImageExcursion.blurDataURL}
               alt='yoga teacher training activity'
               sizes={`100vw, 33vw`}
               fill

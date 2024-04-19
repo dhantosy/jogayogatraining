@@ -3,6 +3,9 @@
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Heading, Section, Subtitle, Title, ImageWrapper, Photos } from './styles'
+import ImageTrainingOne from 'public/assets/images/gallery/training-6.jpg'
+import ImageTrainingTwo from 'public/assets/images/gallery/training-13.jpg'
+import ImageTrainingThree from 'public/assets/images/course-1.jpg'
 
 export default function Graduation() {
   return (
@@ -15,8 +18,10 @@ export default function Graduation() {
           <Photos>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/gallery/training-6.jpg'
-                alt=''
+                src={ImageTrainingOne.src}
+                alt='Yoga teacher training graduations'
+                placeholder='blur'
+                blurDataURL={ImageTrainingOne.blurDataURL}
                 sizes={`100vw, 33vw`}
                 fill
                 style={{ objectFit: 'cover' }}
@@ -24,8 +29,10 @@ export default function Graduation() {
             </ImageWrapper>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/gallery/training-13.jpg'
-                alt=''
+                src={ImageTrainingTwo.src}
+                alt='Yoga teacher training graduations'
+                placeholder='blur'
+                blurDataURL={ImageTrainingOne.blurDataURL}
                 sizes={`100vw, 33vw`}
                 fill
                 style={{ objectFit: 'cover' }}
@@ -33,8 +40,10 @@ export default function Graduation() {
             </ImageWrapper>
             <ImageWrapper className='photo'>
               <Image
-                src='/assets/images/course-1.jpg'
-                alt=''
+                src={ImageTrainingThree.src}
+                alt='Yoga teacher training graduations'
+                placeholder='blur'
+                blurDataURL={ImageTrainingOne.blurDataURL}
                 sizes={`100vw, 33vw`}
                 fill
                 style={{ objectFit: 'cover' }}
