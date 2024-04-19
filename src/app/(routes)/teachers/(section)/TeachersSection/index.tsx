@@ -22,7 +22,7 @@ export default function TeachersSection() {
           {teachers.map(({ name, description, photo, title }) => {
             return (
               <div key={name}>
-                <ProfileCard name={name} description={description} photo={photo} onProfileClick={() => {}} />
+                <ProfileCard name={name} description={description} photo={photo.src} onProfileClick={() => {}} />
                 <div className='subtitle'>{title}</div>
                 <div className='desc'>{description}</div>
               </div>

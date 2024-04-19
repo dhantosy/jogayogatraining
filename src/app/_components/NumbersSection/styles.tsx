@@ -153,21 +153,36 @@ export const Icon = styled.div`
 
 export const VideoWrapper = styled.div`
   position: relative;
-  max-width: 640px;
-  margin: 0px auto 0;
+  max-width: 540px;
   width: 100%;
-  height: 360px;
   border-radius: 20px;
   overflow: hidden;
   z-index: 3;
+
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+  }
   
-  > iframe {
+  .react-player {
     position: absolute;
     top: 0;
     left: 0;
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+`;
+
+export const VideoContent = styled.div`
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 0;
   }
 `;

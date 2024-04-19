@@ -1,5 +1,5 @@
 {
-  "name": "balistingraydiver",
+  "name": "jogayogatraining",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,6 +20,8 @@
     "react-google-recaptcha": "^3.1.0",
     "react-hook-form": "^7.48.2",
     "react-icons": "^4.11.0",
+    "react-player": "^2.16.0",
+    "sharp": "^0.33.3",
     "styled-components": "^6.1.0",
     "swiper": "^11.0.3"
   },

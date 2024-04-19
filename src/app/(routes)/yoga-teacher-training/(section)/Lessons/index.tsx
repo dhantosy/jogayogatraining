@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import LessonItem from './LessonItem';
 import { Section, Subtitle, ImageWrapper, Content, ContentSub, Title } from './styles'
+import ImageTraining from 'public/assets/images/gallery/training-12.jpg'
 
 const dataLearn = [
   {
@@ -68,8 +69,10 @@ export default function Lessons() {
           <div>
             <ImageWrapper>
               <Image
-                src='/assets/images/gallery/training-12.jpg'
-                alt='YTT'
+                src={ImageTraining.src}
+                alt='YTT Learning'
+                placeholder='blur'
+                blurDataURL={ImageTraining.blurDataURL}
                 sizes={`100vw, 33vw`}
                 width='600'
                 height='441'

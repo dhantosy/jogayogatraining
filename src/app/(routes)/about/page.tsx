@@ -6,13 +6,14 @@ import Experience from './(section)/Experience'
 import TrainingsCallToAction from '@/app/_components/TrainingsCallToAction'
 import TestimonialsSection from '@/app/_components/TestimonialsSection'
 import { galleryAbout } from '@/data/galleries'
+import BannerImage from 'public/assets/images/about-us-1.jpg'
 
 export default function About() {
   return (
     <>
       <HeroDetailPage
         title='About Us'
-        backgroundImage='/assets/images/about-us-1.jpg'
+        backgroundImage={BannerImage}
       />
       <Intro />
       <Community />

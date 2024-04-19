@@ -1,14 +1,14 @@
 'use client'
 
+import dynamic from 'next/dynamic';
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 import Container from '@/app/_components/Container'
 import { PiCertificateBold } from "react-icons/pi";
 import { GrYoga } from 'react-icons/gr';
 import { FaStar } from 'react-icons/fa6';
-import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon, VideoWrapper } from './styles'
-import useWindowSize from '@/hooks/useWindowSize'
+import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon, VideoWrapper, VideoContent } from './styles'
 
 export default function NumbersSection() {
-  const size = useWindowSize();
 
   return (
     <Section>
@@ -51,11 +51,28 @@ export default function NumbersSection() {
             </ContentHeading>
           </ContentItem>
         </Content>
-        {size.width > 768 && (
+        <VideoContent>
           <VideoWrapper>
-            <iframe src="https://www.youtube.com/embed/EyMeJcJyGKk?si=gYfS4RWeW3e266sv" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+            <div className='player-wrapper'>
+              <ReactPlayer
+                url='https://www.youtube.com/watch?v=EyMeJcJyGKk'
+                className='react-player'
+                width='100%'
+                height='100%'
+              />
+            </div>
           </VideoWrapper>
-        )}
+          <VideoWrapper>
+            <div className='player-wrapper'>
+              <ReactPlayer
+                url='https://www.youtube.com/watch?v=IOnxrTPBktY'
+                className='react-player'
+                width='100%'
+                height='100%'
+              />
+            </div>
+          </VideoWrapper>
+        </VideoContent>
       </Container>
     </Section>
   )

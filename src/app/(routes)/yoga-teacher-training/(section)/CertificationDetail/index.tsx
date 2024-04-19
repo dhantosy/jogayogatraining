@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import Container from '@/app/_components/Container'
 import { ContentHeading, ContentItem, ImageWrapper, Section, ContentList, ListItem } from './styles'
+import ImageTraining from 'public/assets/images/gallery/about-3.jpg'
 
 export default function CertificationDetail() {
   return (
@@ -49,7 +50,9 @@ export default function CertificationDetail() {
           </div>
           <ImageWrapper>
             <Image
-              src='/assets/images/gallery/about-3.jpg'
+              src={ImageTraining.src}
+              placeholder='blur'
+              blurDataURL={ImageTraining.blurDataURL}
               alt='yoga teacher training activity'
               sizes={`100vw, 33vw`}
               fill

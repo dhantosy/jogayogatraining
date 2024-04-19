@@ -2,13 +2,14 @@ import HeroDetailPage from '@/app/_components/HeroDetailPage'
 import TestimonialsSection from '@/app/_components/TestimonialsSection'
 import TeachersSection from './(section)/TeachersSection'
 import TrainingsCallToAction from '@/app/_components/TrainingsCallToAction'
+import ImageTeachers from 'public/assets/images/teachers.jpg'
 
 export default function Teachers() {
   return (
     <>
       <HeroDetailPage
         title='Meet Our Teachers'
-        backgroundImage='/assets/images/teachers.jpg'
+        backgroundImage={ImageTeachers}
       />
       <TeachersSection />
       <TrainingsCallToAction

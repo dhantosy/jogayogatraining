@@ -72,7 +72,7 @@ export default function Teachers() {
 
               return (
                 <SwiperSlide key={name}>
-                  <ProfileCard key={name} name={name} description={description} photo={photo} title={title} onProfileClick={handleClick} />
+                  <ProfileCard key={name} name={name} description={description} photo={photo.src} title={title} onProfileClick={handleClick} />
                 </SwiperSlide>
               )
             })}
