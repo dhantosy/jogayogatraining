@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Content, VideoWrapper, Title, Subtitle, ImageWrapper, Logos, TitleSmall, HeroMobile } from './styles'
 import useWindowSize from '@/hooks/useWindowSize'
+import ImageBannerMobile from 'public/assets/images/joga-yoga.jpg'
 
 export default function Hero() {
   const size = useWindowSize();
@@ -26,8 +27,10 @@ export default function Hero() {
         )}
         <HeroMobile>
           <Image
-            src='/assets/images/joga-yoga.jpg'
-            alt=''
+            src={ImageBannerMobile.src}
+            placeholder='blur'
+            blurDataURL={ImageBannerMobile.blurDataURL}
+            alt='Joga Yoga Training Banner Mobil'
             sizes={`100vw, 33vw`}
             fill
             style={{ objectFit: 'cover' }}

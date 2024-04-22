@@ -5,9 +5,11 @@ export const Section = styled.section`
   padding: 80px 0 100px;
   margin: 80px 0 0;
   background-color: ${theme.colors.orange};
-  background-image: url('/assets/images/bg-pattern-3.jpg');
+  /* background-image: url('/assets/images/bg-pattern-3.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
@@ -57,9 +59,9 @@ export const Content = styled.div`
   margin: 60px 0 0;
   position: relative;
   z-index: 2;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 1024px) {
-    flex-direction: column;
     margin: 40px 0 0;
   }
 `;
@@ -98,9 +100,13 @@ export const ContentItem = styled.div`
   background: ${theme.colors.backgroundMint};
   border-radius: 20px;
   overflow: hidden;
-  flex: 1;
+  flex: 0 0 30%;
   flex-direction: column;
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    flex: 0 0 100%;
+  }
 `;
 
 export const ContentBody = styled.div`
@@ -138,6 +144,10 @@ export const ButtonMore = styled.div`
   max-width: 130px;
   text-align: center;
   border-radius: 20px;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0;
+  }
 `;
 
 export const Discount = styled.div`
@@ -158,4 +168,14 @@ export const Discount = styled.div`
     letter-spacing: 1px;
     font-size: 14px;
   }
+`;
+
+export const BgWrapper = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 100px;
+  right: 0;
+  margin: auto;
+  width: 100%;
 `;
