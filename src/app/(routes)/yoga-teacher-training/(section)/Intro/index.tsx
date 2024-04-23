@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { Section, Title, Heading, ImageWrapper, Content, Subtitle, Desc, Button } from './styles'
+import ImageBanner from 'public/assets/images/gallery/training-9.jpg'
 
 export default function HeroDetailPage() {
   return (
@@ -29,7 +30,9 @@ export default function HeroDetailPage() {
       <Content>
         <ImageWrapper>
           <Image
-            src='/assets/images/gallery/training-9.jpg'
+            src={ImageBanner.src}
+            placeholder='blur'
+            blurDataURL={ImageBanner.blurDataURL}
             alt='Joga Yoga Teacher Training'
             sizes={`100vw, 33vw`}
             fill

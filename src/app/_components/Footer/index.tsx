@@ -22,7 +22,8 @@ import {
   Info,
   InfoIcon,
   CopyrightSocial,
-  CopyrightSocialItem
+  CopyrightSocialItem,
+  ImageWrapper
 } from './styles'
 import Container from '../Container'
 import { menusMain } from '@/data/menus'
@@ -30,6 +31,16 @@ import { menusMain } from '@/data/menus'
 export default function Footer() {
   return (
     <FooterNav>
+      <ImageWrapper>
+        <Image
+          src='/assets/images/bg-footer.png'
+          alt='footer background'
+          sizes={`100vw, 33vw`}
+          fill
+          style={{ objectFit: 'cover' }}
+          className='image'
+        />
+      </ImageWrapper>
       <Container>
         <Navigation>
           <NavRight>

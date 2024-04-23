@@ -5,13 +5,23 @@ import Image from 'next/image'
 import Container from '@/app/_components/Container'
 import { HiCalendarDays, HiMapPin, HiCheck } from "react-icons/hi2";
 
-import { Section, Title, Subtitle, Heading, Content, ContentHeading, ContentBody, ContentItem, ContentTitle, ContentDetail, ContentList, Icon, ImageWrapper, ButtonMore, Discount } from './styles'
+import { Section, Title, Subtitle, Heading, Content, ContentHeading, ContentBody, ContentItem, ContentTitle, ContentDetail, ContentList, Icon, ImageWrapper, ButtonMore, Discount, BgWrapper } from './styles'
 import trainings from '@/data/trainings';
 
 
 export default function Trainings() {
   return (
     <Section>
+      <BgWrapper>
+        <Image
+          src='/assets/images/bg-pattern-3.jpg'
+          alt='training background'
+          sizes={`100vw, 33vw`}
+          fill
+          style={{ objectFit: 'cover' }}
+          className='image'
+        />
+      </BgWrapper>
       <Container>
         <Heading>
           <Title>Our Upcoming Trainings</Title>

@@ -4,11 +4,13 @@ import theme from '@/styles/theme';
 export const FooterNav = styled.footer`
   padding: 80px 0 40px;
   background-color: ${theme.colors.tealBright};
-  background-image: url('/assets/images/bg-footer.png');
+  /* background-image: url('/assets/images/bg-footer.png');
   background-position: left bottom;
   background-size: 55%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: ${theme.colors.backgroundMint};
+  position: relative;
+  overflow: hidden;
 
   @media screen and (max-width: 1024px) {
     padding: 60px 0 80px;
@@ -20,6 +22,8 @@ export const Navigation = styled.nav`
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  position: relative;
+  z-index: 3;
 
   .featured {
     margin: 0 0 50px;
@@ -67,6 +71,8 @@ export const Logo = styled.div`
 export const Copyright = styled.div`
   font-size: 14px;
   margin-top: 80px;
+  position: relative;
+  z-index: 3;
 `;
 
 export const Address = styled.address`
@@ -148,4 +154,16 @@ export const CopyrightSocialItem = styled.div`
   display: block;
 `;
 
+export const ImageWrapper = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 800px;
+  height: 470px;
 
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding-bottom: 70%;
+    height: auto;
+  }
+`;
