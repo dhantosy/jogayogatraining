@@ -146,7 +146,7 @@ export const ButtonMore = styled.div`
   border-radius: 20px;
 
   @media screen and (max-width: 1024px) {
-    margin: 0;
+    margin: 20px 0 0 auto;
   }
 `;
 
