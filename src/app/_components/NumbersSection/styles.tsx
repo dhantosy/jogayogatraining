@@ -162,6 +162,10 @@ export const VideoWrapper = styled.div`
   .player-wrapper {
     position: relative;
     padding-top: 56.25%;
+
+    > div {
+      cursor: pointer;
+    }
   }
   
   .react-player {
