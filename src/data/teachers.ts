@@ -5,8 +5,15 @@ import ImageTeacherCharlotte from 'public/assets/images/teachers/teacher-charlot
 import ImageTeacherLena from 'public/assets/images/teachers/teacher-lena.png';
 import ImageTeacherKemie from 'public/assets/images/teachers/teacher-kemie.png';
 import ImageTeacherMarylene from 'public/assets/images/teachers/teacher-marylene.png';
+import ImageTeacherBipinji from 'public/assets/images/teachers/teacher-bipinji.png';
 
 export const teachers = [
+  {
+    photo: ImageTeacherBipinji,
+    name: 'Bipin Ji',
+    title: 'Yoga Teacher',
+    description: 'Bipin Ji was born & raised in Rishikesh &  his passion for Yoga led him to pursue formal training and earn multiple certifications in various styles of Yoga • 500 HRS ERYT 2017, Certificate of Appreciation at International(Rishikesh, India), Certified yoga teacher from International Yoga & Meditation Society(Rishikesh, India), Gold Certificate in Yogathon at Swaminarayan Ashram(Rishikesh, Masters in yoga which gave him learning of Hatha, Vinyasa, Ashtanga, Iyengar, Adjustment & Alignment, meditation, pranayama and Yin Yoga. With a diverse range of expertise, Bipin can cater to practitioners of all levels, from beginners to advanced yogis, tailoring their classes to suit individual needs.',
+  },
   {
     photo: ImageTeacherJoseph,
     name: 'Joseph',

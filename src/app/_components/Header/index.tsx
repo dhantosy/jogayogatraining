@@ -99,7 +99,7 @@ export default function Header() {
           <Link href='/'>
             <Logo $active={active}>
               <Image
-                src="/assets/images/logo-new.png"
+                src="/assets/images/joga-yoga-logo.png"
                 alt="Joga yoga training"
                 sizes={`100vw, 33vw`}
                 priority

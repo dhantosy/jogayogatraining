@@ -18,7 +18,7 @@ export default function Trainings() {
           alt='training background'
           sizes={`100vw, 33vw`}
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           className='image'
         />
       </BgWrapper>
