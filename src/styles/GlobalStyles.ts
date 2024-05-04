@@ -38,6 +38,7 @@ const styles = css`
     padding: 0;
     background-image: url('/assets/images/bg-image.jpg');
     color: #3D4939;
+    font-display: swap;
   }
 
   img {

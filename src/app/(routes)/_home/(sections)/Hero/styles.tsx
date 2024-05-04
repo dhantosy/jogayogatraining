@@ -200,6 +200,7 @@ export const HeroMobile = styled.div`
   position: relative;
   border-radius: 20px 20px 0 0;
   overflow: hidden;
+  background-color: ${theme.colors.backgroundGrey};
 
   @media screen and (max-width: 768px) {
     display: block;

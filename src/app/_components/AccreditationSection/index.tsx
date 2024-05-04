@@ -22,7 +22,6 @@ export default function AccreditationSection() {
               sizes={`100vw, 33vw`}
               width='600'
               height='441'
-              priority
             />
           </ImageWrapper>
           <ContentSub>
