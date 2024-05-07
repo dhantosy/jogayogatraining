@@ -159,7 +159,7 @@ export const ImageWrapper = styled.div`
   left: 0;
   bottom: 0;
   width: 800px;
-  height: 470px;
+  height: 520px;
 
   @media screen and (max-width: 1024px) {
     width: 100%;

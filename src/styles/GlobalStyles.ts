@@ -248,6 +248,11 @@ const styles = css`
     font-weight: 700;
   }
 
+  .swiper-autoheight,
+  .swiper-autoheight .swiper-slide {
+    height: 100%;
+  }
+
   .my-20 {
     margin-top: 20px;
     margin-bottom: 20px;

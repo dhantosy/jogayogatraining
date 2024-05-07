@@ -59,7 +59,7 @@ export default function Footer() {
               <Info>
                 <InfoIcon><FaMapMarkerAlt /></InfoIcon>
                 <Address>
-                  Jl. Nelayan Canggu, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
+                  Jl. Pantai Batu Bolong, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361
                 </Address>
               </Info>
               <Info>
