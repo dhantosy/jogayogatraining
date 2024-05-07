@@ -39,6 +39,10 @@ export default function Investment() {
                 </div>
                 <div className='left-date-item'>
                   <div className='left-date-icon'><HiCalendarDays /></div>
+                  <div>1 - 22 October 2024</div>
+                </div>
+                <div className='left-date-item'>
+                  <div className='left-date-icon'><HiCalendarDays /></div>
                   <div>4 - 24 November 2024</div>
                 </div>
               </div>

@@ -83,6 +83,7 @@ export const ContentDetail = styled.div`
   gap: 10px;
   font-size: 16px;
   font-weight: 600;
+  padding: 0 20px;
 
   &.bottom {
     align-items: flex-start;
@@ -119,6 +120,11 @@ export const ContentBody = styled.div`
 
 export const Icon = styled.div`
   width: 20px;
+  height: 22px;
+
+  @media screen and (max-width: 1024px) {
+    height: auto;
+  }
 `;
 
 export const ContentList = styled.div`
@@ -127,6 +133,7 @@ export const ContentList = styled.div`
 
   & > .subtitle {
     margin-bottom: 10px;
+    padding: 0 20px;
   }
 `;
 

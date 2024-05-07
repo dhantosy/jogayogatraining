@@ -124,6 +124,8 @@ export default function FormFields({ onStepChange }: Props) {
                             <option value='august_200hr'>200-Hour Yoga Teachers Training, 5 - 26 August, 2024</option>
                             <option value='september_100hr'>100-Hour Yoga Teachers Training, 2 - 23 September, 2024</option>
                             <option value='september_200hr'>200-Hour Yoga Teachers Training, 2 - 23 September, 2024</option>
+                            <option value='september_300hr'>200-Hour Yoga Teachers Training, 2 - 23 September, 2024</option>
+                            <option value='october_200hr'>200-Hour Yoga Teachers Training, 1 - 22 October, 2024</option>
                             <option value='november_100hr'>100-Hour Yoga Teachers Training, 4 - 25 November, 2024</option>
                             <option value='november_200hr'>200-Hour Yoga Teachers Training, 4 - 25 November, 2024</option>
                           </select>
