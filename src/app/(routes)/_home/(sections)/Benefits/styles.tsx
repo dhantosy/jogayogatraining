@@ -3,11 +3,11 @@ import theme from '@/styles/theme'
 
 export const Section = styled.section`
   position: relative;
-  padding: 100px 0 20px;
+  padding: 0 0 120px;
 
   @media screen and (max-width: 1024px) {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 `;
 

@@ -26,7 +26,7 @@ export default function AccreditationSection() {
           </ImageWrapper>
           <ContentSub>
             <Subtitle>
-              The 200 hrs Yoga Teacher Training course by Joga Yoga Training is fully accredited with Yoga Alliance. You will be eligibled to register your complete hours of Continuing Education (CE) towards your RYT registration.
+              Our Joga Yoga Teacher Training courses are fully accredited with Yoga Alliance. All graduate students will receive the international certificate upon competition of the course and will be eligible to teach worldwide.
             </Subtitle>
             <Logos>
               <div>
