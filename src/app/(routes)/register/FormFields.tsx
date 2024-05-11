@@ -117,7 +117,6 @@ export default function FormFields({ onStepChange }: Props) {
                           })}>
                             <option value='' disabled>Please Select Date</option>
                             <option value='100hour'>100-Hour Yoga Teachers Training</option>
-                            <option value='may'>200-Hour Yoga Teachers Training, 6 May - 27 May, 2024</option>
                             <option value='july_100hr'>100-Hour Yoga Teachers Training, 1 - 22 July, 2024</option>
                             <option value='july_200hr'>200-Hour Yoga Teachers Training, 1 - 22 July, 2024</option>
                             <option value='august_100hr'>100-Hour Yoga Teachers Training, 5 - 26 August, 2024</option>
@@ -138,7 +137,8 @@ export default function FormFields({ onStepChange }: Props) {
                             required: true
                           })}>
                             <option value='' disabled>Please Select Accomodation</option>
-                            <option value='twin_shared'>Twin Shared</option>
+                            <option value='dorm'>Dorm</option>
+                            <option value='twin_shared'>Twin Share</option>
                             <option value='private'>Private</option>
                             <option value='local'>Local Price Non Accomodation</option>
                           </select>

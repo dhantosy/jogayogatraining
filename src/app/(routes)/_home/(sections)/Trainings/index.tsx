@@ -49,10 +49,10 @@ export default function Trainings() {
             }}
             slidesPerView={2}
           >
-            {trainings.map(({ photo, title, startDate, location, list, discount, discountText, link }) => {
+            {trainings.map(({ photo, title, startDate, location, list, discount, discountText, link }, index) => {
 
               return (
-                <SwiperSlide key={startDate}>
+                <SwiperSlide key={index}>
                   <ContentItem>
                     {discount && (
                       <Discount>

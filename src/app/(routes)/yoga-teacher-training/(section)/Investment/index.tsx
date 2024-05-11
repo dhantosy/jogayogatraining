@@ -14,17 +14,23 @@ export default function Investment() {
         </Heading>
         <Content>
           <div className='left'>
-            <div>
-              <div className='price-original'>USD 3450</div>
-              <div className='price-discount'>USD 2450</div>
+            <div className='price-range'>
+              <div>
+                <div className='price-original'>Dorm Room</div>
+                <div className='price-discount'>USD 1699</div>
+              </div>
+              <div>
+                <div className='price-original'>Twin Share</div>
+                <div className='price-discount'>USD 2450</div>
+              </div>
+              <div>
+                <div className='price-original'>Private Room</div>
+                <div className='price-discount'>USD 2999</div>
+              </div>
             </div>
             <div className='left-content'>
               <div>USD 1000 Early Bird Discount</div>
               <div className='left-date'>
-                <div className='left-date-item'>
-                  <div className='left-date-icon'><HiCalendarDays /></div>
-                  <div>6 - 27 May 2024</div>
-                </div>
                 <div className='left-date-item'>
                   <div className='left-date-icon'><HiCalendarDays /></div>
                   <div>1 - 22 July 2024</div>
@@ -56,31 +62,39 @@ export default function Investment() {
             <div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Tuition with experienced teachers in a small-class setting</div>
+                <div>Tuition with highly experienced and accredited yoga teachers</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>200 hrs yoga course materials</div>
+                <div>International Yoga Alliance Certified Certificate</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Healthy vegetarian breakfast</div>
+                <div>Nutritious Vegetarian/Vegan Breakfasts and Lunches</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Excursions around Bali</div>
+                <div>All Books, Resources and t-shirt provided</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Lifetime subscription to our online student portal</div>
+                <div>Access to our online student portal upon completion</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div>Yoga Alliance Recognized Certificate (upon graduation)</div>
+                <div>Free accommodation for the first 10 sign ups!</div>
               </div>
               <div className='list'>
                 <div className='icon'><HiCheck /></div>
-                <div><strong>FREE accommodation!</strong></div>
+                <div>Bali excursion to sacred water temple and monks ashram</div>
+              </div>
+              <div className='list'>
+                <div className='icon'><HiCheck /></div>
+                <div>Airport pick up to location</div>
+              </div>
+              <div className='list'>
+                <div className='icon'><HiCheck /></div>
+                <div>Traditional Balinese Massage</div>
               </div>
             </div>
           </div>
