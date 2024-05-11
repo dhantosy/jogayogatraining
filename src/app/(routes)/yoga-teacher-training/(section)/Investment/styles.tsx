@@ -65,7 +65,7 @@ export const Content = styled.div`
   }
 
   .left-content {
-    margin: 15px 0 20px;
+    margin: 25px 0 20px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -95,14 +95,20 @@ export const Content = styled.div`
   }
 
   .price-original {
-    font-size: 24px;
-    text-decoration: line-through;
+    font-size: 20px;
   }
 
   .price-discount {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 600;
     color: ${theme.colors.pinkMain};
+  }
+
+  .price-range {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn {
@@ -133,6 +139,14 @@ export const Content = styled.div`
 
     .icon {
       flex: 0 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+
+    .price-range {
+      flex-direction: column;
+      gap: 10px;
     }
   }
 

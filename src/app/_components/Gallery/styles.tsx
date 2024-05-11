@@ -3,6 +3,7 @@ import theme from '@/styles/theme'
 
 export const GalleryContainer = styled.div`
   padding: 80px 0 110px;
+  margin-bottom: 80px;
   position: relative;
   background-color: ${theme.colors.orange};
   background-image: url('/assets/images/bg-pattern-3.jpg');
@@ -11,6 +12,7 @@ export const GalleryContainer = styled.div`
 
   @media screen and (max-width: 1024px) {
     padding: 40px 0;
+    margin-bottom: 40px;
   }
 `;
 
