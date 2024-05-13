@@ -11,7 +11,7 @@ import CTABottom from './(section)/CTABottom'
 import Gallery from '@/app/_components/Gallery'
 import Container from '@/app/_components/Container'
 import NumbersSection from '@/app/_components/NumbersSection'
-import GalleryLocation from '@/app/_components/GalleryLocation'
+// import GalleryLocation from '@/app/_components/GalleryLocation'
 import AccreditationSection from '@/app/_components/AccreditationSection'
 import Teachers from '../_home/(sections)/Teachers'
 import VideoTestimonial from '../testimonials/(section)/Reviews/VideoTestimonial'
@@ -35,11 +35,11 @@ export default function YogaTeacherTraining() {
         images={galleryExcursion}
       />
       <Teachers />
-      <div style={{
+      {/* <div style={{
         marginTop: '60px'
       }}>
         <GalleryLocation />
-      </div>
+      </div> */}
       <Container>
         <VideoTestimonial />
       </Container>

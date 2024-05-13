@@ -263,7 +263,7 @@ export default function Benefits() {
               <div className='number'>03.</div>
               <div>Stunning Location</div>
             </ContentHeading>
-            <div>Our location is in the heart of Canggu, only 5 minutes to the beach. We offer private, twin share and dorm. We have a big pool, yoga studio with a wooden floor, lots of plants and a beautiful surrounding! We have a vegan cafe area, free wifi, free clean drinking water and so much more.</div>
+            <div>Our location is in the heart of Canggu, only 10 minutes to the beach. We offer private, twin share and dorm. We have a big yoga studio, huge garden area, lots of plants and trees, vegan cafe area, free WiFi, and clean drinking water.</div>
           </ContentItem>
         </Content>
       </Container>

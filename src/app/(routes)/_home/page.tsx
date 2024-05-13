@@ -6,7 +6,7 @@ import Journey from './(sections)/Journey'
 import AccreditationSection from '@/app/_components/AccreditationSection'
 import NumbersSection from '@/app/_components/NumbersSection'
 import TestimonialsSection from '@/app/_components/TestimonialsSection'
-import GalleryLocation from '@/app/_components/GalleryLocation'
+// import GalleryLocation from '@/app/_components/GalleryLocation'
 import Lessons from '@/app/(routes)/yoga-teacher-training/(section)/Lessons'
 import CertificationDetail from '@/app/(routes)/yoga-teacher-training/(section)/CertificationDetail'
 import Graduation from '@/app/(routes)/yoga-teacher-training/(section)/Graduation'
@@ -26,7 +26,7 @@ export default function Home() {
       <Benefits />
       <Investment />
       <Teachers />
-      <GalleryLocation />
+      {/* <GalleryLocation /> */}
       <TestimonialsSection />
     </>
   )
