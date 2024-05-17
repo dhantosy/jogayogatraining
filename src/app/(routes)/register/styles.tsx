@@ -35,7 +35,7 @@ export const Title = styled.div`
 export const Stepper = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 560px;
   margin: 60px auto 30px;
 
   @media screen and (max-width: 860px) {
@@ -240,4 +240,10 @@ export const ErrorMessage = styled.div`
   text-align: center;
   color: ${theme.colors.red};
   margin: 10px 0;
+`;
+
+export const PrivacyPolicy = styled.div`
+  margin: 20px 0;
+  text-decoration: underline;
+  font-size: 14px;
 `;
