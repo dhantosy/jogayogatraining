@@ -35,7 +35,7 @@ export const Title = styled.div`
 export const Stepper = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 560px;
   margin: 60px auto 30px;
 
   @media screen and (max-width: 860px) {
@@ -164,11 +164,11 @@ export const Form = styled.div`
 export const FormState = styled.div<{ $currentStep: number }>`
 
   &:first-child {
-    display: ${props => props.$currentStep !== 3 ? 'block' : 'none'};
+    display: ${props => props.$currentStep !== 2 ? 'block' : 'none'};
   }
 
   &:last-child {
-    display: ${props => props.$currentStep === 3 ? 'block' : 'none'};
+    display: ${props => props.$currentStep === 2 ? 'block' : 'none'};
   }
   
   > div {
@@ -178,13 +178,13 @@ export const FormState = styled.div<{ $currentStep: number }>`
       max-height: ${props => props.$currentStep === 1 ? '100%' : '0'};
     }
 
-    &:nth-child(2) {
+    /* &:nth-child(2) {
       visibility: hidden;
       max-height: 0;
 
       visibility: ${props => props.$currentStep === 2 ? 'visible' : 'hidden'};
       max-height: ${props => props.$currentStep === 2 ? '100%' : '0'};
-    }
+    } */
   }
 `;
 

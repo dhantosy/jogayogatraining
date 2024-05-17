@@ -96,6 +96,10 @@ export default function Investment() {
                 <div className='icon'><HiCheck /></div>
                 <div>Traditional Balinese Massage</div>
               </div>
+              <div className='list'>
+                <div className='icon'><HiCheck /></div>
+                <div>Special discount price for Indonesians</div>
+              </div>
             </div>
           </div>
         </Content>

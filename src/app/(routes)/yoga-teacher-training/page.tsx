@@ -14,7 +14,7 @@ import NumbersSection from '@/app/_components/NumbersSection'
 // import GalleryLocation from '@/app/_components/GalleryLocation'
 import AccreditationSection from '@/app/_components/AccreditationSection'
 import Teachers from '../_home/(sections)/Teachers'
-import VideoTestimonial from '../testimonials/(section)/Reviews/VideoTestimonial'
+import TestimonialsSection from '@/app/_components/TestimonialsSection'
 import { galleryExcursion } from '@/data/galleries'
 
 export default function YogaTeacherTraining() {
@@ -40,10 +40,12 @@ export default function YogaTeacherTraining() {
       }}>
         <GalleryLocation />
       </div> */}
-      <Container>
-        <VideoTestimonial />
-      </Container>
-      <CTABottom />
+      <div style={{ marginTop: '30px' }}>
+        <Container>
+          <TestimonialsSection />
+        </Container>
+        <CTABottom />
+      </div>
     </>
   )
 }

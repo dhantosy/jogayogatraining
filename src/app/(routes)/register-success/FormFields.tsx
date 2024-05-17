@@ -16,7 +16,7 @@ export default function FormFields({ onStepChange }: Props) {
           <div className='formContent'>
             <div>
               <div>
-                <FormState $currentStep={3}>
+                <FormState $currentStep={2}>
                   <SuccessMessage>
                     <div className='icon'>
                       <HiCheckCircle />

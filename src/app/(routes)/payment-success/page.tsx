@@ -8,7 +8,7 @@ import { Stepper, StepperItem, Title } from './styles'
 type stepNumberProp = number;
 
 export default function PaymentSuccess() {
-  const [currentStep, setCurrentStep] = useState(4);
+  const [currentStep, setCurrentStep] = useState(3);
 
   const handleStepChange = (data: stepNumberProp) => {
     setCurrentStep(data);
@@ -27,14 +27,10 @@ export default function PaymentSuccess() {
             </StepperItem>
             <StepperItem $currentStep={currentStep}>
               <div>2</div>
-              <div>Additional Info</div>
-            </StepperItem>
-            <StepperItem $currentStep={currentStep}>
-              <div>3</div>
               <div>Confirmation</div>
             </StepperItem>
             <StepperItem $currentStep={currentStep}>
-              <div>4</div>
+              <div>3</div>
               <div>Reserve Spot</div>
             </StepperItem>
           </Stepper>

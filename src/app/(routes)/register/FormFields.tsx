@@ -6,7 +6,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { format } from 'date-fns'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { HiCheckCircle } from 'react-icons/hi2'
-import { Back, Form, FormState, Subtitle, SuccessMessage, ErrorMessage } from './styles'
+import { PrivacyPolicy, Form, FormState, Subtitle, SuccessMessage, ErrorMessage } from './styles'
 import Loader from '@/app/_components/Loader'
 
 type Inputs = {
@@ -164,51 +164,6 @@ export default function FormFields({ onStepChange }: Props) {
                         })} />
                       </fieldset>
                     </div>
-                    <button type='button' onClick={() => handleStepChange(2)} className='submit' disabled={
-                      watchDate === '' ||
-                      watchAccomodation === '' ||
-                      watchEmail === '' ||
-                      watchFullName === '' ||
-                      watchPhone === ''
-                    }>Next</button>
-                  </div>
-                  <div>
-                    <fieldset>
-                      <label htmlFor='english'>What is your English proficiency?<span>*</span></label>
-                      <div className='select'>
-                        <select id='english' defaultValue='' {...register('english', {
-                          required: true
-                        })}>
-                          <option value='' disabled>Please Select</option>
-                          <option value='fluent'>Fluent</option>
-                          <option value='conversational'>Conversational</option>
-                          <option value='average'>Average</option>
-                          <option value='needs_work'>Needs Work</option>
-                        </select>
-                      </div>
-                    </fieldset>
-                    <fieldset>
-                      <label htmlFor='condition'>Do you have a medical condition or any current injuries?<span>*</span></label>
-                      <textarea id='condition' {...register('condition', {
-                        required: true
-                      })} />
-                    </fieldset>
-                    <fieldset>
-                      <label htmlFor='source'>How did you know about us?<span>*</span></label>
-                      <div className='select'>
-                        <select id='source' defaultValue='' {...register('source', {
-                          required: true
-                        })}>
-                          <option value='' disabled>Please Select</option>
-                          <option value='instagram'>Instagram</option>
-                          <option value='facebook'>Facebook</option>
-                          <option value='youtube'>Youtube</option>
-                          <option value='google_search'>Google Search</option>
-                          <option value='digital_ads'>Digital Ads</option>
-                          <option value='referral'>Referral</option>
-                        </select>
-                      </div>
-                    </fieldset>
                     <ReCAPTCHA ref={reCaptchaRef} size='invisible' sitekey='6LfoGjIpAAAAAEoGhNvN1iuM6EiezWFPVH3TqKcN' />
                     {recaptchaError && (
                       <ErrorMessage>{recaptchaError}</ErrorMessage>
@@ -217,9 +172,9 @@ export default function FormFields({ onStepChange }: Props) {
                       {isLoading ? <Loader /> : (
                         <>
                           <button type='submit' className='submit' disabled={!isDirty || !isValid}>Submit</button>
-                          <Back onClick={() => handleStepChange(1)}>
-                            Back to previous form
-                          </Back>
+                          <PrivacyPolicy>
+                            <a href="/privacy-policy" target='_blank'>Privacy Policy</a>
+                          </PrivacyPolicy>
                         </>
                       )}
                     </div>

@@ -35,7 +35,7 @@ export const Title = styled.div`
 export const Stepper = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 560px;
   margin: 60px auto 30px;
 
   @media screen and (max-width: 860px) {
