@@ -26,7 +26,7 @@ export default function AccreditationSection() {
           </ImageWrapper>
           <ContentSub>
             <Subtitle>
-              Our Joga Yoga Teacher Training courses are fully accredited with Yoga Alliance. All graduate students will receive the international certificate upon competition of the course and will be eligible to teach worldwide.
+              Our Joga Yoga Teacher Training courses are fully accredited with Yoga Alliance. All graduate students will receive the international certificate upon completion of the course and will be eligible to teach worldwide.
             </Subtitle>
             <Logos>
               <div>

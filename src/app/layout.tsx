@@ -35,12 +35,12 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   robots: 'index, follow',
-  title: 'Joga Yoga Training',
-  description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
+  title: '200 Hour Yoga Teacher Training in Bali | Joga Yoga',
+  description: 'Join our 200 hour yoga teacher training in Bali with Joga Yoga. Gain certification, deepen your practice, and explore beautiful Bali. Enroll now!',
   keywords: 'Joga Yoga, Yoga Teacher Training, YTT, Yoga Teacher Training in Bali, Yoga Teacher Training Canggu, YTT Bali, Yoga Training Bali',
   openGraph: {
-    title: 'Joga Yoga Training',
-    description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
+    title: '200 Hour Yoga Teacher Training in Bali | Joga Yoga',
+    description: 'Join our 200 hour yoga teacher training in Bali with Joga Yoga. Gain certification, deepen your practice, and explore beautiful Bali. Enroll now!',
     type: 'website',
     images: '/assets/images/banner-photo.jpg'
   }

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 import Container from '@/app/_components/Container'
 import { PiCertificateBold } from "react-icons/pi";
 import { GrYoga } from 'react-icons/gr';
@@ -11,6 +10,8 @@ import { FaStar } from 'react-icons/fa6';
 import { Section, Title, Heading, Content, ContentHeading, ContentItem, Icon, VideoWrapper, VideoContent } from './styles'
 import ImageVideoOne from 'public/assets/images/video-image-1.png'
 import ImageVideoTwo from 'public/assets/images/video-image-2.png'
+
+const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
 export default function NumbersSection() {
   const [videoOneLoad, setVideoOneLoad] = useState(false)
