@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/yoga-teacher-training',
   },
-  title: 'Yoga Teacher Training with Joga Yoga',
-  description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
+  title: '300 Hour Yoga Teacher Training in Bali | Joga Yoga',
+  description: 'Advance your practice with our 300 hour yoga teacher training in Bali. Achieve certification and immerse in Bali`s serene beauty. Join Joga Yoga Training today!',
   keywords: 'Joga Yoga, Yoga Teacher Training, YTT, Yoga Teacher Training in Bali, Yoga Teacher Training Canggu, YTT Bali, Yoga Training Bali',
   openGraph: {
-    title: 'Yoga Teacher Training with Joga Yoga',
-    description: 'Joga Yoga offers Yoga Teacher Trainings and a beautiful yoga retreats in Bali. We have experienced teachers and healers in a stunning locations, join us!',
+    title: '300 Hour Yoga Teacher Training in Bali | Joga Yoga',
+    description: 'Advance your practice with our 300 hour yoga teacher training in Bali. Achieve certification and immerse in Bali`s serene beauty. Join Joga Yoga Training today!',
     type: 'website',
     images: '/assets/images/banner-photo.jpg'
   }
